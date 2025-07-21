@@ -163,34 +163,66 @@ def extract_awards(soup: BeautifulSoup) -> List[Dict[str, str]]:
     """
     awards = []
     
-    # Find the awards section
-    awards_section = soup.find('div', class_='mt-32 tablet:mt-48', attrs={'style': lambda s: s and '--color:201,169,111;' in s})
-    
-    if not awards_section:
-        # Try alternative selector
-        awards_section = soup.find('div', string=lambda s: s and 'Awards' in s)
-        if awards_section:
-            awards_section = awards_section.find_parent('div')
-    
-    if awards_section:
-        # Find the award container
-        award_container = awards_section.find('div', class_='award-container')
+    try:
+        # Use the specific CSS selector provided by the user
+        # #main-content > div > div > div > div.mx-16.tablet\:mx-48 > div > div.content-container > div > div > div:nth-child(5)
         
-        if award_container:
-            # Get all paragraphs in the award container
-            paragraphs = award_container.find_all('p', class_=lambda c: c and 'text-body-base' in c)
-            
-            # Process paragraphs in pairs (year and award name)
-            for i in range(0, len(paragraphs) - 1, 2):
-                if i + 1 < len(paragraphs):
-                    year = paragraphs[i].text.strip()
-                    award_name = paragraphs[i + 1].text.strip()
-                    
-                    if year and award_name:
-                        awards.append({
-                            "year": year,
-                            "award": award_name
-                        })
+        # Find the main content div
+        main_content = soup.select_one('#main-content')
+        if main_content:
+            # Navigate through the nested structure
+            mx_div = main_content.select_one('div > div > div > div.mx-16.tablet\\:mx-48')
+            if mx_div:
+                content_container = mx_div.select_one('div > div.content-container')
+                if content_container:
+                    # Try to find the awards div (typically the 5th child)
+                    awards_divs = content_container.select('div > div > div')
+                    if len(awards_divs) >= 5:
+                        awards_section = awards_divs[4]  # 5th child (0-indexed)
+                        
+                        # Check if this is the awards section by looking for "Awards" text
+                        if awards_section and 'Awards' in awards_section.text:
+                            # Find all paragraphs in the award container
+                            award_container = awards_section.select_one('div.award-container')
+                            if award_container:
+                                paragraphs = award_container.find_all('p', class_=lambda c: c and 'text-body-base' in c)
+                                
+                                # Process paragraphs in pairs (year and award name)
+                                for i in range(0, len(paragraphs) - 1, 2):
+                                    if i + 1 < len(paragraphs):
+                                        year = paragraphs[i].text.strip()
+                                        award_name = paragraphs[i + 1].text.strip()
+                                        
+                                        if year and award_name:
+                                            awards.append({
+                                                "year": year,
+                                                "award": award_name
+                                            })
+        
+        # If no awards found with the specific selector, try a more general approach
+        if not awards:
+            # Look for a div with "Awards" heading
+            award_headers = soup.find_all('p', class_=lambda c: c and 'text-heading-2xl' in c)
+            for header in award_headers:
+                if 'Awards' in header.text:
+                    awards_section = header.find_parent('div')
+                    if awards_section:
+                        award_container = awards_section.find('div', class_='award-container')
+                        if award_container:
+                            paragraphs = award_container.find_all('p', class_=lambda c: c and 'text-body-base' in c)
+                            
+                            for i in range(0, len(paragraphs) - 1, 2):
+                                if i + 1 < len(paragraphs):
+                                    year = paragraphs[i].text.strip()
+                                    award_name = paragraphs[i + 1].text.strip()
+                                    
+                                    if year and award_name:
+                                        awards.append({
+                                            "year": year,
+                                            "award": award_name
+                                        })
+    except Exception as e:
+        print(f"Error extracting awards: {e}")
     
     return awards
 
