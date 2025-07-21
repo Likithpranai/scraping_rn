@@ -24,9 +24,6 @@ def get_restaurant_listings() -> List[Dict[str, Any]]:
         response = requests.get(LISTING_URL, headers=HEADERS)
         response.raise_for_status()
         soup = BeautifulSoup(response.text, 'html.parser')
-        
-        # Find all restaurant cards
-        # Look for divs that contain the restaurant card structure with the specific HTML structure
         restaurant_items = []
         
         # First try to find all h2 elements that are likely restaurant names
@@ -154,6 +151,49 @@ def extract_price_point(soup: BeautifulSoup) -> Optional[str]:
                     return '$' * len(price_spans)
     return None
 
+def extract_awards(soup: BeautifulSoup) -> List[Dict[str, str]]:
+    """
+    Extract awards and recognition information from the restaurant detail page.
+    
+    Args:
+        soup: BeautifulSoup object of the detail page
+        
+    Returns:
+        List of award dictionaries with year and award name
+    """
+    awards = []
+    
+    # Find the awards section
+    awards_section = soup.find('div', class_='mt-32 tablet:mt-48', attrs={'style': lambda s: s and '--color:201,169,111;' in s})
+    
+    if not awards_section:
+        # Try alternative selector
+        awards_section = soup.find('div', string=lambda s: s and 'Awards' in s)
+        if awards_section:
+            awards_section = awards_section.find_parent('div')
+    
+    if awards_section:
+        # Find the award container
+        award_container = awards_section.find('div', class_='award-container')
+        
+        if award_container:
+            # Get all paragraphs in the award container
+            paragraphs = award_container.find_all('p', class_=lambda c: c and 'text-body-base' in c)
+            
+            # Process paragraphs in pairs (year and award name)
+            for i in range(0, len(paragraphs) - 1, 2):
+                if i + 1 < len(paragraphs):
+                    year = paragraphs[i].text.strip()
+                    award_name = paragraphs[i + 1].text.strip()
+                    
+                    if year and award_name:
+                        awards.append({
+                            "year": year,
+                            "award": award_name
+                        })
+    
+    return awards
+
 def extract_additional_photos(soup: BeautifulSoup) -> List[str]:
     """
     Extract additional photo URLs from the restaurant detail page.
@@ -251,6 +291,18 @@ def extract_restaurant_details(restaurant_data: Dict[str, Any]) -> Dict[str, Any
         if price_point:
             restaurant_data['source_pricepoint'] = price_point
             print(f"  Price Point: {price_point}")
+        
+        # Extract awards and recognition
+        awards = extract_awards(soup)
+        if awards:
+            restaurant_data['enrich_recognition'] = awards
+            print(f"  Awards: {len(awards)} found")
+        else:
+            restaurant_data['enrich_recognition'] = []
+        
+        # Add enrich_localname and enrich_english_name
+        restaurant_data['enrich_localname'] = restaurant_data.get('source_name', '')
+        restaurant_data['enrich_english_name'] = restaurant_data.get('source_name', '')
         
         # Extract additional photos
         additional_photos = extract_additional_photos(soup)

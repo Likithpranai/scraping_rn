@@ -2,6 +2,8 @@
   {
     "source_url": "https://www.tatlerasia.com/dining/amber?listId=345",
     "source_name": "Amber",
+    "enrich_localname": "Amber",
+    "enrich_english_name": "Amber",
     "source_address": "7/F, The Landmark Mandarin Oriental, 15 Queen's Road Central, Hong Kong",
     "source_neighbourhood": "Central, Hong Kong",
     "source_pricepoint": "$$$$",
@@ -20,6 +22,8 @@
   {
     "source_url": "https://www.tatlerasia.com/dining/ando-hong-kong?listId=345",
     "source_name": "Andō",
+    "enrich_localname": "Andō",
+    "enrich_english_name": "Andō",
     "source_address": "1/F Somptueux Central, 52 Wellington Street, Central, Hong Kong",
     "source_neighbourhood": "Central, Hong Kong",
     "source_pricepoint": "$$$$",
@@ -38,6 +42,8 @@
   {
     "source_url": "https://www.tatlerasia.com/dining/caprice?listId=345",
     "source_name": "Caprice",
+    "enrich_localname": "Caprice",
+    "enrich_english_name": "Caprice",
     "source_address": "6/F, Four Seasons Hotel Hong Kong, 8 Finance Street, Central, Hong Kong",
     "source_neighbourhood": "Central, Central, Hong Kong",
     "source_pricepoint": "$$$$",
@@ -56,6 +62,8 @@
   {
     "source_url": "https://www.tatlerasia.com/dining/chairman?listId=345",
     "source_name": "The Chairman",
+    "enrich_localname": "The Chairman",
+    "enrich_english_name": "The Chairman",
     "source_address": "3/F, The Wellington, 198 Wellington Street, Central, Hong Kong",
     "source_neighbourhood": "Central, Hong Kong",
     "source_pricepoint": "$$$$",
@@ -78,6 +86,8 @@
   {
     "source_url": "https://www.tatlerasia.com/dining/cristal-room-anne-sophie-pic-hong-kong?listId=345",
     "source_name": "Cristal Room by Anne-Sophie Pic",
+    "enrich_localname": "Cristal Room by Anne-Sophie Pic",
+    "enrich_english_name": "Cristal Room by Anne-Sophie Pic",
     "source_address": "44/F, Forty-five, Gloucester Tower, Landmark Atrium, 15 Queen's Road Central, Central, Hong Kong",
     "source_neighbourhood": "Central, Hong Kong",
     "source_pricepoint": "$$$$",
