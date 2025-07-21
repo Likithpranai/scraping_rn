@@ -82,6 +82,48 @@ def extract_must_try_dishes(url):
         print(f"Error scraping must-try dishes from {url}: {e}")
         return None
 
+def extract_description(url):
+    """
+    Extract the short description from a restaurant detail page.
+    Returns the first 20 words of the description or None if not found.
+    """
+    try:
+        headers = {
+            'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36'
+        }
+        response = requests.get(url, headers=headers)
+        response.raise_for_status()
+        
+        soup = BeautifulSoup(response.text, 'html.parser')
+        
+        # Look for the description paragraph with specific class
+        description_p = soup.find('p', class_=lambda c: c and 'font-gt-america' in c and 'font-weight--700' in c and 'text-primary-color-100' in c)
+        
+        if description_p:
+            full_text = description_p.get_text().strip()
+            # Get the first 20 words
+            words = full_text.split()
+            if len(words) > 20:
+                return ' '.join(words[:20])
+            return full_text
+        
+        # Alternative approach: look for the first paragraph in the content container
+        content_container = soup.select_one('#main-content > div > div > div > div.mx-16.tablet\\:mx-48 > div > div.content-container > div > div > div:nth-child(1)')
+        if content_container:
+            description_p = content_container.find('p', class_=lambda c: c and 'font-gt-america' in c)
+            if description_p:
+                full_text = description_p.get_text().strip()
+                # Get the first 20 words
+                words = full_text.split()
+                if len(words) > 20:
+                    return ' '.join(words[:20])
+                return full_text
+        
+        return None
+    except Exception as e:
+        print(f"Error scraping description from {url}: {e}")
+        return None
+
 def main():
     # Load the JSON file
     with open('tatler_results.json', 'r', encoding='utf-8') as f:
@@ -90,6 +132,7 @@ def main():
     # Track changes
     tips_found = 0
     signature_dishes_found = 0
+    descriptions_found = 0
     
     # Process each restaurant entry
     for i, entry in enumerate(data):
@@ -116,15 +159,26 @@ def main():
             else:
                 print(f"  ✗ No tip found")
         
-        # Extract the Must Try dishes
-        dishes = extract_must_try_dishes(url)
+        # Extract the Must Try dishes if not already present
+        if 'enrich_signature' not in entry:
+            dishes = extract_must_try_dishes(url)
+            
+            if dishes and len(dishes) > 0:
+                entry['enrich_signature'] = dishes
+                signature_dishes_found += 1
+                print(f"  ✓ Signature dishes found: {len(dishes)}")
+            else:
+                print(f"  ✗ No signature dishes found")
         
-        if dishes and len(dishes) > 0:
-            entry['enrich_signature'] = dishes
-            signature_dishes_found += 1
-            print(f"  ✓ Signature dishes found: {len(dishes)}")
+        # Extract the description
+        description = extract_description(url)
+        
+        if description:
+            entry['enrich_description'] = description
+            descriptions_found += 1
+            print(f"  ✓ Description found: {description[:50]}...")
         else:
-            print(f"  ✗ No signature dishes found")
+            print(f"  ✗ No description found")
         
         # Add a small delay to avoid overwhelming the server
         time.sleep(1)
@@ -134,7 +188,8 @@ def main():
         json.dump(data, f, ensure_ascii=False, indent=2)
     
     print(f"\nSummary: Found tips for {tips_found} new entries")
-    print(f"Summary: Found signature dishes for {signature_dishes_found} out of {len(data)} entries")
+    print(f"Summary: Found signature dishes for {signature_dishes_found} new entries")
+    print(f"Summary: Found descriptions for {descriptions_found} out of {len(data)} entries")
 
 if __name__ == "__main__":
     main()

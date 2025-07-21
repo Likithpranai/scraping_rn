@@ -39,7 +39,8 @@
       "Aka uni with lobster, cauliflower and caviar",
       "One-year aged carnaroli rice risotto",
       "Roe deer loin, foie gras and beetroot"
-    ]
+    ],
+    "enrich_description": "Creative and expertly executed haute cuisine in a refined yet unpretentious setting"
   },
   {
     "source_url": "https://www.tatlerasia.com/dining/ando-hong-kong?listId=345",
@@ -81,7 +82,8 @@
       "Sin Lola (seasonal)",
       "Suzuki a la plancha, fire roasted tomatoes and black olives",
       "Botan ebi, paprika sabayon foam and caviar"
-    ]
+    ],
+    "enrich_description": "Spanish elegance meets Japanese precision in a dining experience full of quiet surprises"
   },
   {
     "source_url": "https://www.tatlerasia.com/dining/caprice?listId=345",
@@ -123,7 +125,8 @@
       "Australian Wagyu beef with oyster and caviar",
       "Alaskan king crab crustacean jelly with oyster and caviar",
       "Brittany blue lobster, beetroot and chocolate with ruby sauce"
-    ]
+    ],
+    "enrich_description": "A benchmark for haute cuisine in Hong Kong, where French elegance meets Asian finesse"
   },
   {
     "source_url": "https://www.tatlerasia.com/dining/chairman?listId=345",
@@ -169,7 +172,8 @@
       "Steamed flower crab with aged shaoxing wine, chicken oil and flat rice noodles",
       "Thick-cut Chairman-style char siu",
       "Camphor wood-smoked goose"
-    ]
+    ],
+    "enrich_description": "An independent Cantonese restaurant by Danny Yip, rooted in tradition with an eye on the future"
   },
   {
     "source_url": "https://www.tatlerasia.com/dining/cristal-room-anne-sophie-pic-hong-kong?listId=345",
@@ -213,7 +217,8 @@
       "Les Berlingots ASP pasta",
       "Wild seabass with Petrossian Daurenki caviar",
       "Le Millefeuille blanc"
-    ]
+    ],
+    "enrich_description": "A masterclass in French gastronomy, where layers of flavour meet precision and finesse"
   },
   {
     "source_url": "https://www.tatlerasia.com/dining/estro-hong-kong?listId=345",
@@ -257,7 +262,8 @@
       "Seasonal bottoni",
       "Squid with almond and caviar",
       "Red prawn coral pannacotta"
-    ]
+    ],
+    "enrich_description": "Neapolitan tradition, distilled and redefined by Antimo Maria Merone"
   },
   {
     "source_url": "https://www.tatlerasia.com/dining/feuille-hk?listId=345",
@@ -298,7 +304,8 @@
       "Cumin, egg, sweet corn",
       "Mustard seed with shiso and sea grape",
       "Pumpkin, spiny lobster and saffron"
-    ]
+    ],
+    "enrich_description": "A refined, plant-forward fine dining experience where vegetables are spotlighted in beautifully crafted, seasonally driven dishes"
   },
   {
     "source_url": "https://www.tatlerasia.com/dining/fo174?listId=345",
@@ -339,7 +346,8 @@
       "Ah Yat abalone",
       "Oxtail with roasted sauce",
       "Baked stuffed crab shell"
-    ]
+    ],
+    "enrich_description": "A traditional Cantonese institution where abalone is king and classics shine"
   },
   {
     "source_url": "https://www.tatlerasia.com/dining/ho-lee-fook-hong-kong?listId=345",
@@ -380,7 +388,8 @@
       "Ho Lee duck or roast meat platter",
       "Steamed razor clams with glass noodles",
       "Stir-fry king"
-    ]
+    ],
+    "enrich_description": "High-energy Cantonese fare with bold flavours and even louder vibes"
   },
   {
     "source_url": "https://www.tatlerasia.com/dining/leela-hong-kong?listId=345",
@@ -416,7 +425,8 @@
       "Monkfish musallam",
       "Honey sesame pork ribs",
       "Bone marrow and beef cheek biryani"
-    ]
+    ],
+    "enrich_description": "A culinary playground, where Indian cuisine is reimagined with innovative flair"
   },
   {
     "source_url": "https://www.tatlerasia.com/dining/mono-hong-kong?listId=345",
@@ -460,7 +470,8 @@
       "Danish langoustine with cacao expressions",
       "White sesame sourdough with olive oil Aguilera, 100% Arbequina",
       "Mono-made Ecuadorian chocolate 70%"
-    ]
+    ],
+    "enrich_description": "A refined take on Latin American cuisine, where unexpected ingredient pairings surprise and delight in every course"
   },
   {
     "source_url": "https://www.tatlerasia.com/dining/mosu-hong-kong?listId=345",
@@ -506,7 +517,8 @@
       "Abalone taco",
       "Tilefish and brassicas",
       "Ember roasted acorn noodles"
-    ]
+    ],
+    "enrich_description": "A masterful interplay of Korean tradition, French technique, and minimalist elegance"
   },
   {
     "source_url": "https://www.tatlerasia.com/dining/prince-and-the-peacock-hk?listId=345",
@@ -548,7 +560,8 @@
       "Meen porichettu",
       "Nalli gosht biryani",
       "Pandhra rassa"
-    ]
+    ],
+    "enrich_description": "Experience the opulence of India’s royal courts in the heart of Hong Kong"
   },
   {
     "source_url": "https://www.tatlerasia.com/dining/racines-hk?listId=345",
@@ -585,7 +598,8 @@
       "Brittany Pigeon",
       "Chicken Liver parfait canapé",
       "Four seeds sourdough and butter with chilli espelette"
-    ]
+    ],
+    "enrich_description": "An intimate, almost private kitchen experience, where a love for quality ingredients and a passion for creating joy through food"
   },
   {
     "source_url": "https://www.tatlerasia.com/dining/tate-dining-room?listId=345",
@@ -628,7 +642,8 @@
       "Century egg mimosa with crab and vinegar jelly",
       "Warm scallop with kumquat grenobloise sauce",
       "Steamed pigeon breast with Sichuan pigeon jus"
-    ]
+    ],
+    "enrich_description": "French-Chinese fine dining that lives up to the hype"
   },
   {
     "source_url": "https://www.tatlerasia.com/dining/vea-hong-kong?listId=345",
@@ -670,7 +685,8 @@
       "Sea cucumber",
       "Fish maw",
       "Abalone “pithivier”"
-    ]
+    ],
+    "enrich_description": "Where French finesse meets Chinese heritage and flavours—with spectacular results"
   },
   {
     "source_url": "https://www.tatlerasia.com/dining/whey-hk?listId=345",
@@ -712,7 +728,8 @@
       "Buak keluak brioche",
       "Lobster nasi ulam",
       "Mao Shan Wang caviar ice cream"
-    ]
+    ],
+    "enrich_description": "A culinary symphony of Singaporean flavours and European finesse"
   },
   {
     "source_url": "https://www.tatlerasia.com/dining/wing-restaurant?listId=345",
@@ -752,7 +769,8 @@
       "Alaskan king crab leg with crab roe and crispy cheung fun",
       "Japanese oyster and century egg in housemade chilli sauce",
       "Razor clam with Yunnan chilli and bull kelp"
-    ]
+    ],
+    "enrich_description": "Confident, boundary-pushing Chinese cuisine by chef and founder Vicky Cheng"
   },
   {
     "source_url": "https://www.tatlerasia.com/dining/xin-rong-ji-hong-kong?listId=345",
@@ -792,7 +810,8 @@
       "Roasted Peking duck",
       "Braised wild-caught yellow croaker",
       "Crispy fried silver ribbon fish"
-    ]
+    ],
+    "enrich_description": "Pristine seafood, polished service and Taizhou cooking at its finest"
   },
   {
     "source_url": "https://www.tatlerasia.com/dining/yong-fu-hong-kong?listId=345",
@@ -834,7 +853,8 @@
       "Alaskan king crab two ways",
       "⁠Braised abalone in golden premium chicken soup",
       "⁠Stir-fried rice cake with yellow croaker fish roe"
-    ]
+    ],
+    "enrich_description": "Ningbo cuisine at its finest—delicate, precise and singing with flavour"
   },
   {
     "source_url": "https://www.tatlerasia.com/people/carlito-chiu-hk",

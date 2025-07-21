@@ -14,7 +14,9 @@
       "source_categories": [
         "$$$$expensive",
         "Cocktail bar"
-      ]
+      ],
+      "enrich_localName": "Quinary",
+      "enrich_englishName": "Quinary"
     },
     {
       "source_url": "https://wanderlog.com/place/details/1081413/coa",
@@ -29,7 +31,9 @@
       "source_categories": [
         "Cocktail bar",
         "Bar"
-      ]
+      ],
+      "enrich_localName": "COA",
+      "enrich_englishName": "COA"
     },
     {
       "source_url": "https://wanderlog.com/place/details/1081213/the-aubrey",
@@ -43,7 +47,9 @@
       ],
       "source_categories": [
         "Japanese restaurant"
-      ]
+      ],
+      "enrich_localName": "The Aubrey",
+      "enrich_englishName": "The Aubrey"
     },
     {
       "source_url": "https://wanderlog.com/place/details/1081361/the-pontiac",
@@ -59,7 +65,9 @@
         "$$$$affordable",
         "Cocktail bar",
         "Bar"
-      ]
+      ],
+      "enrich_localName": "The Pontiac",
+      "enrich_englishName": "The Pontiac"
     },
     {
       "source_url": "https://wanderlog.com/place/details/2077777/argo",
@@ -77,7 +85,9 @@
         "Bistro",
         "Buffet restaurant",
         "Lounge"
-      ]
+      ],
+      "enrich_localName": "ARGO",
+      "enrich_englishName": "ARGO"
     },
     {
       "source_url": "https://wanderlog.com/place/details/1081228/darkside",
@@ -91,7 +101,9 @@
       ],
       "source_categories": [
         "Cocktail bar"
-      ]
+      ],
+      "enrich_localName": "DarkSide",
+      "enrich_englishName": "DarkSide"
     },
     {
       "source_url": "https://wanderlog.com/place/details/445415/the-old-man",
@@ -105,7 +117,9 @@
       ],
       "source_categories": [
         "Bar"
-      ]
+      ],
+      "enrich_localName": "The Old Man",
+      "enrich_englishName": "The Old Man"
     },
     {
       "source_url": "https://wanderlog.com/place/details/1081359/the-wise-king-soho-hong-kong",
@@ -121,7 +135,9 @@
         "$$$$affordable",
         "Cocktail bar",
         "Opening soon"
-      ]
+      ],
+      "enrich_localName": "The Wise King - SOHO, Hong Kong.",
+      "enrich_englishName": "The Wise King - SOHO, Hong Kong."
     },
     {
       "source_url": "https://wanderlog.com/place/details/1081356/penicillin",
@@ -135,7 +151,9 @@
       ],
       "source_categories": [
         "Cocktail bar"
-      ]
+      ],
+      "enrich_localName": "Penicillin",
+      "enrich_englishName": "Penicillin"
     },
     {
       "source_url": "https://wanderlog.com/place/details/7021740/bar-leone",
@@ -149,7 +167,9 @@
       ],
       "source_categories": [
         "Cocktail bar"
-      ]
+      ],
+      "enrich_localName": "Bar Leone",
+      "enrich_englishName": "Bar Leone"
     },
     {
       "source_url": "https://wanderlog.com/place/details/1081375/terrible-baby",
@@ -166,7 +186,9 @@
         "Cocktail bar",
         "Garden",
         "Musical club"
-      ]
+      ],
+      "enrich_localName": "Terrible Baby",
+      "enrich_englishName": "Terrible Baby"
     },
     {
       "source_url": "https://wanderlog.com/place/details/1081355/tell-camellia",
@@ -181,7 +203,9 @@
       "source_categories": [
         "Cocktail bar",
         "Opening soon"
-      ]
+      ],
+      "enrich_localName": "Tell Camellia",
+      "enrich_englishName": "Tell Camellia"
     },
     {
       "source_url": "https://wanderlog.com/place/details/8028029/mostly-harmless",
@@ -195,7 +219,9 @@
       ],
       "source_categories": [
         "Bar"
-      ]
+      ],
+      "enrich_localName": "Mostly Harmless",
+      "enrich_englishName": "Mostly Harmless"
     },
     {
       "source_url": "https://wanderlog.com/place/details/382554/foxglove",
@@ -210,7 +236,9 @@
       "source_categories": [
         "$$$$expensive",
         "Gastropub"
-      ]
+      ],
+      "enrich_localName": "Foxglove",
+      "enrich_englishName": "Foxglove"
     },
     {
       "source_url": "https://wanderlog.com/place/details/1081362/honky-tonks-tavern",
@@ -225,7 +253,9 @@
       "source_categories": [
         "American restaurant",
         "Restaurant"
-      ]
+      ],
+      "enrich_localName": "Honky Tonks Tavern",
+      "enrich_englishName": "Honky Tonks Tavern"
     },
     {
       "source_url": "https://wanderlog.com/place/details/1081181/sevva",
@@ -242,7 +272,9 @@
         "$$$$very expensive",
         "Restaurant",
         "Fusion restaurant"
-      ]
+      ],
+      "enrich_localName": "SEVVA",
+      "enrich_englishName": "SEVVA"
     },
     {
       "source_url": "https://wanderlog.com/place/details/1081220/lobster-bar-and-grill",
@@ -260,7 +292,9 @@
         "Bar & grill",
         "Cocktail bar",
         "Western restaurant"
-      ]
+      ],
+      "enrich_localName": "Lobster Bar and Grill",
+      "enrich_englishName": "Lobster Bar and Grill"
     },
     {
       "source_url": "https://wanderlog.com/place/details/1081372/ping-pong-129",
@@ -275,7 +309,9 @@
       "source_categories": [
         "$$$$affordable",
         "Cocktail bar"
-      ]
+      ],
+      "enrich_localName": "Ping Pong 129",
+      "enrich_englishName": "Ping Pong 129"
     },
     {
       "source_url": "https://wanderlog.com/place/details/8441866/kinsman",
@@ -290,7 +326,9 @@
       "source_categories": [
         "Cocktail bar",
         "Bar"
-      ]
+      ],
+      "enrich_localName": "Kinsman",
+      "enrich_englishName": "Kinsman"
     },
     {
       "source_url": "https://wanderlog.com/place/details/1081370/mizunara-the-library",
@@ -306,7 +344,9 @@
         "$$$$very expensive",
         "Cocktail bar",
         "Bar"
-      ]
+      ],
+      "enrich_localName": "Mizunara: The Library",
+      "enrich_englishName": "Mizunara: The Library"
     },
     {
       "source_url": "https://wanderlog.com/place/details/6867708/cardinal-point",
@@ -315,7 +355,9 @@
       "source_neighbourhood": "",
       "source_pricepoint": "",
       "source_photoUrls": [],
-      "source_categories": []
+      "source_categories": [],
+      "enrich_localName": "C",
+      "enrich_englishName": "C"
     },
     {
       "source_url": "https://wanderlog.com/place/details/1081353/the-diplomat-hong-kong",
@@ -329,7 +371,9 @@
       ],
       "source_categories": [
         "Bar"
-      ]
+      ],
+      "enrich_localName": "The Diplomat Hong Kong",
+      "enrich_englishName": "The Diplomat Hong Kong"
     },
     {
       "source_url": "https://wanderlog.com/place/details/37337/ozone",
@@ -345,7 +389,9 @@
         "$$$$very expensive",
         "Bar",
         "Lounge"
-      ]
+      ],
+      "enrich_localName": "OZONE",
+      "enrich_englishName": "OZONE"
     },
     {
       "source_url": "https://wanderlog.com/place/details/9451112/qura-bar-best-restaurant-bar",
@@ -359,7 +405,9 @@
       ],
       "source_categories": [
         "Bar"
-      ]
+      ],
+      "enrich_localName": "Qura Bar - Best Restaurant Bar",
+      "enrich_englishName": "Qura Bar - Best Restaurant Bar"
     },
     {
       "source_url": "https://wanderlog.com/place/details/1081364/the-daily-tot",
@@ -373,7 +421,9 @@
       ],
       "source_categories": [
         "Cocktail bar"
-      ]
+      ],
+      "enrich_localName": "The Daily Tot",
+      "enrich_englishName": "The Daily Tot"
     },
     {
       "source_url": "https://wanderlog.com/place/details/393428/the-iron-fairies-hong-kong",
@@ -390,7 +440,9 @@
         "Bar",
         "Club",
         "Live music venue"
-      ]
+      ],
+      "enrich_localName": "The Iron Fairies Hong Kong",
+      "enrich_englishName": "The Iron Fairies Hong Kong"
     },
     {
       "source_url": "https://wanderlog.com/place/details/5299370/stockton",
@@ -405,7 +457,9 @@
       "source_categories": [
         "$$$$expensive",
         "Bar"
-      ]
+      ],
+      "enrich_localName": "Stockton",
+      "enrich_englishName": "Stockton"
     },
     {
       "source_url": "https://wanderlog.com/place/details/6971392/the-savory-project",
@@ -419,7 +473,9 @@
       ],
       "source_categories": [
         "Bar"
-      ]
+      ],
+      "enrich_localName": "The Savory Project",
+      "enrich_englishName": "The Savory Project"
     },
     {
       "source_url": "https://wanderlog.com/place/details/7188292/the-green-door",
@@ -433,7 +489,9 @@
       ],
       "source_categories": [
         "Bar & grill"
-      ]
+      ],
+      "enrich_localName": "The Green Door",
+      "enrich_englishName": "The Green Door"
     },
     {
       "source_url": "https://wanderlog.com/place/details/10165871/dead-poets-hk",
@@ -447,7 +505,9 @@
       ],
       "source_categories": [
         "Bar"
-      ]
+      ],
+      "enrich_localName": "Dead Poets HK",
+      "enrich_englishName": "Dead Poets HK"
     },
     {
       "source_url": "https://wanderlog.com/place/details/7150265/artifact",
@@ -461,7 +521,9 @@
       ],
       "source_categories": [
         "Cocktail bar"
-      ]
+      ],
+      "enrich_localName": "Artifact",
+      "enrich_englishName": "Artifact"
     },
     {
       "source_url": "https://wanderlog.com/place/details/1081416/caprice-bar",
@@ -478,7 +540,9 @@
         "Lounge",
         "Restaurant",
         "Wine bar"
-      ]
+      ],
+      "enrich_localName": "Caprice Bar",
+      "enrich_englishName": "Caprice Bar"
     },
     {
       "source_url": "https://wanderlog.com/place/details/415527/zuma-hong-kong",
@@ -495,7 +559,9 @@
         "Japanese restaurant",
         "Cocktail bar",
         "Lounge"
-      ]
+      ],
+      "enrich_localName": "Zuma Hong Kong",
+      "enrich_englishName": "Zuma Hong Kong"
     },
     {
       "source_url": "https://wanderlog.com/place/details/6971387/maggie-choos-hong-kong",
@@ -510,7 +576,9 @@
       "source_categories": [
         "Cocktail bar",
         "Cabaret club"
-      ]
+      ],
+      "enrich_localName": "Maggie Choo's Hong Kong",
+      "enrich_englishName": "Maggie Choo's Hong Kong"
     },
     {
       "source_url": "https://wanderlog.com/place/details/1081379/draft-land-hk",
@@ -525,7 +593,9 @@
       "source_categories": [
         "Cocktail bar",
         "Cafe"
-      ]
+      ],
+      "enrich_localName": "Draft Land HK",
+      "enrich_englishName": "Draft Land HK"
     },
     {
       "source_url": "https://wanderlog.com/place/details/1081382/room-309",
@@ -540,7 +610,9 @@
       "source_categories": [
         "Permanently Closed",
         "Cocktail bar"
-      ]
+      ],
+      "enrich_localName": "ROOM 309",
+      "enrich_englishName": "ROOM 309"
     },
     {
       "source_url": "https://wanderlog.com/place/details/7990630/lockdown",
@@ -554,7 +626,9 @@
       ],
       "source_categories": [
         "Cocktail bar"
-      ]
+      ],
+      "enrich_localName": "LOCKDOWN",
+      "enrich_englishName": "LOCKDOWN"
     },
     {
       "source_url": "https://wanderlog.com/place/details/10091580/ella",
@@ -567,7 +641,9 @@
         "Children's store",
         "Baby store",
         "Open now"
-      ]
+      ],
+      "enrich_localName": "Ella",
+      "enrich_englishName": "Ella"
     },
     {
       "source_url": "https://wanderlog.com/place/details/382495/8-12-otto-e-mezzo-bombana",
@@ -582,7 +658,9 @@
       "source_categories": [
         "$$$$very expensive",
         "Italian restaurant"
-      ]
+      ],
+      "enrich_localName": "8 1/2 Otto E Mezzo Bombana",
+      "enrich_englishName": "8 1/2 Otto E Mezzo Bombana"
     },
     {
       "source_url": "https://wanderlog.com/place/details/393528/popinjays",
@@ -597,7 +675,9 @@
       "source_categories": [
         "Italian restaurant",
         "Restaurant"
-      ]
+      ],
+      "enrich_localName": "Popinjays",
+      "enrich_englishName": "Popinjays"
     },
     {
       "source_url": "https://wanderlog.com/place/details/1081635/alto",
@@ -615,7 +695,9 @@
         "Bar",
         "Bar & grill",
         "Steak house"
-      ]
+      ],
+      "enrich_localName": "Alto",
+      "enrich_englishName": "Alto"
     },
     {
       "source_url": "https://wanderlog.com/place/details/1081373/red-sugar",
@@ -629,7 +711,9 @@
       ],
       "source_categories": [
         "Bar"
-      ]
+      ],
+      "enrich_localName": "Red Sugar",
+      "enrich_englishName": "Red Sugar"
     },
     {
       "source_url": "https://wanderlog.com/place/details/1081360/please-dont-tell",
@@ -644,7 +728,9 @@
       "source_categories": [
         "Permanently Closed",
         "Bar"
-      ]
+      ],
+      "enrich_localName": "Please Don't Tell",
+      "enrich_englishName": "Please Don't Tell"
     },
     {
       "source_url": "https://wanderlog.com/place/details/446195/dragonfly",
@@ -659,7 +745,9 @@
       "source_categories": [
         "Cocktail bar",
         "Bar"
-      ]
+      ],
+      "enrich_localName": "Dragonfly",
+      "enrich_englishName": "Dragonfly"
     },
     {
       "source_url": "https://wanderlog.com/place/details/1032932/sugar",
@@ -674,7 +762,9 @@
       "source_categories": [
         "$$$$affordable",
         "Bar"
-      ]
+      ],
+      "enrich_localName": "Sugar",
+      "enrich_englishName": "Sugar"
     },
     {
       "source_url": "https://wanderlog.com/place/details/6091282/call-me-al",
@@ -688,7 +778,9 @@
       ],
       "source_categories": [
         "Restaurant"
-      ]
+      ],
+      "enrich_localName": "CALL ME AL",
+      "enrich_englishName": "CALL ME AL"
     },
     {
       "source_url": "https://wanderlog.com/place/details/382525/bar-de-luxe",
@@ -702,7 +794,9 @@
       ],
       "source_categories": [
         "Cocktail bar"
-      ]
+      ],
+      "enrich_localName": "Bar De Luxe",
+      "enrich_englishName": "Bar De Luxe"
     },
     {
       "source_url": "https://wanderlog.com/place/details/1255609/barcode",
@@ -719,7 +813,9 @@
         "Bar",
         "Dessert shop",
         "Snack bar"
-      ]
+      ],
+      "enrich_localName": "BARCODE",
+      "enrich_englishName": "BARCODE"
     },
     {
       "source_url": "https://wanderlog.com/place/details/1255607/xx",
@@ -733,7 +829,9 @@
       ],
       "source_categories": [
         "Bar"
-      ]
+      ],
+      "enrich_localName": "XX",
+      "enrich_englishName": "XX"
     }
   ]
 }

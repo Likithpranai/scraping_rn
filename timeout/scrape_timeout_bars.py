@@ -5,19 +5,6 @@ import re
 import os
 
 def scrape_timeout_bars():
-    """
-    Scrapes bar information from Timeout Hong Kong's best bars page and saves it as JSON.
-    
-    Extracts:
-    - source_url
-    - source_name
-    - source_address
-    - source_neighbourhood
-    - source_pricepoint
-    - source_photoUrls
-    - source_categories
-    """
-    # URL of the page to scrape
     main_url = "https://www.timeout.com/hong-kong/bars-and-pubs/best-bars-hong-kong"
     base_url = "https://www.timeout.com"
     

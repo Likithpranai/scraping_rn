@@ -3,702 +3,1107 @@
         "source_url": "https://www.timeout.com/hong-kong/bars-and-pubs/best-bars-hong-kong",
         "source_name": "Bar Leone",
         "source_address": "G/F, 11-15 Bridges Street, Central, Hong Kong",
-        "source_neighbourhood": "Bars and pubs",
+        "source_neighbourhood": "Central, Hong Kong",
         "source_pricepoint": "",
         "source_photoUrls": [
             "https://media.timeout.com/images/106265244/750/422/image.jpg"
         ],
         "source_categories": [
-            "Bar"
+            "Bars and pubs"
         ],
-        "name": "Bar Leone"
+        "name": "Bar Leone",
+        "enrich_localName": "Bar Leone",
+        "enrich_englishName": "Bar Leone",
+        "enrich_localTips": "Visit Bar Leone for a unique bar experience in Hong Kong. Be sure to check their signature cocktails and atmosphere that make this spot a Time Out recommendation.",
+        "enrich_recognition": [
+            "2024Bar of the Year",
+            "2024Future Shaper Award – Taki Li",
+            "2024Trailblazer Award – Lorenzo Antinori"
+        ],
+        "enrich_type": "Bars and pubs",
+        "enrich_neighborhood": "Central, Hong Kong",
+        "enrich_description": "Bar Leone (2024 Time Out Hong Kong Bar Awards’ Bar of the Year and two-time winner of Asia's 50 Best Bars) is a casual Italian-themed bar on Bridges Street in Soho, founded by award-winning mixologist Lorenzo Antinori. Why we love it: It is a fun, no-fuss venue that reflects the playful character of its founder. They offer excellent and approachable cocktails perfect for your next night out.Time Out tip: Keep your eyes peeled for Bar Leone’s sister venue, Montana, a Cuban-inspired bar expected to open in July 2025."
     },
     {
         "source_url": "https://www.timeout.com/hong-kong/bars-and-pubs/best-bars-hong-kong",
         "source_name": "Kinsman",
         "source_address": "G/F, 65-65A Peel Street, Central, Hong Kong",
-        "source_neighbourhood": "Bars and pubs",
+        "source_neighbourhood": "Central, Hong Kong",
         "source_pricepoint": "",
         "source_photoUrls": [
             "https://media.timeout.com/images/106283615/750/422/image.jpg"
         ],
         "source_categories": [
-            "Bar"
+            "Bars and pubs"
         ],
-        "name": "Kinsman"
+        "name": "Kinsman",
+        "enrich_localName": "Kinsman",
+        "enrich_englishName": "Kinsman",
+        "enrich_localTips": "Don’t forget to try Kinsman’s bar bites inspired by famous local flavours – our personal favourites include the typhoon shelter-style fries, the mapo tofu sando, and the salted egg fried chicken wings.",
+        "enrich_recognition": [
+            "2024Spirit of Hong Kong Award"
+        ],
+        "enrich_type": "Bars and pubs",
+        "enrich_neighborhood": "Central, Hong Kong",
+        "enrich_description": "Kinsman (winner of 2024 Time Out Hong Kong Bar Awards' Spirit of Hong Kong Award) is a new Cantonese bar concept by Singular Concepts, created in collaboration with dining editor Gavin Yeung."
     },
     {
         "source_url": "https://www.timeout.com/hong-kong/bars-and-pubs/best-bars-hong-kong",
         "source_name": "Courtroom",
         "source_address": "52-54 Graham Street, Central, Hong Kong",
-        "source_neighbourhood": "Bars and pubs",
+        "source_neighbourhood": "Central, Hong Kong",
         "source_pricepoint": "",
         "source_photoUrls": [
             "https://media.timeout.com/images/106263826/750/422/image.jpg"
         ],
         "source_categories": [
-            "Bar"
+            "Bars and pubs"
         ],
-        "name": "Courtroom"
+        "name": "Courtroom",
+        "enrich_localName": "Courtroom",
+        "enrich_englishName": "Courtroom",
+        "enrich_localTips": "Visit Courtroom for a unique bar experience in Hong Kong. Be sure to check their signature cocktails and atmosphere that make this spot a Time Out recommendation.",
+        "enrich_recognition": [],
+        "enrich_type": "Bars and pubs",
+        "enrich_neighborhood": "Central, Hong Kong",
+        "enrich_description": ": A courtroom-themed concept created by Penicillin’s former group creative beverage director, Saan Dhakal, and Tell Camellia’s former bar manager, Ranjeet Khatri."
     },
     {
         "source_url": "https://www.timeout.com/hong-kong/bars-and-pubs/best-bars-hong-kong",
         "source_name": "The Opposites",
         "source_address": "LG/F, Hilltop Plaza, 49 Hollywood Road, Central, Hong Kong",
-        "source_neighbourhood": "Bars and pubs",
+        "source_neighbourhood": "Central, Hong Kong",
         "source_pricepoint": "",
         "source_photoUrls": [
             "https://media.timeout.com/images/106164737/750/422/image.jpg"
         ],
         "source_categories": [
-            "Bar"
+            "Bars and pubs"
         ],
-        "name": "The Opposites"
+        "name": "The Opposites",
+        "enrich_localName": "The Opposites",
+        "enrich_englishName": "The Opposites",
+        "enrich_localTips": "Visit The Opposites for a unique bar experience in Hong Kong. Be sure to check their signature cocktails and atmosphere that make this spot a Time Out recommendation.",
+        "enrich_recognition": [],
+        "enrich_type": "Bars and pubs",
+        "enrich_neighborhood": "Central, Hong Kong",
+        "enrich_description": "The Opposites is one of Hong Kong's recommended bars featured in Time Out's best bars list."
     },
     {
         "source_url": "https://www.timeout.com/hong-kong/bars-and-pubs/best-bars-hong-kong",
         "source_name": "Gokan",
         "source_address": "30 Ice House Street, Central, Hong Kong",
-        "source_neighbourhood": "Bars and pubs",
+        "source_neighbourhood": "Central, Hong Kong",
         "source_pricepoint": "",
         "source_photoUrls": [
             "https://media.timeout.com/images/106283611/750/422/image.jpg"
         ],
         "source_categories": [
-            "Bar"
+            "Bars and pubs"
         ],
-        "name": "Gokan"
+        "name": "Gokan",
+        "enrich_localName": "Gokan",
+        "enrich_englishName": "Gokan",
+        "enrich_localTips": "Visit Gokan for a unique bar experience in Hong Kong. Be sure to check their signature cocktails and atmosphere that make this spot a Time Out recommendation.",
+        "enrich_recognition": [],
+        "enrich_type": "Bars and pubs",
+        "enrich_neighborhood": "Central, Hong Kong",
+        "enrich_description": "Gokan is one of Hong Kong's recommended bars featured in Time Out's best bars list."
     },
     {
         "source_url": "https://www.timeout.com/hong-kong/bars-and-pubs/best-bars-hong-kong",
         "source_name": "Argo",
         "source_address": "G/F, Four Seasons Hotel Hong Kong, 8 Finance Street, Central, Hong Kong",
-        "source_neighbourhood": "Bars and pubs",
+        "source_neighbourhood": "Central, Hong Kong",
         "source_pricepoint": "",
         "source_photoUrls": [
             "https://media.timeout.com/images/106201046/750/422/image.jpg"
         ],
         "source_categories": [
-            "Bar"
+            "Bars and pubs"
         ],
-        "name": "Argo"
+        "name": "Argo",
+        "enrich_localName": "Argo",
+        "enrich_englishName": "Argo",
+        "enrich_localTips": "Visit Argo for a unique bar experience in Hong Kong. Be sure to check their signature cocktails and atmosphere that make this spot a Time Out recommendation.",
+        "enrich_recognition": [
+            "2021Best New Bar",
+            "2021Readers’ Choice",
+            "2021Best Cocktail Programme",
+            "2022Bar of the Year",
+            "2022Best Hotel Bar",
+            "2022Readers' Choice",
+            "2024Best Innovative Bar",
+            "2024Bar Congeniality Award"
+        ],
+        "enrich_type": "Bars and pubs",
+        "enrich_neighborhood": "Central, Hong Kong",
+        "enrich_description": "The 2024 Time Out Bar Awards' Best Innovative Bar and number nine on Asia’s 50 Best Bars 2024, Argo is Four Seasons' innovative bar that aims to challenge how we think about drinks."
     },
     {
         "source_url": "https://www.timeout.com/hong-kong/bars-and-pubs/best-bars-hong-kong",
         "source_name": "The Aubrey",
         "source_address": "25/F, Mandarin Oriental, 5 Connaught Rd Central, Central, Hong Kong",
-        "source_neighbourhood": "Bars and pubs",
+        "source_neighbourhood": "Central, Hong Kong",
         "source_pricepoint": "",
         "source_photoUrls": [
             "https://media.timeout.com/images/105787510/750/422/image.jpg"
         ],
         "source_categories": [
-            "Bar"
+            "Bars and pubs"
         ],
-        "name": "The Aubrey"
+        "name": "The Aubrey",
+        "enrich_localName": "The Aubrey",
+        "enrich_englishName": "The Aubrey",
+        "enrich_localTips": "Aside from serving shochu-based cocktails based on classics, The Aubrey’s menu also offers various Japanese wines and sake, including a special sake created in collaboration with Tsuchida Brewery.",
+        "enrich_recognition": [
+            "2021Bartender of the Year - Devender Sehgal"
+        ],
+        "enrich_type": "Bars and pubs",
+        "enrich_neighborhood": "Central, Hong Kong",
+        "enrich_description": "Mandarin Oriental's Japanese izakaya with three different bar experiences in which guests can enjoy Japanese craft cocktails, Japanese whiskies, sake and Champagne."
     },
     {
         "source_url": "https://www.timeout.com/hong-kong/bars-and-pubs/best-bars-hong-kong",
         "source_name": "Quinary",
         "source_address": "G/F, 56-58 Hollywood Rd, Central, Hong Kong",
-        "source_neighbourhood": "Soho",
+        "source_neighbourhood": "Central, Hong Kong",
         "source_pricepoint": "",
         "source_photoUrls": [
             "https://media.timeout.com/images/106283619/750/422/image.jpg"
         ],
         "source_categories": [
-            "Bar"
+            "Bars and pubs"
         ],
-        "name": "Quinary"
+        "name": "Quinary",
+        "enrich_localName": "Quinary",
+        "enrich_englishName": "Quinary",
+        "enrich_localTips": "If there’s one thing you have to order at Quinary, make sure you get their legendary Earl Grey Caviar Martini. With fun ingredients like caviar pearls made from tea and Earl Grey tea-flavoured ‘air’, this cocktail is a delight to drink.",
+        "enrich_recognition": [
+            "2018Best Bartender – Antonio Lai",
+            "2019Legend Award – Antonio Lai",
+            "2024Timeless Bar Award"
+        ],
+        "enrich_type": "Bars and pubs",
+        "enrich_neighborhood": "Central, Hong Kong",
+        "enrich_description": "Winner of Timeless Bar Award at the 2024 Time Out Hong Kong Bar Awards, Quinary is the finest of Antonio Lai's various excellent cocktail bars and ground zero of molecular mixology in Hong Kong."
     },
     {
         "source_url": "https://www.timeout.com/hong-kong/bars-and-pubs/best-bars-hong-kong",
         "source_name": "Avoca",
         "source_address": "38/F, Mondrian, 8A Hart Ave, Tsim Sha Tsui, Hong Kong",
-        "source_neighbourhood": "Bars and pubs",
+        "source_neighbourhood": "Tsim Sha Tsui, Hong Kong",
         "source_pricepoint": "",
         "source_photoUrls": [
             "https://media.timeout.com/images/106079907/750/422/image.jpg"
         ],
         "source_categories": [
-            "Bar"
+            "Bars and pubs"
         ],
-        "name": "Avoca"
+        "name": "Avoca",
+        "enrich_localName": "Avoca",
+        "enrich_englishName": "Avoca",
+        "enrich_localTips": "Check out their cosy bed nook with a stunning harbour view for relaxing and snapping pictures. Our favourite sips feature the Haam Neng Mung, inspired by cha chaan teng salted lemonade, and the refreshing Bloody Mary twist, LGM Mary.",
+        "enrich_recognition": [
+            "2024Best Cocktail Programme",
+            "2024Readers' Choice"
+        ],
+        "enrich_type": "Bars and pubs",
+        "enrich_neighborhood": "Tsim Sha Tsui, Hong Kong",
+        "enrich_description": "Avoca (winner of 2024 Time Out Hong Kong Bar Awards' Best Cocktail Programme) is the new bar inside TST's Mondrian Hong Kong. Located on the 38th floor of the hotel, this fresh spot is a modern bar with stunning views of Hong Kong Island and Victoria Harbour."
     },
     {
         "source_url": "https://www.timeout.com/hong-kong/bars-and-pubs/best-bars-hong-kong",
         "source_name": "Qura Bar",
         "source_address": "Lobby Floor, Regent Hong Kong, 18 Salisbury Road, Kowloon, Hong Kong",
-        "source_neighbourhood": "Bars and pubs",
+        "source_neighbourhood": "Kowloon, Hong Kong",
         "source_pricepoint": "",
         "source_photoUrls": [
             "https://media.timeout.com/images/106134843/750/422/image.jpg"
         ],
         "source_categories": [
-            "Bar"
+            "Bars and pubs"
         ],
-        "name": "Qura Bar"
+        "name": "Qura Bar",
+        "enrich_localName": "Qura Bar",
+        "enrich_englishName": "Qura Bar",
+        "enrich_localTips": "Pair your cocktails with Qura’s Riviera-inspired dishes for an unparalleled bar experience.",
+        "enrich_recognition": [
+            "2024Best Restaurant Bar"
+        ],
+        "enrich_type": "Bars and pubs",
+        "enrich_neighborhood": "Kowloon, Hong Kong",
+        "enrich_description": ": Qura, (2024 Time Out Hong Kong Bar Awards' Best Restaurant Bar winner) is all about the good stuff – rare spirits, wines, and cigars."
     },
     {
         "source_url": "https://www.timeout.com/hong-kong/bars-and-pubs/best-bars-hong-kong",
         "source_name": "The Blind Spot",
         "source_address": "LG/F, 39 Aberdeen Street, Central, Hong Kong",
-        "source_neighbourhood": "Bars and pubs",
+        "source_neighbourhood": "Central, Hong Kong",
         "source_pricepoint": "",
         "source_photoUrls": [
             "https://media.timeout.com/images/106197923/750/422/image.jpg"
         ],
         "source_categories": [
-            "Bar"
+            "Bars and pubs"
         ],
-        "name": "The Blind Spot"
+        "name": "The Blind Spot",
+        "enrich_localName": "The Blind Spot",
+        "enrich_englishName": "The Blind Spot",
+        "enrich_localTips": "Visit The Blind Spot for a unique bar experience in Hong Kong. Be sure to check their signature cocktails and atmosphere that make this spot a Time Out recommendation.",
+        "enrich_recognition": [],
+        "enrich_type": "Bars and pubs",
+        "enrich_neighborhood": "Central, Hong Kong",
+        "enrich_description": "The Blind Spot is one of Hong Kong's recommended bars featured in Time Out's best bars list."
     },
     {
         "source_url": "https://www.timeout.com/hong-kong/bars-and-pubs/best-bars-hong-kong",
         "source_name": "Mostly Harmless",
         "source_address": "2/F, 110 Queen’s Road West, Sai Ying Pun,, Hong Kong",
-        "source_neighbourhood": "Sheung Wan",
+        "source_neighbourhood": ", Hong Kong",
         "source_pricepoint": "",
         "source_photoUrls": [
             "https://media.timeout.com/images/106158388/750/422/image.jpg"
         ],
         "source_categories": [
-            "Bar"
+            "Bars and pubs"
         ],
-        "name": "Mostly Harmless"
+        "name": "Mostly Harmless",
+        "enrich_localName": "Mostly Harmless",
+        "enrich_englishName": "Mostly Harmless",
+        "enrich_localTips": "This friendly joint offers a non-alcoholic menu and each of its drinks creatively showcases local produce.",
+        "enrich_recognition": [],
+        "enrich_type": "Bars and pubs",
+        "enrich_neighborhood": ", Hong Kong",
+        "enrich_description": "The Best New Bar winner at fifth Time Out Bar Awards’, Mostly Harmless is an omakase cocktail bar headed by mixologist extraordinaire Ezra Star (2024 Time Out Hong Kong Bar Awards' Bartender of the Year)."
     },
     {
         "source_url": "https://www.timeout.com/hong-kong/bars-and-pubs/best-bars-hong-kong",
         "source_name": "Artifact Bar",
         "source_address": "LG/F, Basehall 02, Jardine House, No, 1 & 2, Shop 5 & 7, 1 Connaught Place, Central, Hong Kong",
-        "source_neighbourhood": "Bars and pubs",
+        "source_neighbourhood": "Central, Hong Kong",
         "source_pricepoint": "",
         "source_photoUrls": [
             "https://media.timeout.com/images/106005507/750/422/image.jpg"
         ],
         "source_categories": [
-            "Bar"
+            "Bars and pubs"
         ],
-        "name": "Artifact Bar"
+        "name": "Artifact Bar",
+        "enrich_localName": "Artifact Bar",
+        "enrich_englishName": "Artifact Bar",
+        "enrich_localTips": "In addition to its regular cocktail menu, Artifact also has a rotating speciality menu that focuses on an individual aged spirit.",
+        "enrich_recognition": [
+            "2024Best Transportative Bar"
+        ],
+        "enrich_type": "Bars and pubs",
+        "enrich_neighborhood": "Central, Hong Kong",
+        "enrich_description": "Artifact Bar (2024 Time Out Hong Kong Bar Awards' Best Transportative Bar) is a speakeasy-style bar located at BaseHall 02. The bar’s design draws inspiration from surreal geometry and the serene atmospheres found in underground water reservoirs, creating a transportive atmosphere reminiscent of dystopian sci-fi movies."
     },
     {
         "source_url": "https://www.timeout.com/hong-kong/bars-and-pubs/best-bars-hong-kong",
         "source_name": "Penicillin",
         "source_address": "L/G, Amber Lodge, 23 Hollywood Road, Central, Hong Kong",
-        "source_neighbourhood": "Bars and pubs",
+        "source_neighbourhood": "Central, Hong Kong",
         "source_pricepoint": "",
         "source_photoUrls": [
             "https://media.timeout.com/images/105716111/750/422/image.jpg"
         ],
         "source_categories": [
-            "Bar"
+            "Bars and pubs"
         ],
-        "name": "Penicillin"
+        "name": "Penicillin",
+        "enrich_localName": "Penicillin",
+        "enrich_englishName": "Penicillin",
+        "enrich_localTips": "In case you are in Shanghai, check out their new branch that’s located on Huaihai Road.",
+        "enrich_recognition": [
+            "2021Best Sustainability Initiative"
+        ],
+        "enrich_type": "Bars and pubs",
+        "enrich_neighborhood": "Central, Hong Kong",
+        "enrich_description": "Hong Kong's first eco-conscious bar and the latest concept from The Old Man Hong Kong founders Agung Prabowo and Roman Ghale. It also made it to Time Out's list of coolest bars in the world in 2021, representing establishments that go above and beyond the call of duty and push the boundaries of today's drinking culture, one drink at a time."
     },
     {
         "source_url": "https://www.timeout.com/hong-kong/bars-and-pubs/best-bars-hong-kong",
         "source_name": "Lockdown",
         "source_address": "G/F 27 Hollywood Road, Central,, Hong Kong",
-        "source_neighbourhood": "Bars and pubs",
+        "source_neighbourhood": ", Hong Kong",
         "source_pricepoint": "",
         "source_photoUrls": [
             "https://media.timeout.com/images/106095870/750/422/image.jpg"
         ],
         "source_categories": [
-            "Bar"
+            "Bars and pubs"
         ],
-        "name": "Lockdown"
+        "name": "Lockdown",
+        "enrich_localName": "Lockdown",
+        "enrich_englishName": "Lockdown",
+        "enrich_localTips": "Pull up a chair at the rotating bar station and sip on innovative cocktails made with antique spirits inspired by the Prohibition era.",
+        "enrich_recognition": [],
+        "enrich_type": "Bars and pubs",
+        "enrich_neighborhood": ", Hong Kong",
+        "enrich_description": "Conceived by the award-winning duo Agung and Laura Prabowo, Lockdown is right across from its sister bar, Penicillin. It welcomes guests with a cheeky entrance: a toilet, setting it apart from the city's more traditionally hidden speakeasy-style bars."
     },
     {
         "source_url": "https://www.timeout.com/hong-kong/bars-and-pubs/best-bars-hong-kong",
         "source_name": "Dead Poets",
         "source_address": "41-49 Aberdeen Street, Central, Hong Kong",
-        "source_neighbourhood": "Sheung Wan",
+        "source_neighbourhood": "Central, Hong Kong",
         "source_pricepoint": "",
         "source_photoUrls": [
             "https://media.timeout.com/images/106090686/750/422/image.jpg"
         ],
         "source_categories": [
-            "Bar"
+            "Bars and pubs"
         ],
-        "name": "Dead Poets"
+        "name": "Dead Poets",
+        "enrich_localName": "Dead Poets",
+        "enrich_englishName": "Dead Poets",
+        "enrich_localTips": "If you happen to be a boozy bookworm, you’ll be thrilled to find out their latest cocktail menu pays homage to iconic authors like Kafka and Fitzgerald.",
+        "enrich_recognition": [],
+        "enrich_type": "Bars and pubs",
+        "enrich_neighborhood": "Central, Hong Kong",
+        "enrich_description": ": Brought to you by the creative minds behind The Old Man Hong Kong, Dead Poets in Central transforms from a cool cafe by day to a trendy cocktail bar by night."
     },
     {
         "source_url": "https://www.timeout.com/hong-kong/bars-and-pubs/best-bars-hong-kong",
         "source_name": "On The Hill Coffee Bar (Tai Kwun)",
         "source_address": "E Hall, Tai Kwun, 10 Hollywood Road, Central, Hong Kong",
-        "source_neighbourhood": "Restaurants | Cafés",
+        "source_neighbourhood": "Central, Hong Kong",
         "source_pricepoint": "",
         "source_photoUrls": [
             "https://media.timeout.com/images/106283622/750/422/image.jpg"
         ],
         "source_categories": [
-            "Bar"
+            "Bars and pubs"
         ],
-        "name": "On The Hill Coffee Bar (Tai Kwun)"
+        "name": "On The Hill Coffee Bar (Tai Kwun)",
+        "enrich_localName": "On The Hill Coffee Bar (Tai Kwun)",
+        "enrich_englishName": "On The Hill Coffee Bar (Tai Kwun)",
+        "enrich_localTips": "Visit On The Hill Coffee Bar (Tai Kwun) for a unique bar experience in Hong Kong. Be sure to check their signature cocktails and atmosphere that make this spot a Time Out recommendation.",
+        "enrich_recognition": [],
+        "enrich_type": "Bars and pubs",
+        "enrich_neighborhood": "Central, Hong Kong",
+        "enrich_description": ": A casual cafe bar tucked inside Tai Kwun that used to be part of the Victoria Gaol. Why we love it: This venue shakes up nine distinct coffee cocktails made with single-origin beans. Plus, it’s not every day you can tell other people you had a few drinks in a former jail cell.Time Out Tip: Their cocktails are divided into three straightforward sections – sour, sweet, and bitter – so you’ll have no issues choosing a drink that you’ll enjoy."
     },
     {
         "source_url": "https://www.timeout.com/hong-kong/bars-and-pubs/best-bars-hong-kong",
         "source_name": "The St. Regis Bar",
         "source_address": "2/F, The St Regis Hong Kong, 1 Harbour Dr, Wan Chai, Hong Kong",
-        "source_neighbourhood": "Wan Chai",
+        "source_neighbourhood": "Wan Chai, Hong Kong",
         "source_pricepoint": "",
         "source_photoUrls": [
             "https://media.timeout.com/images/105706761/750/422/image.jpg"
         ],
         "source_categories": [
-            "Bar"
+            "Bars and pubs"
         ],
-        "name": "The St. Regis Bar"
+        "name": "The St. Regis Bar",
+        "enrich_localName": "The St. Regis Bar",
+        "enrich_englishName": "The St. Regis Bar",
+        "enrich_localTips": "The iconic Bloody Mary is the signature cocktail of The St. Regis hotels worldwide. Indulge in four variations at the HK location, including the Canto Mary ($168), inspired by Hong Kong's cultural identity and heritage.",
+        "enrich_recognition": [],
+        "enrich_type": "Bars and pubs",
+        "enrich_neighborhood": "Wan Chai, Hong Kong",
+        "enrich_description": "The St. Regis Bar is the flagship bar of The St. Regis Hong Kong, and it honours the hotel's rich lineage by serving signature drinks such as the Bloody Mary, first created at the St. Regis New York in 1934."
     },
     {
         "source_url": "https://www.timeout.com/hong-kong/bars-and-pubs/best-bars-hong-kong",
         "source_name": "Cardinal Point",
         "source_address": "Forty-Five, Gloucester Tower Landmark, 15 Queen's Road Central, Hong Kong",
-        "source_neighbourhood": "Restaurants",
+        "source_neighbourhood": "15 Queen's Road Central, Hong Kong",
         "source_pricepoint": "$",
         "source_photoUrls": [
             "https://media.timeout.com/images/106033707/750/422/image.jpg",
             "https://media.timeout.com/images/106081992/750/562/image.jpg"
         ],
         "source_categories": [
-            "Bar"
+            "Bars and pubs"
         ],
-        "name": "Cardinal Point"
+        "name": "Cardinal Point",
+        "enrich_localName": "Cardinal Point",
+        "enrich_englishName": "Cardinal Point",
+        "enrich_localTips": "Beat the heat with their Pandan Highball for a fragrant and refreshing cocktail.",
+        "enrich_recognition": [],
+        "enrich_type": "Bars and pubs",
+        "enrich_neighborhood": "15 Queen's Road Central, Hong Kong",
+        "enrich_description": "Cardinal Point (2024 Time Out Hong Kong Bar Awards' Best Al Fresco Bar) is one of the venues at multi-experience space Forty-Five. Led by The Diplomat’s John Nugent, the bar’s creative drinks programme celebrates global ingredients with innovative and retro twists."
     },
     {
         "source_url": "https://www.timeout.com/hong-kong/bars-and-pubs/best-bars-hong-kong",
         "source_name": "Coa",
         "source_address": "Shop A, LG/F,  Wah Shin House, 6-10 Shin Hing Street, Sheung Wan, Hong Kong",
-        "source_neighbourhood": "Bars and pubs",
+        "source_neighbourhood": "Sheung Wan, Hong Kong",
         "source_pricepoint": "",
         "source_photoUrls": [
             "https://media.timeout.com/images/105327668/750/422/image.jpg"
         ],
         "source_categories": [
-            "Bar"
+            "Bars and pubs"
         ],
-        "name": "Coa"
+        "name": "Coa",
+        "enrich_localName": "Coa",
+        "enrich_englishName": "Coa",
+        "enrich_localTips": "Coa has partnered with local chocolate brand Conspiracy Chocolate to launch a mezcal and chocolate flight – perfect for those looking to elevate their tasting experience with unique flavour pairings.",
+        "enrich_recognition": [
+            "2018Best new bar",
+            "2019Best Bar",
+            "2019Best Bartender – Jay Khan",
+            "2020Best Takeaway Cocktail – Cocktail Flight",
+            "2022Trailblazer Awards - Jay Khan"
+        ],
+        "enrich_type": "Bars and pubs",
+        "enrich_neighborhood": "Sheung Wan, Hong Kong",
+        "enrich_description": "Crowned the best bar in Asia at the 2023 Asia's 50 Best Bars, Coa is an Oaxacan-inspired cocktail bar helmed by Time Out’s Trailblazer awardee, Jay Khan."
     },
     {
         "source_url": "https://www.timeout.com/hong-kong/bars-and-pubs/best-bars-hong-kong",
         "source_name": "Tell Camellia",
         "source_address": "LG/F, H Code, 45 Pottinger Street, Central, Hong Kong",
-        "source_neighbourhood": "Central",
+        "source_neighbourhood": "Central, Hong Kong",
         "source_pricepoint": "",
         "source_photoUrls": [
             "https://media.timeout.com/images/105715339/750/422/image.jpg"
         ],
         "source_categories": [
-            "Bar"
+            "Bars and pubs"
         ],
-        "name": "Tell Camellia"
+        "name": "Tell Camellia",
+        "enrich_localName": "Tell Camellia",
+        "enrich_englishName": "Tell Camellia",
+        "enrich_localTips": "This bar isn’t afraid to experiment with bold ingredients, such as duck fat or clarified oyster gin that gets distilled in-house.",
+        "enrich_recognition": [
+            "2020Readers' Choice",
+            "2022Bartender of the Year – Gagan Gurung"
+        ],
+        "enrich_type": "Bars and pubs",
+        "enrich_neighborhood": "Central, Hong Kong",
+        "enrich_description": "A tea-focused cocktail bar helmed by mixologist Gagan Gurung. The cocktail menu is split between signature Teatails – all of which are infused with exotic teas and local spices from particular world regions – and house gins that have been lovingly redistilled with different flavoured, you guessed it, tea."
     },
     {
         "source_url": "https://www.timeout.com/hong-kong/bars-and-pubs/best-bars-hong-kong",
         "source_name": "001",
         "source_address": "Block 10 & 13, Superintendent's House and C Hall Shop 10&13-101, Tai Kwun, Central, Hong Kong",
-        "source_neighbourhood": "Central",
+        "source_neighbourhood": "Central, Hong Kong",
         "source_pricepoint": "",
         "source_photoUrls": [
             "https://media.timeout.com/images/106042554/750/422/image.jpg"
         ],
         "source_categories": [
-            "Bar"
+            "Bars and pubs"
         ],
-        "name": "001"
+        "name": "001",
+        "enrich_localName": "001",
+        "enrich_englishName": "001",
+        "enrich_localTips": "Don’t be discouraged if you can’t find the bar’s entrance. Once you’re in Tai Kwun, head to Building 13 and look for an inconspicuous black door. We’ll let you figure out the rest…",
+        "enrich_recognition": [],
+        "enrich_type": "Bars and pubs",
+        "enrich_neighborhood": "Central, Hong Kong",
+        "enrich_description": "001 is Hong Kong's first hidden bar, serving the city's thirsty souls since 2010 from its inconspicuous location in Graham Street market. This year, the venue relocated to the historic Tai Kwun."
     },
     {
         "source_url": "https://www.timeout.com/hong-kong/bars-and-pubs/best-bars-hong-kong",
         "source_name": "The Savory Project",
         "source_address": "4 Staunton Street, Central, Hong Kong Island, Hong Kong",
-        "source_neighbourhood": "Bars and pubs",
+        "source_neighbourhood": "Hong Kong Island, Hong Kong",
         "source_pricepoint": "",
         "source_photoUrls": [
             "https://media.timeout.com/images/106187559/750/422/image.jpg"
         ],
         "source_categories": [
-            "Bar"
+            "Bars and pubs"
         ],
-        "name": "The Savory Project"
+        "name": "The Savory Project",
+        "enrich_localName": "The Savory Project",
+        "enrich_englishName": "The Savory Project",
+        "enrich_localTips": "Before ordering your drink, check if you are allergic to any of the ingredients listed on the menu.",
+        "enrich_recognition": [
+            "2024Rising Star Award"
+        ],
+        "enrich_type": "Bars and pubs",
+        "enrich_neighborhood": "Hong Kong Island, Hong Kong",
+        "enrich_description": "The Savory Project (2024 Time Out Hong Kong Bar Awards' Rising Star Award) is the latest venture of Jay Khan and Ajit Gurung, the award-winning team behind Coa. This bar features food-inspired cocktails made with high-concept techniques that often include caviar, saline, mushrooms, and other kitchen ingredients."
     },
     {
         "source_url": "https://www.timeout.com/hong-kong/bars-and-pubs/best-bars-hong-kong",
         "source_name": "Draft Land",
         "source_address": "63 Wyndham Street, Central, Hong Kong",
-        "source_neighbourhood": "Central",
+        "source_neighbourhood": "Central, Hong Kong",
         "source_pricepoint": "",
         "source_photoUrls": [
             "https://media.timeout.com/images/106096421/750/422/image.jpg"
         ],
         "source_categories": [
-            "Bar"
+            "Bars and pubs"
         ],
-        "name": "Draft Land"
+        "name": "Draft Land",
+        "enrich_localName": "Draft Land",
+        "enrich_englishName": "Draft Land",
+        "enrich_localTips": ": The first Hong Kong outpost of the popular Taiwanese cocktails-on-tap bar founded by renowned bartender Angus Zou, created in collaboration with local mixology master Antonio Lai. : This bar is a hotspot for drinkers who want quality, crushable cocktails on tap at wallet-friendly prices. : If their venue on Wyndham Street gets too crowded for your liking, take a quick stroll down to BaseHall 02 at Jardine House to sip on their cocktails, or hop on the tram and visit their Causeway Bay branch instead.",
+        "enrich_recognition": [],
+        "enrich_type": "Bars and pubs",
+        "enrich_neighborhood": "Central, Hong Kong",
+        "enrich_description": "Draft Land is one of Hong Kong's recommended bars featured in Time Out's best bars list."
     },
     {
         "source_url": "https://www.timeout.com/hong-kong/bars-and-pubs/best-bars-hong-kong",
         "source_name": "The Green Door",
         "source_address": "LG/F, Welley Building, 97 Wellington Street, Central, Hong Kong",
-        "source_neighbourhood": "Central",
+        "source_neighbourhood": "Central, Hong Kong",
         "source_pricepoint": "",
         "source_photoUrls": [
             "https://media.timeout.com/images/106179490/750/422/image.jpg"
         ],
         "source_categories": [
-            "Bar"
+            "Bars and pubs"
         ],
-        "name": "The Green Door"
+        "name": "The Green Door",
+        "enrich_localName": "The Green Door",
+        "enrich_englishName": "The Green Door",
+        "enrich_localTips": "A speakeasy-style cocktail bar – co-owned by F&B industry veterans Arlene Wong and Dabi Chin –  at the former location of 001Their menu provides a wide range of cocktails based on booziness, so there’s bound to be something for every kind of drinker. What’s more, they’ve got one of the best apple pies in town.: To find the bar’s entrance, wander through Graham Street Market and look out for the dark green door with an awning.",
+        "enrich_recognition": [],
+        "enrich_type": "Bars and pubs",
+        "enrich_neighborhood": "Central, Hong Kong",
+        "enrich_description": "The Green Door is one of Hong Kong's recommended bars featured in Time Out's best bars list."
     },
     {
         "source_url": "https://www.timeout.com/hong-kong/bars-and-pubs/best-bars-hong-kong",
         "source_name": "Socio",
         "source_address": "17 Staunton Street, Soho, Central, Hong Kong",
-        "source_neighbourhood": "Bars and pubs",
+        "source_neighbourhood": "Central, Hong Kong",
         "source_pricepoint": "",
         "source_photoUrls": [
             "https://media.timeout.com/images/106102084/750/422/image.jpg"
         ],
         "source_categories": [
-            "Bar"
+            "Bars and pubs"
         ],
-        "name": "Socio"
+        "name": "Socio",
+        "enrich_localName": "Socio",
+        "enrich_englishName": "Socio",
+        "enrich_localTips": "Don’t forget to check out Socio’s sister location, Gossip, for cocktails inspired by traditional Asian face masks.",
+        "enrich_recognition": [],
+        "enrich_type": "Bars and pubs",
+        "enrich_neighborhood": "Central, Hong Kong",
+        "enrich_description": "A drinking den founded by bar professionals Amir Javaid (formerly of VEA Restaurant and John Anthony), Max Bajracharya (co-founder of Finding Daisy), and Elton Sherchan (formerly of Tiffany’s New York Bar)."
     },
     {
         "source_url": "https://www.timeout.com/hong-kong/bars-and-pubs/best-bars-hong-kong",
         "source_name": "25:00",
         "source_address": "13/F, Luk Yu Building, 24-26 Stanley St, Central, Hong Kong",
-        "source_neighbourhood": "Bars and pubs",
+        "source_neighbourhood": "Central, Hong Kong",
         "source_pricepoint": "",
         "source_photoUrls": [
             "https://media.timeout.com/images/105898596/750/422/image.jpg"
         ],
         "source_categories": [
-            "Bar"
+            "Bars and pubs"
         ],
-        "name": "25:00"
+        "name": "25:00",
+        "enrich_localName": "25:00",
+        "enrich_englishName": "25:00",
+        "enrich_localTips": "Visit 25:00 for a unique bar experience in Hong Kong. Be sure to check their signature cocktails and atmosphere that make this spot a Time Out recommendation.",
+        "enrich_recognition": [],
+        "enrich_type": "Bars and pubs",
+        "enrich_neighborhood": "Central, Hong Kong",
+        "enrich_description": "25:00 (Twenty Fifth Hour) is a speakeasy-style cocktail bar tucked above Luk Yu Tea House on Stanley Street. Headed by passionate mixologist Kenzo Lee (formerly of W Hotel's Woobar and East Hong Kong's Sugar), the bar serves well-thought-of cocktails inspired by the concept of time."
     },
     {
         "source_url": "https://www.timeout.com/hong-kong/bars-and-pubs/best-bars-hong-kong",
         "source_name": "Caprice Bar",
         "source_address": "6/F, Four Seasons Hotel Hong Kong, 8 Finance Street, Central, Hong Kong",
-        "source_neighbourhood": "Bars and pubs",
+        "source_neighbourhood": "Central, Hong Kong",
         "source_pricepoint": "",
         "source_photoUrls": [
             "https://media.timeout.com/images/105707060/750/422/image.jpg"
         ],
         "source_categories": [
-            "Bar"
+            "Bars and pubs"
         ],
-        "name": "Caprice Bar"
+        "name": "Caprice Bar",
+        "enrich_localName": "Caprice Bar",
+        "enrich_englishName": "Caprice Bar",
+        "enrich_localTips": "pair your drinks with their extensive selection of artisan cheeses.",
+        "enrich_recognition": [
+            "2020Bar of the Year",
+            "2020Best Bartender – Lorenzo Antinori"
+        ],
+        "enrich_type": "Bars and pubs",
+        "enrich_neighborhood": "Central, Hong Kong",
+        "enrich_description": "The bar inside the award-winning fine French restaurant Caprice, housed in the suave Four Seasons Hotel."
     },
     {
         "source_url": "https://www.timeout.com/hong-kong/bars-and-pubs/best-bars-hong-kong",
         "source_name": "DarkSide",
         "source_address": "2/F, Rosewood Hong Kong, Victoria Dockside, 18 Salisbury Road, Tsim Sha Tsui, Hong Kong",
-        "source_neighbourhood": "Bars and pubs",
+        "source_neighbourhood": "Tsim Sha Tsui, Hong Kong",
         "source_pricepoint": "",
         "source_photoUrls": [
             "https://media.timeout.com/images/105767464/750/422/image.jpg"
         ],
         "source_categories": [
-            "Bar"
+            "Bars and pubs"
         ],
-        "name": "DarkSide"
+        "name": "DarkSide",
+        "enrich_localName": "DarkSide",
+        "enrich_englishName": "DarkSide",
+        "enrich_localTips": "Still got room for another drink? Head upstairs to find XX to sip on classic cocktails while relaxing on their plush couches.",
+        "enrich_recognition": [
+            "2019Best New Bar",
+            "2021Best Bar",
+            "2021Best Hotel Bar",
+            "2022Best Cocktail Programme",
+            "2022Best Sustainable Cocktail"
+        ],
+        "enrich_type": "Bars and pubs",
+        "enrich_neighborhood": "Tsim Sha Tsui, Hong Kong",
+        "enrich_description": "Winner of the 2021 Time Out Bar Awards' Best Bar and ranked number nine on Asia’s 50 Best Bars 2023, DarkSide is the flagship bar of Rosewood Hong Kong."
     },
     {
         "source_url": "https://www.timeout.com/hong-kong/bars-and-pubs/best-bars-hong-kong",
         "source_name": "The Pontiac",
         "source_address": "13 Old Bailey Street, Central, Hong Kong",
-        "source_neighbourhood": "Bars and pubs",
+        "source_neighbourhood": "Central, Hong Kong",
         "source_pricepoint": "",
         "source_photoUrls": [
             "https://media.timeout.com/images/105281955/750/422/image.jpg"
         ],
         "source_categories": [
-            "Bar"
+            "Bars and pubs"
         ],
-        "name": "The Pontiac"
+        "name": "The Pontiac",
+        "enrich_localName": "The Pontiac",
+        "enrich_englishName": "The Pontiac",
+        "enrich_localTips": ": Try their signature Hobnail that’s spiked with ginger syrup for a zesty kick that’ll get you pumped for a wild night out.",
+        "enrich_recognition": [],
+        "enrich_type": "Bars and pubs",
+        "enrich_neighborhood": "Central, Hong Kong",
+        "enrich_description": "Created by Beckaly Franks and led by bar manager Jen Queen, The Pontiac is a grungy, American-style bar that looks like it would fit in just as well in downtown NYC as it does on the steep slope of Old Bailey Street."
     },
     {
         "source_url": "https://www.timeout.com/hong-kong/bars-and-pubs/best-bars-hong-kong",
         "source_name": "The Old Man Hong Kong",
         "source_address": "LG/F, 37 Aberdeen Street, Soho, Central, Hong Kong",
-        "source_neighbourhood": "Sheung Wan",
+        "source_neighbourhood": "Central, Hong Kong",
         "source_pricepoint": "",
         "source_photoUrls": [
             "https://media.timeout.com/images/103956013/750/422/image.jpg"
         ],
         "source_categories": [
-            "Bar"
+            "Bars and pubs"
         ],
-        "name": "The Old Man Hong Kong"
+        "name": "The Old Man Hong Kong",
+        "enrich_localName": "The Old Man Hong Kong",
+        "enrich_englishName": "The Old Man Hong Kong",
+        "enrich_localTips": "Visit The Old Man Hong Kong for a unique bar experience in Hong Kong. Be sure to check their signature cocktails and atmosphere that make this spot a Time Out recommendation.",
+        "enrich_recognition": [],
+        "enrich_type": "Bars and pubs",
+        "enrich_neighborhood": "Central, Hong Kong",
+        "enrich_description": "An Ernest Hemingway-themed bar in Central that earned a spot at The World's 50 Best Bars in 2018 and took the top place at Asia's 50 Best Bars in 2019."
     },
     {
         "source_url": "https://www.timeout.com/hong-kong/bars-and-pubs/best-bars-hong-kong",
         "source_name": "The Diplomat",
         "source_address": "LG/F, High Block, H Code, 45 Pottinger St,, Central, Hong Kong",
-        "source_neighbourhood": "Central",
+        "source_neighbourhood": "Central, Hong Kong",
         "source_pricepoint": "",
         "source_photoUrls": [
             "https://media.timeout.com/images/105611234/750/422/image.jpg"
         ],
         "source_categories": [
-            "Bar"
+            "Bars and pubs"
         ],
-        "name": "The Diplomat"
+        "name": "The Diplomat",
+        "enrich_localName": "The Diplomat",
+        "enrich_englishName": "The Diplomat",
+        "enrich_localTips": "Though its location is not so hidden, the bar does hide a secret pink VIP room that you can only enter through a referral from regular patrons.",
+        "enrich_recognition": [
+            "2020Best Cocktail – Tuxedo #852",
+            "2020Best New Bar"
+        ],
+        "enrich_type": "Bars and pubs",
+        "enrich_neighborhood": "Central, Hong Kong",
+        "enrich_description": "The Diplomat is Time Out Bar Awards Best New Bar for 2020, and it's a perfect watering hole for people looking for after-work drinks."
     },
     {
         "source_url": "https://www.timeout.com/hong-kong/bars-and-pubs/best-bars-hong-kong",
         "source_name": "Ping Pong 129 Gintoneria",
         "source_address": "L/G, Nam Cheong House, 129 Second St, Sai Ying Pun, Hong Kong",
-        "source_neighbourhood": "Bars and pubs",
+        "source_neighbourhood": "Sai Ying Pun, Hong Kong",
         "source_pricepoint": "",
         "source_photoUrls": [
             "https://media.timeout.com/images/105715433/750/422/image.jpg"
         ],
         "source_categories": [
-            "Bar"
+            "Bars and pubs"
         ],
-        "name": "Ping Pong 129 Gintoneria"
+        "name": "Ping Pong 129 Gintoneria",
+        "enrich_localName": "Ping Pong 129 Gintoneria",
+        "enrich_englishName": "Ping Pong 129 Gintoneria",
+        "enrich_localTips": "Visit Ping Pong 129 Gintoneria for a unique bar experience in Hong Kong. Be sure to check their signature cocktails and atmosphere that make this spot a Time Out recommendation.",
+        "enrich_recognition": [],
+        "enrich_type": "Bars and pubs",
+        "enrich_neighborhood": "Sai Ying Pun, Hong Kong",
+        "enrich_description": "A speakeasy-style bar perched along Sai Ying Pun’s streets."
     },
     {
         "source_url": "https://www.timeout.com/hong-kong/bars-and-pubs/best-bars-hong-kong",
         "source_name": "Mizunara: The Library",
         "source_address": "4/F, Kiu Yin Commercial Building, 361-363 Lockhart Road, Wan Chai, Hong Kong",
-        "source_neighbourhood": "Wan Chai",
+        "source_neighbourhood": "Wan Chai, Hong Kong",
         "source_pricepoint": "",
         "source_photoUrls": [
             "https://media.timeout.com/images/105894127/750/422/image.jpg"
         ],
         "source_categories": [
-            "Bar"
+            "Bars and pubs"
         ],
-        "name": "Mizunara: The Library"
+        "name": "Mizunara: The Library",
+        "enrich_localName": "Mizunara: The Library",
+        "enrich_englishName": "Mizunara: The Library",
+        "enrich_localTips": "The drinks here might be a bit pricey, but they’re made with care and you’re unlikely to find anything that compares to what they offer.",
+        "enrich_recognition": [],
+        "enrich_type": "Bars and pubs",
+        "enrich_neighborhood": "Wan Chai, Hong Kong",
+        "enrich_description": "Mizunara is a Japanese-style bar hidden away on the fourth floor of a commercial building on Lockhart Road."
     },
     {
         "source_url": "https://www.timeout.com/hong-kong/bars-and-pubs/best-bars-hong-kong",
         "source_name": "Honky Tonks Tavern",
         "source_address": "Man Hing Lane, Central, Hong Kong",
-        "source_neighbourhood": "Restaurants",
+        "source_neighbourhood": "Central, Hong Kong",
         "source_pricepoint": "",
         "source_photoUrls": [
             "https://media.timeout.com/images/106049902/750/422/image.jpg"
         ],
         "source_categories": [
-            "Bar"
+            "Bars and pubs"
         ],
-        "name": "Honky Tonks Tavern"
+        "name": "Honky Tonks Tavern",
+        "enrich_localName": "Honky Tonks Tavern",
+        "enrich_englishName": "Honky Tonks Tavern",
+        "enrich_localTips": "The bar attracts a trendy crowd that spills onto the outdoor space. Come by on busy nights, and you'll most likely meet new people and make new friends.",
+        "enrich_recognition": [],
+        "enrich_type": "Bars and pubs",
+        "enrich_neighborhood": "Central, Hong Kong",
+        "enrich_description": ": Honky Tonks Tavern is a restaurant, as well as a wine and cocktail bar from the same group behind venues like Terracotta Lamma and Quality Goods Club."
     },
     {
         "source_url": "https://www.timeout.com/hong-kong/bars-and-pubs/best-bars-hong-kong",
         "source_name": "Brut!",
         "source_address": "Shop C, G/F, 1 Second Street,  Sai Ying Pun, Hong Kong",
-        "source_neighbourhood": "Restaurants | Brasseries",
+        "source_neighbourhood": "Sai Ying Pun, Hong Kong",
         "source_pricepoint": "",
         "source_photoUrls": [
             "https://media.timeout.com/images/105751832/750/422/image.jpg"
         ],
         "source_categories": [
-            "Bar"
+            "Bars and pubs"
         ],
-        "name": "Brut!"
+        "name": "Brut!",
+        "enrich_localName": "Brut!",
+        "enrich_englishName": "Brut!",
+        "enrich_localTips": "Visit Brut! for a unique bar experience in Hong Kong. Be sure to check their signature cocktails and atmosphere that make this spot a Time Out recommendation.",
+        "enrich_recognition": [],
+        "enrich_type": "Bars and pubs",
+        "enrich_neighborhood": "Sai Ying Pun, Hong Kong",
+        "enrich_description": "Brut! is one of Hong Kong's recommended bars featured in Time Out's best bars list."
     },
     {
         "source_url": "https://www.timeout.com/hong-kong/bars-and-pubs/best-bars-hong-kong",
         "source_name": "Terrible Baby",
         "source_address": "4/F, Eaton HK, 380 Nathan Road, Jordan, Hong Kong",
-        "source_neighbourhood": "Bars and pubs",
+        "source_neighbourhood": "Jordan, Hong Kong",
         "source_pricepoint": "",
         "source_photoUrls": [
             "https://media.timeout.com/images/105619605/750/422/image.jpg"
         ],
         "source_categories": [
-            "Bar"
+            "Bars and pubs"
         ],
-        "name": "Terrible Baby"
+        "name": "Terrible Baby",
+        "enrich_localName": "Terrible Baby",
+        "enrich_englishName": "Terrible Baby",
+        "enrich_localTips": "Check their social media to stay updated on exciting live performances and various events at the bar’s Music Room.",
+        "enrich_recognition": [
+            "2020Best Rooftop Bar"
+        ],
+        "enrich_type": "Bars and pubs",
+        "enrich_neighborhood": "Jordan, Hong Kong",
+        "enrich_description": "Located in Eaton HK, Terrible Baby, headed by bar manager Axel Gonzalez, shakes up a selection of fun, creative cocktails and offers a varied selection of spirits."
     },
     {
         "source_url": "https://www.timeout.com/hong-kong/bars-and-pubs/best-bars-hong-kong",
         "source_name": "Yardleys Taproom",
         "source_address": "62 Peel Street, SoHo, Central, Hong Kong",
-        "source_neighbourhood": "Central",
+        "source_neighbourhood": "Central, Hong Kong",
         "source_pricepoint": "",
         "source_photoUrls": [
             "https://media.timeout.com/images/105917572/750/422/image.jpg"
         ],
         "source_categories": [
-            "Bar"
+            "Bars and pubs"
         ],
-        "name": "Yardleys Taproom"
+        "name": "Yardleys Taproom",
+        "enrich_localName": "Yardleys Taproom",
+        "enrich_englishName": "Yardleys Taproom",
+        "enrich_localTips": "The bar offers 12 taps focused on signature brews, including their famous sours, ales, stouts, lagers, and limited-release barrel-aged selections.",
+        "enrich_recognition": [],
+        "enrich_type": "Bars and pubs",
+        "enrich_neighborhood": "Central, Hong Kong",
+        "enrich_description": "Located on Peel Street, it is the taproom of Hong Kong beer brewery Yardley Brothers Craft Beer."
     },
     {
         "source_url": "https://www.timeout.com/hong-kong/bars-and-pubs/best-bars-hong-kong",
         "source_name": "Apothecary",
         "source_address": "Shop 3A, Carfield Commercial Building, 75-77 Wyndham Street, Central, Hong Kong",
-        "source_neighbourhood": "Bars and pubs",
+        "source_neighbourhood": "Central, Hong Kong",
         "source_pricepoint": "$",
         "source_photoUrls": [
             "https://media.timeout.com/images/105795677/750/422/image.jpg"
         ],
         "source_categories": [
-            "Bar"
+            "Bars and pubs"
         ],
-        "name": "Apothecary"
+        "name": "Apothecary",
+        "enrich_localName": "Apothecary",
+        "enrich_englishName": "Apothecary",
+        "enrich_localTips": "Visit Apothecary for a unique bar experience in Hong Kong. Be sure to check their signature cocktails and atmosphere that make this spot a Time Out recommendation.",
+        "enrich_recognition": [],
+        "enrich_type": "Bars and pubs",
+        "enrich_neighborhood": "Central, Hong Kong",
+        "enrich_description": ": This old-school pharmacy-themed cocktail bar can cure your woes with delectable sips that go down smoothly but pack a punch."
     },
     {
         "source_url": "https://www.timeout.com/hong-kong/bars-and-pubs/best-bars-hong-kong",
         "source_name": "Call Me Al",
         "source_address": "123 Queen’s Rd W, Sheung Wan, Hong Kong",
-        "source_neighbourhood": "Bars and pubs",
+        "source_neighbourhood": "Sheung Wan, Hong Kong",
         "source_pricepoint": "",
         "source_photoUrls": [
             "https://media.timeout.com/images/105979913/750/422/image.jpg"
         ],
         "source_categories": [
-            "Bar"
+            "Bars and pubs"
         ],
-        "name": "Call Me Al"
+        "name": "Call Me Al",
+        "enrich_localName": "Call Me Al",
+        "enrich_englishName": "Call Me Al",
+        "enrich_localTips": "Order the Crazy Train for an entertaining fire show along with a contemporary take on an Old Fashioned.",
+        "enrich_recognition": [],
+        "enrich_type": "Bars and pubs",
+        "enrich_neighborhood": "Sheung Wan, Hong Kong",
+        "enrich_description": "Named after the famous song You Can Call Me Al by American musician Paul Simon, Call Me Al is a new cosy neighbourhood restobar from F&B industry stalwarts Beckaly Franks from The Pontiac and Ezra Star of Mostly Harmless."
     },
     {
         "source_url": "https://www.timeout.com/hong-kong/bars-and-pubs/best-bars-hong-kong",
         "source_name": "Bourke's",
         "source_address": "G/F, 46 Peel St, Central, Hong Kong, Hong Kong",
-        "source_neighbourhood": "Restaurants",
+        "source_neighbourhood": "Hong Kong, Hong Kong",
         "source_pricepoint": "",
         "source_photoUrls": [
             "https://media.timeout.com/images/106283629/750/422/image.jpg"
         ],
         "source_categories": [
-            "Bar"
+            "Bars and pubs"
         ],
-        "name": "Bourke's"
+        "name": "Bourke's",
+        "enrich_localName": "Bourke's",
+        "enrich_englishName": "Bourke's",
+        "enrich_localTips": "Visit Bourke's for a unique bar experience in Hong Kong. Be sure to check their signature cocktails and atmosphere that make this spot a Time Out recommendation.",
+        "enrich_recognition": [],
+        "enrich_type": "Bars and pubs",
+        "enrich_neighborhood": "Hong Kong, Hong Kong",
+        "enrich_description": "Bourke's is one of Hong Kong's recommended bars featured in Time Out's best bars list."
     },
     {
         "source_url": "https://www.timeout.com/hong-kong/bars-and-pubs/best-bars-hong-kong",
         "source_name": "Whisky & Words",
         "source_address": "7 Shin Hing Street, Sheung Wan, Hong Kong",
-        "source_neighbourhood": "Sheung Wan",
+        "source_neighbourhood": "Sheung Wan, Hong Kong",
         "source_pricepoint": "",
         "source_photoUrls": [
             "https://media.timeout.com/images/105303618/750/422/image.jpg"
         ],
         "source_categories": [
-            "Bar"
+            "Bars and pubs"
         ],
-        "name": "Whisky & Words"
+        "name": "Whisky & Words",
+        "enrich_localName": "Whisky & Words",
+        "enrich_englishName": "Whisky & Words",
+        "enrich_localTips": "Need a change of flavours? Whisky & Words’ menu also provides a selection of cocktails that use gin and vodka as a base.",
+        "enrich_recognition": [],
+        "enrich_type": "Bars and pubs",
+        "enrich_neighborhood": "Sheung Wan, Hong Kong",
+        "enrich_description": "Excellent and understated whisky and cocktail bar on the steps of Shin Hing Street."
     },
     {
         "source_url": "https://www.timeout.com/hong-kong/bars-and-pubs/best-bars-hong-kong",
         "source_name": "House Welley Bar",
         "source_address": "Unit A, 2/F, 97 Wellington Street , Central, Hong Kong",
-        "source_neighbourhood": "Bars and pubs",
+        "source_neighbourhood": "Central, Hong Kong",
         "source_pricepoint": "$",
         "source_photoUrls": [
             "https://media.timeout.com/images/105649414/750/422/image.jpg"
         ],
         "source_categories": [
-            "Bar"
+            "Bars and pubs"
         ],
-        "name": "House Welley Bar"
+        "name": "House Welley Bar",
+        "enrich_localName": "House Welley Bar",
+        "enrich_englishName": "House Welley Bar",
+        "enrich_localTips": "There's no menu, so if you are new to the place, ask the servers for recommendations, check what's new in their collection, or request something fun, like whiskies from your birth year.",
+        "enrich_recognition": [],
+        "enrich_type": "Bars and pubs",
+        "enrich_neighborhood": "Central, Hong Kong",
+        "enrich_description": "A contemporary whisky bar offering an extensive collection of whiskies from Japan, Scotland, Ireland, Australia, and other world whiskies."
     },
     {
         "source_url": "https://www.timeout.com/hong-kong/bars-and-pubs/best-bars-hong-kong",
         "source_name": "Foxglove",
         "source_address": "18 Ice House Street, Central, Hong Kong",
-        "source_neighbourhood": "Bars and pubs",
+        "source_neighbourhood": "Central, Hong Kong",
         "source_pricepoint": "",
         "source_photoUrls": [
             "https://media.timeout.com/images/105329914/750/422/image.jpg"
         ],
         "source_categories": [
-            "Bar"
+            "Bars and pubs"
         ],
-        "name": "Foxglove"
+        "name": "Foxglove",
+        "enrich_localName": "Foxglove",
+        "enrich_englishName": "Foxglove",
+        "enrich_localTips": "It's one of the best places to go for live music in the city. Their live events run a gamut of genres, including Latino and world music, but it's the jazz nights that they're renowned for.",
+        "enrich_recognition": [],
+        "enrich_type": "Bars and pubs",
+        "enrich_neighborhood": "Central, Hong Kong",
+        "enrich_description": "Foxglove is a 1950s-style bar disguised as an umbrella shop on Duddell Street, a concept based on the travels of fictional Englishman Frank Minza."
     },
     {
         "source_url": "https://www.timeout.com/hong-kong/bars-and-pubs/best-bars-hong-kong",
         "source_name": "James Suckling Wine Central",
         "source_address": "2/F, 22 Staunton Street, Central, Hong Kong",
-        "source_neighbourhood": "Soho",
+        "source_neighbourhood": "Central, Hong Kong",
         "source_pricepoint": "",
         "source_photoUrls": [
             "https://media.timeout.com/images/105393990/750/422/image.jpg"
         ],
         "source_categories": [
-            "Bar"
+            "Bars and pubs"
         ],
-        "name": "James Suckling Wine Central"
+        "name": "James Suckling Wine Central",
+        "enrich_localName": "James Suckling Wine Central",
+        "enrich_englishName": "James Suckling Wine Central",
+        "enrich_localTips": "Those interested to learn more about wine can take advantage of their regularly scheduled open-tasting sessions. Always check their site for updates on the latest wine promotions and happy hour deals.",
+        "enrich_recognition": [],
+        "enrich_type": "Bars and pubs",
+        "enrich_neighborhood": "Central, Hong Kong",
+        "enrich_description": "Wine bar by world-famous wine critic James Suckling located on Staunton Street."
     },
     {
         "source_url": "https://www.timeout.com/hong-kong/bars-and-pubs/best-bars-hong-kong",
         "source_name": "Blue Supreme",
         "source_address": "21 Tung Street, Sheung Wan, Hong Kong",
-        "source_neighbourhood": "Sheung Wan",
+        "source_neighbourhood": "Sheung Wan, Hong Kong",
         "source_pricepoint": "",
         "source_photoUrls": [
             "https://media.timeout.com/images/105686660/750/422/image.jpg"
         ],
         "source_categories": [
-            "Bar"
+            "Bars and pubs"
         ],
-        "name": "Blue Supreme"
+        "name": "Blue Supreme",
+        "enrich_localName": "Blue Supreme",
+        "enrich_englishName": "Blue Supreme",
+        "enrich_localTips": "Blue Supreme is a pet-friendly venue, so be sure to bring your four-legged friends along as you chill out with ice-cold pints.",
+        "enrich_recognition": [],
+        "enrich_type": "Bars and pubs",
+        "enrich_neighborhood": "Sheung Wan, Hong Kong",
+        "enrich_description": "A diamond among the tourist tat of Upper Lascar Row, Blue Supreme is Hong Kong's classiest craft beer bar."
     },
     {
         "source_url": "https://www.timeout.com/hong-kong/bars-and-pubs/best-bars-hong-kong",
         "source_name": "Orchard",
         "source_address": "G/F, 28 Gage Street, Central, Hong Kong",
-        "source_neighbourhood": "Bars and pubs",
+        "source_neighbourhood": "Central, Hong Kong",
         "source_pricepoint": "$",
         "source_photoUrls": [
             "https://media.timeout.com/images/106006403/750/422/image.jpg"
         ],
         "source_categories": [
-            "Bar"
+            "Bars and pubs"
         ],
-        "name": "Orchard"
+        "name": "Orchard",
+        "enrich_localName": "Orchard",
+        "enrich_englishName": "Orchard",
+        "enrich_localTips": "Try the Butter Me Up 2.0, a delightful blend of fruit spirits including Calvados, VSOP Cognac, and Amontillado sherry.",
+        "enrich_recognition": [],
+        "enrich_type": "Bars and pubs",
+        "enrich_neighborhood": "Central, Hong Kong",
+        "enrich_description": "Orchard is a cocktail bar on Gage Street dedicated to showcasing fruit spirits."
     },
     {
         "source_url": "https://www.timeout.com/hong-kong/bars-and-pubs/best-bars-hong-kong",
         "source_name": "La Cabane Wine Bistro",
         "source_address": "62 Hollywood Road, Central, Hong Kong",
-        "source_neighbourhood": "Bars and pubs",
+        "source_neighbourhood": "Central, Hong Kong",
         "source_pricepoint": "",
         "source_photoUrls": [
             "https://media.timeout.com/images/105911547/750/422/image.jpg"
         ],
         "source_categories": [
-            "Bar"
+            "Bars and pubs"
         ],
-        "name": "La Cabane Wine Bistro"
+        "name": "La Cabane Wine Bistro",
+        "enrich_localName": "La Cabane Wine Bistro",
+        "enrich_englishName": "La Cabane Wine Bistro",
+        "enrich_localTips": "A laid-back wine bistro that’s also a bottle shop specialising in natural wines. This bar is really passionate about wine – they establish close relationships with small growers from France, Italy, Spain, and other regions, so you can expect to find interesting bottles here. Order small bites, cold cuts, or cheese boards to go with your glasses of wine for a rounded pairing experience.",
+        "enrich_recognition": [],
+        "enrich_type": "Bars and pubs",
+        "enrich_neighborhood": "Central, Hong Kong",
+        "enrich_description": "La Cabane Wine Bistro is one of Hong Kong's recommended bars featured in Time Out's best bars list."
     },
     {
         "source_url": "https://www.timeout.com/hong-kong/bars-and-pubs/best-bars-hong-kong",
         "source_name": "Dragonfly",
         "source_address": "Shop 10 & 13-G01, Tai Kwun, 10 Hollywood Road, Central, Hong Kong",
-        "source_neighbourhood": "Bars and pubs",
+        "source_neighbourhood": "Central, Hong Kong",
         "source_pricepoint": "",
         "source_photoUrls": [
             "https://media.timeout.com/images/105371862/750/422/image.jpg"
         ],
         "source_categories": [
-            "Bar"
+            "Bars and pubs"
         ],
-        "name": "Dragonfly"
+        "name": "Dragonfly",
+        "enrich_localName": "Dragonfly",
+        "enrich_englishName": "Dragonfly",
+        "enrich_localTips": "A gorgeous cocktail bar taking over the former superintendent’s house in Tai Kwun. Designed by the renowned Ashley Sutton, this cocktail bar is full of dragonfly-inspired decor, such as the giant dragonfly at the centre of the bar and countless wing-patterned lamps covering the bar’s ceiling.Check Dragonfly’s Instagram to stay updated on their schedule of live music performances taking place in the bar’s garden.",
+        "enrich_recognition": [],
+        "enrich_type": "Bars and pubs",
+        "enrich_neighborhood": "Central, Hong Kong",
+        "enrich_description": "Dragonfly is one of Hong Kong's recommended bars featured in Time Out's best bars list."
     },
     {
         "source_url": "https://www.timeout.com/hong-kong/bars-and-pubs/best-bars-hong-kong",
         "source_name": "Gishiki Lounge",
         "source_address": "01-LG103, LG1/F, Block 01, Tai Kwun, 10 Hollywood Road, Hong Kong",
-        "source_neighbourhood": "Central",
+        "source_neighbourhood": "10 Hollywood Road, Hong Kong",
         "source_pricepoint": "",
         "source_photoUrls": [
             "https://media.timeout.com/images/105424422/750/422/image.jpg"
         ],
         "source_categories": [
-            "Bar"
+            "Bars and pubs"
         ],
-        "name": "Gishiki Lounge"
+        "name": "Gishiki Lounge",
+        "enrich_localName": "Gishiki Lounge",
+        "enrich_englishName": "Gishiki Lounge",
+        "enrich_localTips": "Browse their menu to find Japanese-inflected cocktails that look just as good as they taste.",
+        "enrich_recognition": [],
+        "enrich_type": "Bars and pubs",
+        "enrich_neighborhood": "10 Hollywood Road, Hong Kong",
+        "enrich_description": "Located in Tai Kwun, Gishiki Lounge is the cocktail bar of the Japanese restaurant Sushi Zo."
     },
     {
         "source_url": "https://www.timeout.com/hong-kong/bars-and-pubs/best-bars-hong-kong",
@@ -839,9 +1244,16 @@
             "https://media.timeout.com/images/105988780/750/562/image.jpg"
         ],
         "source_categories": [
-            "Bar"
+            "Bars and pubs"
         ],
-        "name": "50 Most incredible things to do in Hong Kong"
+        "name": "50 Most incredible things to do in Hong Kong",
+        "enrich_localName": "50 Most incredible things to do in Hong Kong",
+        "enrich_englishName": "50 Most incredible things to do in Hong Kong",
+        "enrich_localTips": "Visit 50 Most incredible things to do in Hong Kong for a unique bar experience in Hong Kong. Be sure to check their signature cocktails and atmosphere that make this spot a Time Out recommendation.",
+        "enrich_recognition": [],
+        "enrich_type": "Bars and pubs",
+        "enrich_neighborhood": "Things to do",
+        "enrich_description": "50 Most incredible things to do in Hong Kong is one of Hong Kong's recommended bars featured in Time Out's best bars list."
     },
     {
         "source_url": "https://www.timeout.com/hong-kong/bars-and-pubs/best-bars-hong-kong",
@@ -953,9 +1365,16 @@
             "https://media.timeout.com/images/105715397/750/562/image.jpg"
         ],
         "source_categories": [
-            "Bar"
+            "Bars and pubs"
         ],
-        "name": "50 Best restaurants in Hong Kong you have to try"
+        "name": "50 Best restaurants in Hong Kong you have to try",
+        "enrich_localName": "50 Best restaurants in Hong Kong you have to try",
+        "enrich_englishName": "50 Best restaurants in Hong Kong you have to try",
+        "enrich_localTips": "Visit 50 Best restaurants in Hong Kong you have to try for a unique bar experience in Hong Kong. Be sure to check their signature cocktails and atmosphere that make this spot a Time Out recommendation.",
+        "enrich_recognition": [],
+        "enrich_type": "Bars and pubs",
+        "enrich_neighborhood": "Contemporary Global",
+        "enrich_description": "50 Best restaurants in Hong Kong you have to try is one of Hong Kong's recommended bars featured in Time Out's best bars list."
     },
     {
         "source_url": "https://www.timeout.com/hong-kong/bars-and-pubs/best-bars-hong-kong",
@@ -984,8 +1403,15 @@
             "https://media.timeout.com/images/106002543/750/562/image.jpg"
         ],
         "source_categories": [
-            "Bar"
+            "Bars and pubs"
         ],
-        "name": "Your ultimate guide to Hong Kong cafes and coffee shops"
+        "name": "Your ultimate guide to Hong Kong cafes and coffee shops",
+        "enrich_localName": "Your ultimate guide to Hong Kong cafes and coffee shops",
+        "enrich_englishName": "Your ultimate guide to Hong Kong cafes and coffee shops",
+        "enrich_localTips": "Visit Your ultimate guide to Hong Kong cafes and coffee shops for a unique bar experience in Hong Kong. Be sure to check their signature cocktails and atmosphere that make this spot a Time Out recommendation.",
+        "enrich_recognition": [],
+        "enrich_type": "Bars and pubs",
+        "enrich_neighborhood": "",
+        "enrich_description": "Your ultimate guide to Hong Kong cafes and coffee shops is one of Hong Kong's recommended bars featured in Time Out's best bars list."
     }
 ]
