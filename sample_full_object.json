@@ -1,0 +1,46 @@
+{
+    "source_url": "https://www.klook.com/activity/90278-hong-kong-murray-hotel-niccolo-spa-treatment-beauty/",
+    "source_name": "The Murray, Hong Kong - Wellness at The Murray | Beauty & Spa Experience | Central",
+    "source_address": "22 Cotton Tree Dr, Central, Hong Kong",
+    "source_pricePoint": "$1480",
+    "source_rating": 4.8,
+    "source_introduction": "A sanctuary of calm and holistic wellness, Wellness at The Murray offers a range of massage treatments and beauty rituals at the spa, to restore one’s health and vitality. The spa offers three single plus two couple treatment suites, each with its own private steam or sauna facility. In addition to bespoke massages, guests may also enjoy facials and other beauty treats.",
+    "source_Categories": "Tours & experiences,Massages,Spa & massages",
+    "enrich_localName": "The Murray, Hong Kong - Wellness at The Murray | 美容與水療體驗 | 中環",
+    "enrich_englishName": "The Murray, Hong Kong - Wellness at The Murray | Beauty & Spa Experience | Central",
+    "enrich_type": "local activities",
+    "enrich_neighborhood": "Central",
+    "enrich_hiddenGemScore": 20,
+    "enrich_textEmbedding": "Experience a luxurious Beauty & Spa treatment at Wellness at The Murray, a sanctuary of calm in Central, Hong Kong. This spa offers a range of massage treatments, beauty rituals, and facials to restore vitality. Enjoy private treatment suites with steam or sauna facilities.",
+    "enrich_tagsType": {
+        "Food": 0,
+        "Nature": 0,
+        "Sports": 0,
+        "Leisure": 20,
+        "Shopping": 0,
+        "Wellness": 80,
+        "Adventure": 0,
+        "Nightlife": 0,
+        "Educational": 0,
+        "Hidden Gems": 0,
+        "Photography": 0,
+        "Art & Culture": 0,
+        "Entertainment": 0
+    },
+    "enrich_tagsBudget": {
+        "Free": 0,
+        "Budget friendly": 0,
+        "Moderately priced": 0,
+        "High-end": 1,
+        "Luxury": 0
+    },
+    "enrich_tagsGroup": {
+        "Date": 50,
+        "Kids": 0,
+        "Family": 20,
+        "Friends": 30,
+        "Business": 0,
+        "Colleagues": 0
+    },
+    "enrich_description": "A luxury hotel spa in Central offering massages, facials, and beauty treatments to restore vitality."
+}

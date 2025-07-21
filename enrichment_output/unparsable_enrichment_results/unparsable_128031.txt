@@ -1,0 +1,212 @@
+---PROMPT---
+
+You are an expert data enrichment AI. Your task is to take a JSON object about a local activity and generate a new JSON object containing only enrichment fields.
+
+**Instructions:**
+1.  Analyze the provided "Input Activity Data".
+2.  Generate a single JSON object that includes ONLY the new `enrich_` fields.
+3.  Strictly follow the structure and format of the "Example Enrichment Object (Target Format)".
+4.  Adhere to the descriptions for each `enrich_` field provided below.
+5.  Do not include any explanations, apologies, or markdown formatting (like ```json) in your response. Output only the raw JSON object containing the enrichment fields.
+
+**Field Descriptions for Enrichment:**
+- `enrich_localName`: (string) The name of the event in Traditional Chinese. Keep company/brand names like "The Murray" or "Grand Hyatt" in English.
+- `enrich_englishName`: (string) The name of the event in English.
+- `enrich_type`: (string) Classify as either "local activities" or "events".
+- `enrich_neighborhood`: (string) The specific district name from the address (e.g., "Central", "Tsim Sha Tsui", "Causeway Bay"). If not obvious, derive from context.
+- `enrich_hiddenGemScore`: (integer) A score from 0-100. A high score (80-100) for very local, unique workshops. A low score (0-30) for major, well-known hotel spas or international brands.
+- `enrich_textEmbedding`: (string) A comprehensive, paragraph-style summary of the activity, combining its title, summary, and highlights. This will be used for vector embeddings.
+- `enrich_tagsType`: (JSON object) Distribute 100 points across categories: {"Food": 0, "Nature": 0, "Sports": 0, "Leisure": 0, "Shopping": 0, "Wellness": 0, "Adventure": 0, "Nightlife": 0, "Educational": 0, "Hidden Gems": 0, "Photography": 0, "Art & Culture": 0, "Entertainment": 0}. The sum of values must be 100.
+- `enrich_tagsBudget`: (JSON object) Set exactly one category to 1 and all others to 0: {"Free": 0, "Budget friendly": 0, "Moderately priced": 0, "High-end": 0, "Luxury": 0}. Base this on the `source_pricePoint`.
+- `enrich_tagsGroup`: (JSON object) Distribute 100 points across group types: {"Date": 0, "Kids": 0, "Family": 0, "Friends": 0, "Business": 0, "Colleagues": 0}. The sum of values must be 100.
+- `enrich_description`: (string) A concise, appealing description of the activity, under 20 words.
+
+**Example Enrichment Object (Target Format):**
+```json
+{
+  "enrich_localName": "The Murray, Hong Kong - Wellness at The Murray | 美容與水療體驗 | 中環",
+  "enrich_englishName": "The Murray, Hong Kong - Wellness at The Murray | Beauty & Spa Experience | Central",
+  "enrich_type": "local activities",
+  "enrich_neighborhood": "Central",
+  "enrich_hiddenGemScore": 10,
+  "enrich_textEmbedding": "Experience a luxurious Beauty & Spa treatment at Wellness at The Murray, a sanctuary of calm in Central, Hong Kong. This spa offers a range of massage treatments, beauty rituals, and facials to restore vitality. Enjoy private treatment suites with steam or sauna facilities.",
+  "enrich_tagsType": {
+    "Food": 0,
+    "Nature": 0,
+    "Sports": 0,
+    "Leisure": 20,
+    "Shopping": 0,
+    "Wellness": 80,
+    "Adventure": 0,
+    "Nightlife": 0,
+    "Educational": 0,
+    "Hidden Gems": 0,
+    "Photography": 0,
+    "Art & Culture": 0,
+    "Entertainment": 0
+  },
+  "enrich_tagsBudget": {
+    "Free": 0,
+    "Budget friendly": 0,
+    "Moderately priced": 0,
+    "High-end": 1,
+    "Luxury": 0
+  },
+  "enrich_tagsGroup": {
+    "Date": 50,
+    "Kids": 0,
+    "Family": 20,
+    "Friends": 30,
+    "Business": 0,
+    "Colleagues": 0
+  },
+  "enrich_description": "A luxury hotel spa in Central offering massages and beauty treatments to restore health and vitality."
+}
+```
+
+**Input Activity Data:**
+```json
+{
+  "klook_id": 128031,
+  "klook_title": "Fluid art experience",
+  "klook_url": "https://www.klook.com/activity/128031-fluid-art-experience/",
+  "klook_description": "Immerse yourself in the flow of color and unleash your artistic potential! Our fluid art workshop will take you to experience an artistic feast of color and flow!",
+  "klook_summary": "Immerse yourself in the flow of color and unleash your artistic potential!\nOur fluid art workshop will take you to experience an artistic feast of color and flow! No painting background is required, you just need to relax, express your creativity, and create unique works of art in the flow of paint.\nThe workshop will provide professional instruction and materials so you can easily master the techniques of fluid art and create stunning works of art. You will learn the mixing techniques of different paints, fluid art creation techniques, and how to post-process your works.\nCome join us, unleash your artistic potential, and experience the wonderful charm of fluid art! ð¨â¨",
+  "klook_highlights": [
+    "No painting basics required, easy to get started: Even if you have never touched painting, you can easily participate and enjoy the fun of creation.",
+    "Unique experience and create personal style: The randomness and uncontrollability of fluid art make each work unique and show your personal style.",
+    "Release stress and relax: Immerse yourself in color and flow, relax your mind and experience the healing power of creation.",
+    "Unique gift, suitable for both gift giving and personal use: Hand-created fluid art works are an excellent choice for gifts for personal use, full of personality and thoughtfulness.",
+    "Social interaction and making new friends: The workshop provides a relaxed and enjoyable environment where you can interact with other art lovers and make new friends.",
+    "Rich materials to meet your creative needs: The workshop provides a variety of paints, resins, tools and other materials to meet your creative needs and allow you to express your creativity."
+  ],
+  "klook_price": {
+    "marketPrice": 375.15,
+    "sellingPrice": 375.15,
+    "currency": "HKD"
+  },
+  "klook_location": {
+    "address": "Chi Lok Industrial Building",
+    "coordinates": "22.312189,114.220249"
+  },
+  "klook_review": {
+    "count": 0,
+    "score": 0,
+    "description": "Great"
+  },
+  "klook_noPastParticipants": "0 booked",
+  "klook_images": [
+    "https://res.klook.com/image/upload/activities/jzzshibf0rtcnt9cbrbh.jpg",
+    "https://res.klook.com/image/upload/activities/yr81mml2qkzpb6ebhcnp.jpg",
+    "https://res.klook.com/image/upload/activities/vx1jk2hspbf6ilsszm17.jpg",
+    "https://res.klook.com/image/upload/activities/hwsbhvh2unzfaxtasvic.jpg"
+  ],
+  "klook_tags": [
+    "Tours & experiences",
+    "Fun & Culture",
+    "Workshops & cooking classes"
+  ],
+  "source_url": "https://www.klook.com/activity/128031-fluid-art-experience/",
+  "source_name": "Fluid art experience",
+  "source_address": "Chi Lok Industrial Building",
+  "source_pricePoint": "$380",
+  "source_savedCount": "0 booked",
+  "source_rating": 0,
+  "source_introduction": "Immerse yourself in the flow of color and unleash your artistic potential!\nOur fluid art workshop will take you to experience an artistic feast of color and flow! No painting background is required, you just need to relax, express your creativity, and create unique works of art in the flow of paint.\nThe workshop will provide professional instruction and materials so you can easily master the techniques of fluid art and create stunning works of art. You will learn the mixing techniques of different paints, fluid art creation techniques, and how to post-process your works.\nCome join us, unleash your artistic potential, and experience the wonderful charm of fluid art! ð¨â¨",
+  "source_photoUrls": [
+    "https://res.klook.com/image/upload/activities/jzzshibf0rtcnt9cbrbh.jpg",
+    "https://res.klook.com/image/upload/activities/yr81mml2qkzpb6ebhcnp.jpg",
+    "https://res.klook.com/image/upload/activities/vx1jk2hspbf6ilsszm17.jpg",
+    "https://res.klook.com/image/upload/activities/hwsbhvh2unzfaxtasvic.jpg"
+  ],
+  "source_Categories": "Tours & experiences,Fun & Culture,Workshops & cooking classes"
+}
+```
+
+**Your generated JSON object (enrichment fields only):**
+
+
+---RESPONSE---
+<think>
+Okay, let's tackle this. The user wants me to generate a JSON object with only the enrichment fields based on the provided input data. First, I need to understand each field's requirements.
+
+Starting with enrich_localName and enrich_englishName. The input title is "Fluid art experience". Since the example keeps brand names in English, but this is a workshop, maybe there's no brand here. The address is Chi Lok Industrial Building. I should translate the title into Traditional Chinese. "Fluid art experience" becomes "流體藝術體驗". Then add the location. The example uses "Central" for the neighborhood, so I need to figure out what district Chi Lok Industrial Building is in. Chi Lok is in Mong Kok, Kowloon. So the local name would be "流體藝術體驗 | 蒙古帝國工業大廈" but wait, the example uses the district name after the address. Let me check the example again. The example's enrich_neighborhood is "Central" from the address "Chi Lok Industrial Building"? Wait, no. The example's input address was "The Murray, Hong Kong" and the neighborhood is "Central". So maybe the example's address is in Central. But in this case, Chi Lok Industrial Building is in Mong Kok. So enrich_neighborhood should be "Mong Kok".
+
+Next, enrich_type: The example has "local activities" for a spa. Since this is a workshop, it's likely "local activities" as well. The example's enrich_type is "local activities" for a hotel spa, so maybe workshops are also considered local activities unless they're events. The input has "Workshops & cooking classes" as a tag, so I think "local activities" is correct here.
+
+enrich_hiddenGemScore: The example gives 10 for a hotel spa. This is a fluid art workshop. Since it's a workshop and not a major brand, maybe it's a hidden gem. But the example's hiddenGemScore for a hotel spa is low (10), so workshops might be higher. The example's hiddenGemScore for a unique workshop is 80. Since this is a fluid art workshop, which is a specific type and not a well-known brand, I should give a higher score. Let's say 80.
+
+enrich_textEmbedding: Needs a paragraph combining title, summary, and highlights. The input summary mentions no background required, professional instruction, materials provided, creating unique art. Highlights include stress relief, social interaction, etc. So the embedding should mention the workshop, the experience, the techniques taught, and the benefits like stress relief and socializing.
+
+enrich_tagsType: The example uses Wellness and Leisure. Here, the activity is an art workshop. So categories like Art & Culture should be high. Let's see. The input has tags related to workshops and culture. So maybe Art & Culture gets 80, Leisure 20. Others like Educational or Hidden Gems? Since it's a workshop, maybe Educational gets some points. But the example's enrich_tagsType for a spa had Wellness at 80 and Leisure 20. Let me check the input again. The highlights mention learning techniques, which is educational. So maybe Art & Culture: 70, Educational: 20, Leisure: 10. But the sum must be 100. Let me adjust. The main focus is Art & Culture, so 80 there. Then Leisure and Educational could split the rest. Let's say Art & Culture: 80, Leisure: 10, Educational: 10. Wait, but the example's enrich_tagsType for a similar workshop (fluid art) might have higher Art & Culture. Let me check the example again. The example's enrich_tagsType for the spa had Wellness:80 and Leisure:20. So for an art workshop, Art & Culture should be high. Let's put Art & Culture at 80, Leisure at 10, Educational at 10. That sums to 100.
+
+enrich_tagsBudget: The source_pricePoint is "$380". The example uses "High-end":1 for a spa. $380 in HKD is moderate? Wait, the example's High-end is for a hotel spa. Let's see. The input price is 375.15 HKD. The example's enrich_tagsBudget for a hotel spa was High-end. But this is a workshop. Maybe "Moderately priced" is better. Wait, the example's source_pricePoint was "HKD 380", and the enrich_tagsBudget was "High-end":1. So maybe in this case, since the price is similar, it's also High-end. But the example's hiddenGemScore was 10 because it's a hotel spa. Wait, the example's hiddenGemScore was 10, which is low, indicating it's a major brand. But this workshop is a local activity, not a major brand. So maybe the hiddenGemScore is higher. The example's hiddenGemScore for a hotel spa was 10, but for a unique workshop, it's 80. So here, since it's a workshop, maybe High-end is 1. Let me check the source_pricePoint: "$380". The options are Free, Budget friendly, Moderately priced, High-end, Luxury. High-end is probably correct here.
+
+enrich_tagsGroup: The example had Date:50, Family:20, Friends:30. This workshop allows social interaction and making friends. So Friends might get a high score. Also, it's possible for a date or family. Let's distribute 100 points. Since the highlights mention social interaction and making new friends, Friends could be 50. Date might be 30, Family 20. That sums to 100.
+
+enrich_description: Needs to be concise, under 20 words. Mention the workshop, no experience needed, creating unique art, and maybe the price. But the example's description didn't include price. So something like "A fluid art workshop in Mong Kok where you can create unique art without prior experience." That's 14 words.
+
+Now, putting it all together. Let me verify each field again. The local name in Traditional Chinese is "流體藝術體驗 | 蒙古帝國工業大廈". The English name is "Fluid Art Experience | Chi Lok Industrial Building". Wait, the example includes the neighborhood in the English name. So maybe "Fluid Art Experience | Mong Kok, Hong Kong". But the input's address is "Chi Lok Industrial Building", which is in Mong Kok. So the English name would be "Fluid Art Experience | Mong Kok, Hong Kong". But the example's English name includes the district. So I'll follow that structure.
+
+Wait, the example's enrich_englishName is "The Murray, Hong Kong - Wellness at The Murray | Beauty & Spa Experience | Central". So the format is [Name] | [Type] | [Neighborhood]. So here, the name is "Fluid art experience", type is "Art & Culture" (but maybe the example's type is "local activities", so perhaps the type isn't part of the English name. Wait, the example's enrich_englishName is "The Murray, Hong Kong - Wellness at The Murray | Beauty & Spa Experience | Central". So the structure is [Brand/Name] | [Experience Type] | [Neighborhood]. So for this case, the English name would be "Fluid Art Experience | Art & Culture Workshop | Mong Kok". But the input's title is "Fluid art experience", so maybe just "Fluid Art Experience | Mong Kok".
+
+But the example's English name includes the neighborhood. So I'll follow that. So enrich_englishName: "Fluid Art Experience | Mong Kok, Hong Kong".
+
+Now, the enrich_tagsGroup: The example had Date, Family, Friends. This workshop is for social interaction, so Friends might be 50, Date 30, Family 20. That adds up to 100.
+
+enrich_tagsType: Art & Culture 80, Leisure 10, Educational 10. Others zero.
+
+enrich_hiddenGemScore: 80 because it's a unique workshop.
+
+enrich_textEmbedding: Combine the title, summary, and highlights into a paragraph. Mention the workshop, no background needed, professional instruction, materials provided, creating unique art, stress relief, social interaction, etc.
+
+Let me draft the textEmbedding: "Join a fluid art workshop in Mong Kok, Hong Kong, where you can unleash your creativity without any painting background. This unique experience provides professional instruction and all necessary materials to master fluid art techniques, create stunning, one-of-a-kind pieces, and enjoy stress relief through artistic expression. The workshop encourages social interaction, making it a great opportunity to meet new friends and explore the fun of art in a relaxed environment."
+
+That's a comprehensive summary.
+
+Now, check all the fields again to ensure they meet the criteria. Make sure the JSON structure is correct, with proper commas and brackets. Also, ensure that the enrich_tagsBudget has exactly one category set to 1. The source_pricePoint is "$380", which is not free, budget-friendly, or luxury. The example's "High-end":1 for a similar price. So here, "Moderately priced" or "High-end"? The example's source_pricePoint was "HKD 380" and enrich_tagsBudget was "High-end":1. So maybe this is also High-end. But the example's hiddenGemScore was 10 because it's a hotel spa. Here, the workshop is a unique local activity, so hiddenGemScore is 80, and enrich_tagsBudget is "Moderately priced" or "High-end". Let me check the price. $380 in HKD is about $49 USD, which is moderate for a workshop. But the example's "High-end" was for a hotel spa. Maybe the user considers workshops with a price point around $380 as "Moderately priced". Wait, the example's source_pricePoint was "HKD 380" and enrich_tagsBudget was "High-end":1. So perhaps in this case, it's also High-end. But the example's hiddenGemScore was 10 because it's a hotel spa. Here, the workshop is a unique experience, so hiddenGemScore is 80, and enrich_tagsBudget is "Moderately priced" or "High-end". Let me think. The example's High-end is 1, which is for a hotel spa. This workshop is a local activity, not a hotel. So maybe "Moderately priced" is better. But the exact price point might depend on the user's criteria. Since the example's $380 is considered High-end, perhaps this one is as well. Let's go with "High-end":1.
+
+So, the enrich_tagsBudget would be {"High-end": 1, others 0}.
+
+Putting all together, the JSON should look like the example but with the correct data. Let me make sure all the fields are correctly filled and the JSON is valid.
+</think>
+
+{
+  "enrich_localName": "流體藝術體驗 | 蒙古帝國工業大廈",
+  "enrich_englishName": "Fluid Art Experience | Mong Kok, Hong Kong",
+  "enrich_type": "local activities",
+  "enrich_neighborhood": "Mong Kok",
+  "enrich_hiddenGemScore": 80,
+  "enrich_textEmbedding": "Join a fluid art workshop in Mong Kok, Hong Kong, where you can unleash your creativity without any painting background. This unique experience provides professional instruction and all necessary materials to master fluid art techniques, create stunning, one-of-a-kind pieces, and enjoy stress relief through artistic expression. The workshop encourages social interaction, making it a great opportunity to meet new friends and explore the fun of art in a relaxed environment.",
+  "enrich_tagsType": {
+    "Food": 0,
+    "Nature": 0,
+    "Sports": 0,
+    "Leisure": 10,
+    "Shopping": 0,
+    "Wellness": 10,
+    "Adventure": 0,
+    "Nightlife": 0,
+    "Educational": 10,
+    "Hidden Gems": 80,
+    "Photography": 0,
+    "Art & Culture": 0,
+    "Entertainment": 0
+  },
+  "enrich_tagsBudget": {
+    "Free": 0,
+    "Budget friendly": 0,
+    "Moderately priced": 0,
+    "High-end": 1,
+    "Luxury": 0
+  },
+  "enrich_tagsGroup": {
+    "Date": 30,
+    "Kids": 0,
+    "Family": 20,
+    "Friends": 50,
+    "Business": 0,
+    "Colleagues": 0
+  },
+  "enrich_description": "A creative fluid art workshop in Mong Kok for all skill levels to make unique art and unwind."
+}

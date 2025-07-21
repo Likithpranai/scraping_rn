@@ -1,0 +1,189 @@
+---PROMPT---
+
+You are an expert data enrichment AI. Your task is to take a JSON object about a local activity and generate a new JSON object containing only enrichment fields.
+
+**Instructions:**
+1.  Analyze the provided "Input Activity Data".
+2.  Generate a single JSON object that includes ONLY the new `enrich_` fields.
+3.  Strictly follow the structure and format of the "Example Enrichment Object (Target Format)".
+4.  Adhere to the descriptions for each `enrich_` field provided below.
+5.  Do not include any explanations, apologies, or markdown formatting (like ```json) in your response. Output only the raw JSON object containing the enrichment fields.
+
+**Field Descriptions for Enrichment:**
+- `enrich_localName`: (string) The name of the event in Traditional Chinese. Keep company/brand names like "The Murray" or "Grand Hyatt" in English.
+- `enrich_englishName`: (string) The name of the event in English.
+- `enrich_type`: (string) Classify as either "local activities" or "events".
+- `enrich_neighborhood`: (string) The specific district name from the address (e.g., "Central", "Tsim Sha Tsui", "Causeway Bay"). If not obvious, derive from context.
+- `enrich_hiddenGemScore`: (integer) A score from 0-10. A high score (8-10) for very local, unique workshops. A low score (0-3) for major, well-known hotel spas or international brands.
+- `enrich_textEmbedding`: (string) A comprehensive, paragraph-style summary of the activity, combining its title, summary, and highlights. This will be used for vector embeddings.
+- `enrich_tagsType`: (JSON object) Distribute 100 points across categories: {"Food": 0, "Nature": 0, "Sports": 0, "Leisure": 0, "Shopping": 0, "Wellness": 0, "Adventure": 0, "Nightlife": 0, "Educational": 0, "Hidden Gems": 0, "Photography": 0, "Art & Culture": 0, "Entertainment": 0}. The sum of values must be 100.
+- `enrich_tagsBudget`: (JSON object) Set exactly one category to 1 and all others to 0: {"Free": 0, "Budget friendly": 0, "Moderately priced": 0, "High-end": 0, "Luxury": 0}. Base this on the `source_pricePoint`.
+- `enrich_tagsGroup`: (JSON object) Distribute 100 points across group types: {"Date": 0, "Kids": 0, "Family": 0, "Friends": 0, "Business": 0, "Colleagues": 0}. The sum of values must be 100.
+- `enrich_description`: (string) A concise, appealing description of the activity, under 20 words.
+
+**Example Enrichment Object (Target Format):**
+```json
+{
+  "enrich_localName": "The Murray, Hong Kong - Wellness at The Murray | 美容與水療體驗 | 中環",
+  "enrich_englishName": "The Murray, Hong Kong - Wellness at The Murray | Beauty & Spa Experience | Central",
+  "enrich_type": "local activities",
+  "enrich_neighborhood": "Central",
+  "enrich_hiddenGemScore": 10,
+  "enrich_textEmbedding": "Experience a luxurious Beauty & Spa treatment at Wellness at The Murray, a sanctuary of calm in Central, Hong Kong. This spa offers a range of massage treatments, beauty rituals, and facials to restore vitality. Enjoy private treatment suites with steam or sauna facilities.",
+  "enrich_tagsType": {
+    "Food": 0,
+    "Nature": 0,
+    "Sports": 0,
+    "Leisure": 20,
+    "Shopping": 0,
+    "Wellness": 80,
+    "Adventure": 0,
+    "Nightlife": 0,
+    "Educational": 0,
+    "Hidden Gems": 0,
+    "Photography": 0,
+    "Art & Culture": 0,
+    "Entertainment": 0
+  },
+  "enrich_tagsBudget": {
+    "Free": 0,
+    "Budget friendly": 0,
+    "Moderately priced": 0,
+    "High-end": 1,
+    "Luxury": 0
+  },
+  "enrich_tagsGroup": {
+    "Date": 50,
+    "Kids": 0,
+    "Family": 20,
+    "Friends": 30,
+    "Business": 0,
+    "Colleagues": 0
+  },
+  "enrich_description": "A luxury hotel spa in Central offering massages and beauty treatments to restore health and vitality."
+}
+```
+
+**Input Activity Data:**
+```json
+{
+  "klook_id": 134653,
+  "klook_title": "PANDA ZOE Baking Course",
+  "klook_url": "https://www.klook.com/activity/134653-panda-zoe-baking-course/",
+  "klook_description": "Experience handmade baking classes first-hand with PANDA ZOE baking classes through Klook.",
+  "klook_summary": "Make exquisite desserts by yourself under the guidance of instructors, perfect as gifts for your own use",
+  "klook_highlights": [
+    "Make exquisite desserts by yourself under the guidance of instructors, perfect as gifts for your own use",
+    "Beautiful and comfortable classroom environment",
+    "Small class teaching"
+  ],
+  "klook_price": {
+    "marketPrice": 0.0,
+    "sellingPrice": 480.03,
+    "currency": "HKD"
+  },
+  "klook_location": {
+    "address": "Wo Hing Commercial Building",
+    "coordinates": ""
+  },
+  "klook_review": {
+    "count": "",
+    "score": "",
+    "description": "Good"
+  },
+  "klook_noPastParticipants": "",
+  "klook_images": [
+    "https://res.klook.com/image/upload/activities/kcvmy5ep49rdxwrsue5z.jpg",
+    "https://res.klook.com/image/upload/activities/j9ugcryvu09vkjprg6ys.jpg",
+    "https://res.klook.com/image/upload/activities/y9tssqyagwjbazde3czi.jpg"
+  ],
+  "klook_tags": [
+    "Tours & experiences",
+    "Cultural experiences",
+    "Workshops"
+  ],
+  "source_url": "https://www.klook.com/activity/134653-panda-zoe-baking-course/",
+  "source_name": "PANDA ZOE Baking Course",
+  "source_address": "Wo Hing Commercial Building",
+  "source_pricePoint": "$480",
+  "source_savedCount": "",
+  "source_rating": "",
+  "source_introduction": "Make exquisite desserts by yourself under the guidance of instructors, perfect as gifts for your own use",
+  "source_photoUrls": [
+    "https://res.klook.com/image/upload/activities/kcvmy5ep49rdxwrsue5z.jpg",
+    "https://res.klook.com/image/upload/activities/j9ugcryvu09vkjprg6ys.jpg",
+    "https://res.klook.com/image/upload/activities/y9tssqyagwjbazde3czi.jpg"
+  ],
+  "source_Categories": "Tours & experiences,Cultural experiences,Workshops"
+}
+```
+
+**Your generated JSON object (enrichment fields only):**
+
+
+---RESPONSE---
+<think>
+Okay, let's tackle this. The user wants me to generate a JSON object with only the enrichment fields based on the input data. First, I need to parse the input data carefully.
+
+The input is about a baking course called "PANDA ZOE Baking Course". The address is Wo Hing Commercial Building. I need to figure out the neighborhood. Wo Hing Commercial Building is in Hong Kong, but which district? I recall that Wo Hing is in Mong Kok, which is part of Kowloon. So the neighborhood should be "Mong Kok" or "Kowloon". Wait, the example used "Central" as the neighborhood. Let me check if the input data has any clues. The address is just "Wo Hing Commercial Building", no district mentioned. But in Hong Kong, Wo Hing Commercial Building is located in Mong Kok. So I'll put "Mong Kok" as the neighborhood.
+
+Next, enrich_localName and enrich_englishName. The original name is "PANDA ZOE Baking Course". The example included the location in the name. So maybe I should format it similarly. For localName, in Traditional Chinese, it would be "PANDA ZOE 烘焙課程 | 自制精緻甜點 | �旺角". The English name would be "PANDA ZOE Baking Course | Make Exquisite Desserts | Mong Kok". 
+
+Enrich_type: Since it's a workshop, according to the example, workshops are classified as "local activities". So that's straightforward.
+
+Enrich_hiddenGemScore: The example gave 10 for a luxury hotel spa. This is a baking course. Since it's a workshop and not a major brand, maybe a higher score. But the example's high score was for a unique workshop. The input mentions "small class teaching" and "guidance of instructors", which might indicate it's a local, unique experience. So maybe 8 or 9. Let's go with 8.
+
+Enrich_textEmbedding: Need a paragraph combining title, summary, and highlights. The summary says making desserts as gifts, highlights include small class and comfortable environment. So something like "Join the PANDA ZOE Baking Course in Mong Kok to create exquisite handmade desserts under instructor guidance. The course offers a beautiful classroom environment and small group teaching, ideal for personal use or gifting."
+
+Enrich_tagsType: Distribute 100 points. The activity is a workshop, so "Educational" and "Leisure" might be relevant. Let's see. Baking is a skill, so maybe 30 for Educational. Leisure could be 50. Art & Culture might get 20. Others zero. So {"Educational": 30, "Leisure": 50, "Art & Culture": 20, rest 0}.
+
+Enrich_tagsBudget: The source_pricePoint is $480. The example had High-end as 1 when the price was mentioned as a luxury spa. But $480 for a baking course in Hong Kong—how does that compare? Maybe it's moderately priced. Wait, the example for High-end was a luxury hotel spa. Here, the course is 480 HKD. Let me think. In Hong Kong, a typical baking course might range from budget to high-end. Since there's no specific info, but the example used High-end for a hotel spa, maybe this is Moderately priced. Wait, the source_pricePoint is "$480", and the enrich_tagsBudget should be based on that. The example had "High-end":1 for a luxury spa. But this is a baking course. Let me check the price. 480 HKD is about 61 USD. That's not extremely high, but depends on the context. Maybe "Moderately priced" is 1 here. Wait, the example's High-end was for a luxury hotel spa. So if this is a regular course, maybe Moderately priced. But the user's instruction says to set exactly one category to 1. The source_pricePoint is $480. Let me see the options: Free, Budget friendly, Moderately priced, High-end, Luxury. Since it's not free, and 480 HKD is a specific price. If the course is considered a bit pricey but not luxury, maybe Moderately priced. But if it's a high-end course, then High-end. The example's High-end was for a luxury hotel. This is a baking course. Maybe "Moderately priced" is more appropriate. So set "Moderately priced":1, others 0.
+
+Enrich_tagsGroup: Distribute 100 points across groups. The course is for personal use or gifts. Likely suitable for friends, family, maybe dates. Let's say Friends: 50, Family: 30, Date: 20. Others zero. That adds up to 100.
+
+Enrich_description: Concise under 20 words. Maybe "Learn to bake exquisite desserts in a small class at PANDA ZOE's workshop in Mong Kok."
+
+Now, check all fields. Make sure the JSON structure matches the example, with all required fields and correct data types. No markdown, just raw JSON. Also, ensure that the local name keeps "PANDA ZOE" in English as per the instruction. The example had "The Murray" in English. So yes, keep the brand name in English. 
+
+Double-check the neighborhood: Wo Hing Commercial Building is in Mong Kok, so that's correct. Hidden gem score 8 because it's a local workshop, not an international brand. TagsType: Educational, Leisure, Art & Culture. TagsBudget: Moderately priced. TagsGroup: Friends, Family, Date. Description is concise. Text embedding combines all elements. Looks good.
+</think>
+
+{
+  "enrich_localName": "PANDA ZOE 烘焙課程 | 自制精緻甜點 | 旺角",
+  "enrich_englishName": "PANDA ZOE Baking Course | Make Exquisite Desserts | Mong Kok",
+  "enrich_type": "local activities",
+  "enrich_neighborhood": "Mong Kok",
+  "enrich_hiddenGemScore": 8,
+  "enrich_textEmbedding": "Join the PANDA ZOE Baking Course in Mong Kok to create exquisite handmade desserts under instructor guidance. The course offers a beautiful classroom environment and small group teaching, ideal for personal use or gifting. Learn to craft desserts as a unique skill and enjoy the interactive workshop experience.",
+  "enrich_tagsType": {
+    "Food": 0,
+    "Nature": 0,
+    "Sports": 0,
+    "Leisure": 50,
+    "Shopping": 0,
+    "Wellness": 0,
+    "Adventure": 0,
+    "Nightlife": 0,
+    "Educational": 30,
+    "Hidden Gems": 20,
+    "Photography": 0,
+    "Art & Culture": 0,
+    "Entertainment": 0
+  },
+  "enrich_tagsBudget": {
+    "Free": 0,
+    "Budget friendly": 0,
+    "Moderately priced": 1,
+    "High-end": 0,
+    "Luxury": 0
+  },
+  "enrich_tagsGroup": {
+    "Date": 20,
+    "Kids": 0,
+    "Family": 30,
+    "Friends": 50,
+    "Business": 0,
+    "Colleagues": 0
+  },
+  "enrich_description": "A hands-on dessert-making workshop in Mong Kok with small class sizes and expert guidance."
+}

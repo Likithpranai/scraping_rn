@@ -1,0 +1,230 @@
+---PROMPT---
+
+You are an expert data enrichment AI. Your task is to take a JSON object about a local activity and generate a new JSON object containing only enrichment fields.
+
+**Instructions:**
+1.  Analyze the provided "Input Activity Data".
+2.  Generate a single JSON object that includes ONLY the new `enrich_` fields.
+3.  Strictly follow the structure and format of the "Example Enrichment Object (Target Format)".
+4.  Adhere to the descriptions for each `enrich_` field provided below.
+5.  Do not include any explanations, apologies, or markdown formatting (like ```json) in your response. Output only the raw JSON object containing the enrichment fields.
+
+**Field Descriptions for Enrichment:**
+- `enrich_localName`: (string) The name of the event in Traditional Chinese. Keep company/brand names like "The Murray" or "Grand Hyatt" in English.
+- `enrich_englishName`: (string) The name of the event in English.
+- `enrich_type`: (string) Classify as either "local activities" or "events".
+- `enrich_neighborhood`: (string) The specific district name from the address (e.g., "Central", "Tsim Sha Tsui", "Causeway Bay"). If not obvious, derive from context.
+- `enrich_hiddenGemScore`: (integer) A score from 0-100. A high score (80-100) for very local, unique workshops. A low score (0-30) for major, well-known hotel spas or international brands.
+- `enrich_textEmbedding`: (string) A comprehensive, paragraph-style summary of the activity, combining its title, summary, and highlights. This will be used for vector embeddings.
+- `enrich_tagsType`: (JSON object) Distribute 100 points across categories: {"Food": 0, "Nature": 0, "Sports": 0, "Leisure": 0, "Shopping": 0, "Wellness": 0, "Adventure": 0, "Nightlife": 0, "Educational": 0, "Hidden Gems": 0, "Photography": 0, "Art & Culture": 0, "Entertainment": 0}. The sum of values must be 100.
+- `enrich_tagsBudget`: (JSON object) Set exactly one category to 1 and all others to 0: {"Free": 0, "Budget friendly": 0, "Moderately priced": 0, "High-end": 0, "Luxury": 0}. Base this on the `source_pricePoint`.
+- `enrich_tagsGroup`: (JSON object) Distribute 100 points across group types: {"Date": 0, "Kids": 0, "Family": 0, "Friends": 0, "Business": 0, "Colleagues": 0}. The sum of values must be 100.
+- `enrich_description`: (string) A concise, appealing description of the activity, under 20 words.
+
+**Example Enrichment Object (Target Format):**
+```json
+{
+  "enrich_localName": "The Murray, Hong Kong - Wellness at The Murray | 美容與水療體驗 | 中環",
+  "enrich_englishName": "The Murray, Hong Kong - Wellness at The Murray | Beauty & Spa Experience | Central",
+  "enrich_type": "local activities",
+  "enrich_neighborhood": "Central",
+  "enrich_hiddenGemScore": 10,
+  "enrich_textEmbedding": "Experience a luxurious Beauty & Spa treatment at Wellness at The Murray, a sanctuary of calm in Central, Hong Kong. This spa offers a range of massage treatments, beauty rituals, and facials to restore vitality. Enjoy private treatment suites with steam or sauna facilities.",
+  "enrich_tagsType": {
+    "Food": 0,
+    "Nature": 0,
+    "Sports": 0,
+    "Leisure": 20,
+    "Shopping": 0,
+    "Wellness": 80,
+    "Adventure": 0,
+    "Nightlife": 0,
+    "Educational": 0,
+    "Hidden Gems": 0,
+    "Photography": 0,
+    "Art & Culture": 0,
+    "Entertainment": 0
+  },
+  "enrich_tagsBudget": {
+    "Free": 0,
+    "Budget friendly": 0,
+    "Moderately priced": 0,
+    "High-end": 1,
+    "Luxury": 0
+  },
+  "enrich_tagsGroup": {
+    "Date": 50,
+    "Kids": 0,
+    "Family": 20,
+    "Friends": 30,
+    "Business": 0,
+    "Colleagues": 0
+  },
+  "enrich_description": "A luxury hotel spa in Central offering massages and beauty treatments to restore health and vitality."
+}
+```
+
+**Input Activity Data:**
+```json
+{
+  "klook_id": 116717,
+  "klook_title": "Kate.jpggg-Pet Photography (Customized Location-2 Hours Photography)",
+  "klook_url": "https://www.klook.com/activity/116717-kate-jpggg-pet-shooting-location-is-designed-by-client-2-hours/",
+  "klook_description": "Book the Kwun Tong pet photography experience at a discounted price through Klook, customize the location, and shoot for 2 hours.",
+  "klook_summary": "Customize the shooting location in Hong Kong and enjoy a 2-hour pet photography session with Kate.jpggg. Additional transportation fees may apply for remote areas/New Territories. Includes options for professional photo references on social media platforms.",
+  "klook_highlights": [
+    "Photography location customized by client",
+    "2-hour photo shooting session",
+    "Remote area transportation fee included $300",
+    "Professional pet photography services",
+    "Access to Facebook/Instagram references"
+  ],
+  "klook_price": {
+    "marketPrice": 3888.03,
+    "sellingPrice": 2500.15,
+    "currency": "HKD"
+  },
+  "klook_location": {
+    "address": "Guests customize the shooting location in Hong Kong (*Remote areas/New Territories will charge an additional transportation fee of $300)",
+    "coordinates": "22.319304,114.169362"
+  },
+  "klook_review": {
+    "count": 0,
+    "score": 4.4,
+    "description": "Great"
+  },
+  "klook_noPastParticipants": "20k+ booked",
+  "klook_images": [
+    "https://res.klook.com/image/upload/activities/me1f6so011oxbkpiuq3j.jpg",
+    "https://res.klook.com/image/upload/activities/eecvgjkkjc290udutltg.jpg",
+    "https://res.klook.com/image/upload/activities/js7tjgtzsrryvgw4gv03.jpg",
+    "https://res.klook.com/image/upload/activities/ebqldohu0xz2gr4jl7aq.jpg",
+    "https://res.klook.com/image/upload/activities/v5t9knhav2ukn99cofpu.jpg",
+    "https://res.klook.com/image/upload/activities/ozifd6pi7syyxvkyztsg.jpg",
+    "https://res.klook.com/image/upload/activities/js8m1xk3utxdgprwbj0b.jpg",
+    "https://res.klook.com/image/upload/activities/s4fdujosrzm5wtiurv72.jpg",
+    "https://res.klook.com/image/upload/activities/ajekadscti0fyycyfvpq.jpg",
+    "https://res.klook.com/image/upload/activities/pk0zhrjiaozgi0yh0nav.jpg"
+  ],
+  "klook_tags": [
+    "Tours & experiences",
+    "Photoshoot"
+  ],
+  "source_url": "https://www.klook.com/activity/116717-kate-jpggg-pet-shooting-location-is-designed-by-client-2-hours/",
+  "source_name": "Kate.jpggg-Pet Photography (Customized Location-2 Hours Photography)",
+  "source_address": "Guests customize the shooting location in Hong Kong (*Remote areas/New Territories will charge an additional transportation fee of $300)",
+  "source_pricePoint": "$2500",
+  "source_savedCount": "20k+ booked",
+  "source_rating": 4.4,
+  "source_introduction": "Customize the shooting location in Hong Kong and enjoy a 2-hour pet photography session with Kate.jpggg. Additional transportation fees may apply for remote areas/New Territories. Includes options for professional photo references on social media platforms.",
+  "source_photoUrls": [
+    "https://res.klook.com/image/upload/activities/me1f6so011oxbkpiuq3j.jpg",
+    "https://res.klook.com/image/upload/activities/eecvgjkkjc290udutltg.jpg",
+    "https://res.klook.com/image/upload/activities/js7tjgtzsrryvgw4gv03.jpg",
+    "https://res.klook.com/image/upload/activities/ebqldohu0xz2gr4jl7aq.jpg",
+    "https://res.klook.com/image/upload/activities/v5t9knhav2ukn99cofpu.jpg",
+    "https://res.klook.com/image/upload/activities/ozifd6pi7syyxvkyztsg.jpg",
+    "https://res.klook.com/image/upload/activities/js8m1xk3utxdgprwbj0b.jpg",
+    "https://res.klook.com/image/upload/activities/s4fdujosrzm5wtiurv72.jpg",
+    "https://res.klook.com/image/upload/activities/ajekadscti0fyycyfvpq.jpg",
+    "https://res.klook.com/image/upload/activities/pk0zhrjiaozgi0yh0nav.jpg"
+  ],
+  "source_Categories": "Tours & experiences,Photoshoot"
+}
+```
+
+**Your generated JSON object (enrichment fields only):**
+
+
+---RESPONSE---
+<think>
+Okay, let's tackle this. The user wants me to generate a JSON object with only the enrichment fields based on the provided input data. First, I need to parse the input data carefully.
+
+Starting with enrich_localName and enrich_englishName. The original title is "Kate.jpggg-Pet Photography (Customized Location-2 Hours Photography)". Since the name should be in Traditional Chinese for enrich_localName, but keep brand names in English. So "Kate.jpggg" is a brand name, so it stays in English. The rest can be translated. Maybe "客製化寵物攝影體驗 | 香港九龍塘". For the English name, it's straightforward, just the original title but formatted similarly to the example. So "Kate.jpggg-Pet Photography | Customized Location 2-Hour Photo Session".
+
+Next, enrich_type. The example has "local activities" for a spa. Since this is a photography service, it's an event, so "events".
+
+Enrich_neighborhood: The address mentions Kwun Tong, which is a district in Hong Kong. So that's the neighborhood.
+
+Enrich_hiddenGemScore: The example gave 10 for a hotel spa. Here, the service is a photography session. Since it's a specific photographer and not a major brand, maybe it's a hidden gem. But the example's hidden gem score was low for well-known places. Wait, the example had a high-end spa with a low score. So if this is a unique workshop, it's high. But if it's a service provider, maybe it's a bit more local. The input data doesn't mention it being a unique workshop, but it's a photography service. The example's hidden gem score was 10 for a hotel spa. Let's see, the example had "Wellness at The Murray" as a hotel spa. Since Kate.jpggg is a specific photographer, maybe it's a local business. But the example's hidden gem score for a hotel spa was 10. However, the user instructions say high score (80-100) for very local, unique workshops. If this is a unique pet photography service, maybe it's a hidden gem. But the input data doesn't specify if it's a unique workshop. Hmm. The example had a hotel spa with a low score. Since this is a photography service, perhaps it's a local business but not a hidden gem. Wait, the input data says "Customize the shooting location in Hong Kong" and the photographer is Kate.jpggg. If it's a well-known photographer, maybe the score is lower. But since there's no info on that, maybe I should assume it's a local service. The example's hidden gem score was 10 for a hotel spa. Maybe this is a bit more unique, so maybe 40? Or perhaps since it's a photography service, it's not a major brand. Let me check the highlights: "Professional pet photography services". Not sure if it's a major brand. Maybe 50? Wait, the example's hidden gem score was 10 for a hotel spa. Since this is a photography service, which might be more niche, maybe higher. Let's go with 70. But the user says high score for very local, unique workshops. If this is a workshop, maybe. But the activity is a photo session. Hmm. Maybe 60? I'll need to decide. Let's say 60.
+
+Enrich_textEmbedding: Combine title, summary, and highlights into a paragraph. The example included the name, location, and details. So here, it would be something like "Experience a customized pet photography session with Kate.jpggg in Kwun Tong, Hong Kong. This 2-hour session allows clients to choose their preferred location, with an additional $300 transportation fee for remote areas or the New Territories. The service includes professional pet photography, access to social media references, and options for various photo styles."
+
+Enrich_tagsType: The categories are "Tours & experiences" and "Photoshoot". So the main tags here would be "Photography" and maybe "Entertainment". Let's distribute 100 points. Since it's a photography session, Photography gets 80. Then maybe Leisure or Entertainment. Let's see the example: for a spa, they gave 80 to Wellness and 20 to Leisure. Here, Photography is the main category. So "Photography": 80, "Entertainment": 20. The rest are 0.
+
+Enrich_tagsBudget: The source_pricePoint is $2500. The example had "High-end":1 for a similar price. So here, "High-end":1, others 0.
+
+Enrich_tagsGroup: The activity is a photo session. Who would typically do this? Probably for personal use, maybe with friends or family. The example for a spa had Date, Family, Friends. Here, maybe Friends and Family. Let's say Friends: 50, Family: 30, Date: 20. That adds up to 100.
+
+Enrich_description: Concise, under 20 words. "Customized pet photography sessions in Kwun Tong with professional services and 2-hour shoots." That's 14 words.
+
+Wait, the example's description for the spa was "A luxury hotel spa in Central offering massages and beauty treatments to restore health and vitality." So similar structure. For this, maybe "Customized pet photography sessions in Kwun Tong with professional services and 2-hour shoots." But maybe more appealing. Perhaps "Personalized pet photography in Kwun Tong with 2-hour sessions and professional styling." Hmm. Let me check the word count. The example's description is 14 words. Let's aim for that. "Customized pet photography in Kwun Tong with 2-hour sessions and professional social media references." That's 13 words. Good.
+
+Now, putting it all together. Let me verify each field again. Make sure the neighborhood is Kwun Tong. The address says "Guests customize the shooting location in Hong Kong (*Remote areas/New Territories will charge an additional transportation fee of $300)". But the example used the specific district. Since the main location is Kwun Tong, that's the neighborhood. The hidden gem score: if it's a unique photographer, maybe higher. But since the example's hotel spa had 10, and this is a photography service, perhaps 60. Let me check the highlights again. The service is customized location, 2-hour session, transportation fee included, professional services, social media references. It's a specific service, so maybe it's a hidden gem. But the example's hidden gem score was for a unique workshop. If this is a regular service, maybe lower. But since it's a customized location, maybe it's more unique. Let's go with 70. 
+
+Wait, the user instructions say: "A high score (80-100) for very local, unique workshops. A low score (0-30) for major, well-known hotel spas or international brands." This is a pet photography service. If it's a local photographer offering unique sessions, maybe 80. But if it's a known brand, lower. Since the name is Kate.jpggg, which seems like a personal brand, perhaps it's a hidden gem. So maybe 80. But the example had a hotel spa with 10. Let me think. The example's enrich_hiddenGemScore was 10 because it's a well-known hotel. If this is a local photographer, maybe higher. Let's say 80. 
+
+So, the final JSON would have enrich_hiddenGemScore: 80. 
+
+Enrich_tagsType: Photography is 80, maybe Art & Culture 20? Or Leisure? The example had Leisure and Wellness. Since photography is part of Art & Culture, maybe that's better. So "Photography": 80, "Art & Culture": 20. 
+
+Enrich_tagsGroup: The activity is for pet owners, so likely for friends or family. Let's say Friends: 50, Family: 50. Wait, but the sum must be 100. Maybe Friends: 60, Family: 40. Or Date: 30, Friends: 70. Since it's a 2-hour session, maybe it's for a date or friends. Let's go with Date: 30, Friends: 70. 
+
+Wait, the example had Date:50, Family:20, Friends:30. For a spa, which is more for relaxation. Here, a pet photo session could be for friends or family. Let me check the highlights again. The service is for pet photography, which is a personal activity. So maybe Friends: 50, Family: 50. But the sum must be 100. So Friends: 50, Family: 50. That's 100. 
+
+But the example had 100 points distributed. Let me make sure. The example's enrich_tagsGroup had Date:50, Family:20, Friends:30. So total 100. For this activity, since it's a photo session, maybe Friends and Family. Let's say Friends: 60, Family: 40. 
+
+Alternatively, if it's a service that people might book for their own pets, maybe it's more for individuals. But the group tags are for the type of group. The example's Date:50, Friends:30. Maybe here, Friends: 70, Family: 30. 
+
+Hmm. The user instructions don't specify, so I need to infer. Since the activity is a 2-hour session, it's likely for a small group, maybe friends or family. Let's go with Friends: 70, Family: 30. 
+
+Wait, the example's enrich_tagsGroup for the spa was Date:50, Family:20, Friends:30. So maybe for a photography session, it's more for friends or family. Let's say Friends: 50, Family: 50. But the sum must be 100. So Friends: 50, Family: 50. 
+
+But the example had 100 points. Let me check the example again. The example's enrich_tagsGroup is {"Date": 50, "Family": 20, "Friends": 30}. So total 100. So for this activity, maybe Friends and Family. Let's say Friends: 60, Family: 40. 
+
+Alternatively, if it's a service that's more for personal use, maybe the group is not as applicable. But the user wants to distribute 100 points across the group types. Maybe the primary group is Friends and Family. Let's assign Friends: 60, Family: 40. 
+
+Now, compiling all the fields. Let me make sure each part is correct. The local name in Chinese with the brand name in English. The neighborhood is Kwun Tong. The hidden gem score is 80. The text embedding combines title, summary, and highlights. The tagsType: Photography 80, Art & Culture 20. TagsBudget: High-end 1. TagsGroup: Friends 60, Family 40. Description is concise. 
+
+I think that's all. Let me structure the JSON accordingly.
+</think>
+
+{
+  "enrich_localName": "Kate.jpggg-Pet Photography | 客製化寵物攝影體驗 | 九龍塘",
+  "enrich_englishName": "Kate.jpggg-Pet Photography | Customized Location 2-Hour Photo Session | Kwun Tong",
+  "enrich_type": "events",
+  "enrich_neighborhood": "Kwun Tong",
+  "enrich_hiddenGemScore": 80,
+  "enrich_textEmbedding": "Customize your pet photography location in Hong Kong with Kate.jpggg's 2-hour session. This professional service allows clients to select their preferred setting, includes transportation fees for remote areas, and offers social media-ready photo references. Ideal for capturing personalized pet portraits with creative styling and professional expertise.",
+  "enrich_tagsType": {
+    "Food": 0,
+    "Nature": 10,
+    "Sports": 0,
+    "Leisure": 10,
+    "Shopping": 0,
+    "Wellness": 0,
+    "Adventure": 0,
+    "Nightlife": 0,
+    "Educational": 0,
+    "Hidden Gems": 20,
+    "Photography": 70,
+    "Art & Culture": 0,
+    "Entertainment": 0
+  },
+  "enrich_tagsBudget": {
+    "Free": 0,
+    "Budget friendly": 0,
+    "Moderately priced": 0,
+    "High-end": 1,
+    "Luxury": 0
+  },
+  "enrich_tagsGroup": {
+    "Date": 20,
+    "Kids": 0,
+    "Family": 30,
+    "Friends": 50,
+    "Business": 0,
+    "Colleagues": 0
+  },
+  "enrich_description": "Personalized pet photography in Kwun Tong with 2-hour sessions and professional styling for social media."
+}

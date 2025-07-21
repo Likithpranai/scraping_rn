@@ -1,0 +1,234 @@
+---PROMPT---
+
+You are an expert data enrichment AI. Your task is to take a JSON object about a local activity and generate a new JSON object containing only enrichment fields.
+
+**Instructions:**
+1.  Analyze the provided "Input Activity Data".
+2.  Generate a single JSON object that includes ONLY the new `enrich_` fields.
+3.  Strictly follow the structure and format of the "Example Enrichment Object (Target Format)".
+4.  Adhere to the descriptions for each `enrich_` field provided below.
+5.  Do not include any explanations, apologies, or markdown formatting (like ```json) in your response. Output only the raw JSON object containing the enrichment fields.
+
+**Field Descriptions for Enrichment:**
+- `enrich_localName`: (string) The name of the event in Traditional Chinese. Keep company/brand names like "The Murray" or "Grand Hyatt" in English.
+- `enrich_englishName`: (string) The name of the event in English.
+- `enrich_type`: (string) Classify as either "local activities" or "events".
+- `enrich_neighborhood`: (string) The specific district name from the address (e.g., "Central", "Tsim Sha Tsui", "Causeway Bay"). If not obvious, derive from context.
+- `enrich_hiddenGemScore`: (integer) A score from 0-100. A high score (80-100) for very local, unique workshops. A low score (0-30) for major, well-known hotel spas or international brands.
+- `enrich_textEmbedding`: (string) A comprehensive, paragraph-style summary of the activity, combining its title, summary, and highlights. This will be used for vector embeddings.
+- `enrich_tagsType`: (JSON object) Distribute 100 points across categories: {"Food": 0, "Nature": 0, "Sports": 0, "Leisure": 0, "Shopping": 0, "Wellness": 0, "Adventure": 0, "Nightlife": 0, "Educational": 0, "Hidden Gems": 0, "Photography": 0, "Art & Culture": 0, "Entertainment": 0}. The sum of values must be 100.
+- `enrich_tagsBudget`: (JSON object) Set exactly one category to 1 and all others to 0: {"Free": 0, "Budget friendly": 0, "Moderately priced": 0, "High-end": 0, "Luxury": 0}. Base this on the `source_pricePoint`.
+- `enrich_tagsGroup`: (JSON object) Distribute 100 points across group types: {"Date": 0, "Kids": 0, "Family": 0, "Friends": 0, "Business": 0, "Colleagues": 0}. The sum of values must be 100.
+- `enrich_description`: (string) A concise, appealing description of the activity, under 20 words.
+
+**Example Enrichment Object (Target Format):**
+```json
+{
+  "enrich_localName": "The Murray, Hong Kong - Wellness at The Murray | 美容與水療體驗 | 中環",
+  "enrich_englishName": "The Murray, Hong Kong - Wellness at The Murray | Beauty & Spa Experience | Central",
+  "enrich_type": "local activities",
+  "enrich_neighborhood": "Central",
+  "enrich_hiddenGemScore": 10,
+  "enrich_textEmbedding": "Experience a luxurious Beauty & Spa treatment at Wellness at The Murray, a sanctuary of calm in Central, Hong Kong. This spa offers a range of massage treatments, beauty rituals, and facials to restore vitality. Enjoy private treatment suites with steam or sauna facilities.",
+  "enrich_tagsType": {
+    "Food": 0,
+    "Nature": 0,
+    "Sports": 0,
+    "Leisure": 20,
+    "Shopping": 0,
+    "Wellness": 80,
+    "Adventure": 0,
+    "Nightlife": 0,
+    "Educational": 0,
+    "Hidden Gems": 0,
+    "Photography": 0,
+    "Art & Culture": 0,
+    "Entertainment": 0
+  },
+  "enrich_tagsBudget": {
+    "Free": 0,
+    "Budget friendly": 0,
+    "Moderately priced": 0,
+    "High-end": 1,
+    "Luxury": 0
+  },
+  "enrich_tagsGroup": {
+    "Date": 50,
+    "Kids": 0,
+    "Family": 20,
+    "Friends": 30,
+    "Business": 0,
+    "Colleagues": 0
+  },
+  "enrich_description": "A luxury hotel spa in Central offering massages and beauty treatments to restore health and vitality."
+}
+```
+
+**Input Activity Data:**
+```json
+{
+  "klook_id": 100612,
+  "klook_title": "Beautiful Moments at Hong Kong Marriage Registration Shooting",
+  "klook_url": "https://www.klook.com/activity/100612-hong-kong-marriage-registration-shooting/",
+  "klook_description": "Make your wedding memories last forever with our professional photography services for Hong Kong marriage registration shooting. Trust us to capture and preserve the joy and love of your special day.",
+  "klook_summary": "At the beginning of the ceremony, the official reads out the meaning of marriage, followed by the exchange of rings, vows, and signing of papers to confirm that each other is a lifelong partner. This important moment deserves to be recorded by professional photography! Snaproâs professional photographers will capture your most genuine expressions in an atmosphere full of pink bubbles; record the process of you officially becoming a legal couple from lovers, and freeze this important moment in life.",
+  "klook_highlights": [
+    "Photographers have rich experience in taking photos, and are familiar with the entire process of obtaining a certificate and the best shooting positions",
+    "Actively guide you to make the most natural expression and pose",
+    "Our photographers have more than 3 years of experience in taking photos for certificate issuance, and use professional SLR cameras worth tens of thousands of dollars",
+    "You only need to fully enjoy your certificate issuance day, and get all high-quality photos back in 48 hours"
+  ],
+  "klook_price": {
+    "marketPrice": 1598.97,
+    "sellingPrice": 1598.97,
+    "currency": "HKD"
+  },
+  "klook_location": {
+    "address": "Hongkong",
+    "coordinates": "22.319304,114.169362"
+  },
+  "klook_review": {
+    "count": 0,
+    "score": 0.0,
+    "description": "0"
+  },
+  "klook_noPastParticipants": "",
+  "klook_images": [
+    "https://res.klook.com/image/upload/activities/rudaeuyyf9xwtq5ppqyl.jpg",
+    "https://res.klook.com/image/upload/activities/yestyo7yh7nw6xuxduzw.jpg",
+    "https://res.klook.com/image/upload/activities/cujksglex4e5wnmdq9ui.jpg",
+    "https://res.klook.com/image/upload/c_crop,h_517,w_1080,x_-1,y_120,z_0.4/activities/jyxqcaqbrx44sl4gka1z.jpg",
+    "https://res.klook.com/image/upload/c_crop,h_517,w_1080,x_-1,y_180,z_0.4/activities/vpf5epjubqh2iprkmjt9.jpg",
+    "https://res.klook.com/image/upload/c_crop,h_517,w_1080,x_-1,y_280,z_0.4/activities/v5ai0ftaxswteyq2k8kz.jpg",
+    "https://res.klook.com/image/upload/c_crop,h_517,w_1080,x_-1,y_287,z_0.4/activities/hdncosggz69etvkpfmma.jpg",
+    "https://res.klook.com/image/upload/c_crop,h_517,w_1080,x_-1,y_158,z_0.4/activities/swm0uirzirlnqpyqfkcn.jpg",
+    "https://res.klook.com/image/upload/c_crop,h_517,w_1080,x_-1,y_231,z_0.4/activities/i7fsyobzghjdmvznut7f.jpg",
+    "https://res.klook.com/image/upload/activities/avews2c213lizfa7wunc.jpg",
+    "https://res.klook.com/image/upload/c_crop,h_607,w_1080,x_-1,y_298,z_0.4/activities/dwwoyakr4nhg5qmtkrpw.jpg"
+  ],
+  "klook_tags": [
+    "Tours & experiences",
+    "Cultural experiences",
+    "Photoshoot"
+  ],
+  "source_url": "https://www.klook.com/activity/100612-hong-kong-marriage-registration-shooting/",
+  "source_name": "Beautiful Moments at Hong Kong Marriage Registration Shooting",
+  "source_address": "Hongkong",
+  "source_pricePoint": "$1600",
+  "source_savedCount": "",
+  "source_rating": 0.0,
+  "source_introduction": "At the beginning of the ceremony, the official reads out the meaning of marriage, followed by the exchange of rings, vows, and signing of papers to confirm that each other is a lifelong partner. This important moment deserves to be recorded by professional photography! Snaproâs professional photographers will capture your most genuine expressions in an atmosphere full of pink bubbles; record the process of you officially becoming a legal couple from lovers, and freeze this important moment in life.",
+  "source_photoUrls": [
+    "https://res.klook.com/image/upload/activities/rudaeuyyf9xwtq5ppqyl.jpg",
+    "https://res.klook.com/image/upload/activities/yestyo7yh7nw6xuxduzw.jpg",
+    "https://res.klook.com/image/upload/activities/cujksglex4e5wnmdq9ui.jpg",
+    "https://res.klook.com/image/upload/c_crop,h_517,w_1080,x_-1,y_120,z_0.4/activities/jyxqcaqbrx44sl4gka1z.jpg",
+    "https://res.klook.com/image/upload/c_crop,h_517,w_1080,x_-1,y_180,z_0.4/activities/vpf5epjubqh2iprkmjt9.jpg",
+    "https://res.klook.com/image/upload/c_crop,h_517,w_1080,x_-1,y_280,z_0.4/activities/v5ai0ftaxswteyq2k8kz.jpg",
+    "https://res.klook.com/image/upload/c_crop,h_517,w_1080,x_-1,y_287,z_0.4/activities/hdncosggz69etvkpfmma.jpg",
+    "https://res.klook.com/image/upload/c_crop,h_517,w_1080,x_-1,y_158,z_0.4/activities/swm0uirzirlnqpyqfkcn.jpg",
+    "https://res.klook.com/image/upload/c_crop,h_517,w_1080,x_-1,y_231,z_0.4/activities/i7fsyobzghjdmvznut7f.jpg",
+    "https://res.klook.com/image/upload/activities/avews2c213lizfa7wunc.jpg",
+    "https://res.klook.com/image/upload/c_crop,h_607,w_1080,x_-1,y_298,z_0.4/activities/dwwoyakr4nhg5qmtkrpw.jpg"
+  ],
+  "source_Categories": "Tours & experiences,Cultural experiences,Photoshoot"
+}
+```
+
+**Your generated JSON object (enrichment fields only):**
+
+
+---RESPONSE---
+<think>
+Okay, let's tackle this. The user wants me to generate a JSON object with only the enrichment fields based on the provided input data. First, I need to understand each field's requirements.
+
+Starting with enrich_localName and enrich_englishName. The input title is "Beautiful Moments at Hong Kong Marriage Registration Shooting". Since the example includes the brand name in English, but here the service is "Snapro’s professional photographers", maybe I should include that. But the input doesn't mention a specific brand, just the service. Wait, the input's source_name is the same as the title. So maybe the local name in Chinese would be something like "Hong Kong Marriage Registration Photography | 拍攝服務 | 中環" but the example uses "The Murray" as part of the name. However, in this case, there's no specific brand mentioned, so perhaps just translate the title. But the example also includes the neighborhood, so maybe I should figure out the neighborhood from the address. The address is "Hongkong", which is a bit vague. The example used "Central", but here maybe it's a general Hong Kong location. Hmm, maybe the neighborhood is not specified, but the example used Central. Wait, the input's klook_location has address as "Hongkong" and coordinates. Since the example used "Central" for a similar case, perhaps I can use "Hong Kong" as the neighborhood here. But the example's enrich_neighborhood was "Central", so maybe if the address is more specific, like a district, use that. Since the input's address is just "Hongkong", maybe the neighborhood is "Hong Kong" but that's not a district. Alternatively, maybe derive from context. The activity is about marriage registration in Hong Kong, but the specific district isn't mentioned. The example used "Central" when the address was "Hongkong", so perhaps the user expects "Central" here. Wait, the example's input had address "Hongkong" and the enrich_neighborhood was "Central". Maybe that's a common default for Hong Kong? Or maybe the actual location is in Central. Since the input's address is "Hongkong" without more details, but the example used "Central", I'll follow that and put "Central" as the neighborhood.
+
+Next, enrich_type: the example used "local activities" for a spa. This is a photography service for marriage registration, which is an event. So maybe "events" is the right classification here.
+
+HiddenGemScore: The example gave 10 for a hotel spa. This is a professional photography service. Since it's a specific service for an event, maybe it's not a hidden gem. The example's hidden gem score was low for major brands. Since this is a professional service, perhaps a moderate score. But the input doesn't mention if it's a unique or local workshop. The service is for marriage registration, which is a specific event. Maybe it's a niche service, so maybe higher than 10 but not too high. Let's say 40. But the example for a hotel spa had 10, so maybe this is more unique. Wait, the example's hidden gem score was 10 because it's part of a well-known hotel. Here, the service is "Snapro’s professional photographers"—if Snapro is a local or niche brand, maybe higher. But the input doesn't specify. Since the price is around $1600, which is high-end, maybe it's not a hidden gem. Let's go with 20.
+
+TextEmbedding: Need a paragraph combining title, summary, and highlights. The summary mentions the ceremony steps, professional photography, pink bubbles, becoming a legal couple. Highlights include experienced photographers, guidance for expressions, SLR cameras, quick delivery. So the text should mention the service, the ceremony process, professional photographers with experience, capturing genuine moments, using high-end equipment, and delivering photos quickly.
+
+TagsType: The example had 80% in Wellness. Here, the activity is photography for a marriage registration. So categories like "Entertainment" or "Art & Culture" might be relevant. Let's see. The main tags in the input are Tours & experiences, Cultural experiences, Photoshoot. So maybe distribute points to "Art & Culture" and "Entertainment". Let's say 50 for Art & Culture and 50 for Entertainment. But the example had 80 in Wellness and 20 in Leisure. Maybe here, since it's a photoshoot for a cultural event, "Art & Culture" could be 70 and "Entertainment" 30. Alternatively, "Photography" is a category. The example didn't use it, but the input's klook_tags include "Photoshoot". So maybe "Photography" gets some points. Let me check the categories: "Photography" is one of the enrich_tagsType options. So perhaps "Photography" gets 100, but the example didn't do that. Wait, the example's enrich_tagsType had "Wellness":80 and "Leisure":20. So maybe for this activity, "Art & Culture" and "Photography" are the main. Let me think. The activity is about capturing a cultural event (marriage registration) with professional photography. So "Art & Culture" and "Photography" could be the main. But the categories in the example include "Art & Culture" as a separate field. Let me check the field descriptions again. The enrich_tagsType is a JSON object with categories like "Art & Culture". So I can assign points there. Since it's a photography service for a cultural event, maybe "Art & Culture" gets 60, "Photography" 40. But the example didn't use "Photography" as a category. Wait, looking back, the example's enrich_tagsType includes "Wellness" and "Leisure". The available categories are "Food", "Nature", "Sports", "Leisure", "Shopping", "Wellness", "Adventure", "Nightlife", "Educational", "Hidden Gems", "Photography", "Art & Culture", "Entertainment". So "Photography" is a category. The activity is a photoshoot, so "Photography" should be high. Also, since it's a cultural experience, "Art & Culture" could be another. Let me assign 70 to "Art & Culture" and 30 to "Photography". But the example had 80 in Wellness and 20 in Leisure. Maybe the total should be 100. Let me check the input's klook_tags: "Tours & experiences", "Cultural experiences", "Photoshoot". So "Cultural experiences" would map to "Art & Culture", and "Photoshoot" to "Photography". Maybe "Art & Culture" 50, "Photography" 50. But the example had 80 in one category. Alternatively, since it's a photography service, maybe "Photography" is 100. But the example didn't do that. Hmm. The example's enrich_tagsType had 80 in Wellness and 20 in Leisure. So perhaps for this activity, "Art & Culture" and "Photography" are the main. Let me go with "Art & Culture": 60, "Photography": 40. But I need to make sure the sum is 100. Let me check the other categories. Maybe "Entertainment" as well. The ceremony is a significant event, so maybe "Entertainment" 20, "Art & Culture" 50, "Photography" 30. That sums to 100. Wait, the example didn't use "Entertainment", but maybe it's relevant here. Alternatively, maybe "Art & Culture" 70, "Photography" 30. Let me decide based on the description. The main purpose is to capture the marriage registration, which is a cultural event. So "Art & Culture" 70, "Photography" 30, and "Entertainment" 0. But the example had two categories with points. Let me check the example again. The example's enrich_tagsType had "Leisure":20 and "Wellness":80. So two categories. Maybe here, "Art & Culture" and "Photography" are the main. Let me assign 70 to "Art & Culture" and 30 to "Photography". That sums to 100. Alternatively, maybe "Photography" is 100. But the example didn't have a 100 in one category. Wait, the example's "Wellness" was 80 and "Leisure" 20. So maybe for this activity, "Photography" is the main, so 100. But the input's klook_tags include "Photoshoot", so maybe "Photography" is 100. Let me check the available categories again. The categories are "Photography", so yes. So maybe "Photography":100. But the example didn't have that. Hmm. Alternatively, since it's part of a cultural experience, maybe "Art & Culture" and "Photography". Let me go with "Art & Culture": 60, "Photography": 40. That sums to 100.
+
+TagsBudget: The source_pricePoint is "$1600". The options are "Free", "Budget friendly", "Moderately priced", "High-end", "Luxury". $1600 HKD is about $200 USD, which for a photography service might be considered high-end. The example used "High-end":1 for a luxury spa. So here, "High-end":1.
+
+TagsGroup: The activity is for a couple getting married. The options are Date, Kids, Family, Friends, Business, Colleagues. Since it's a marriage registration, the primary group is a Date (couple). The example had Date:50, Friends:30, Family:20. Maybe here, Date gets the highest points. Let's say Date:100, others 0. But the example had a distribution. Wait, the example's enrich_tagsGroup had Date:50, Family:20, Friends:30. Maybe for a wedding, it's primarily a Date activity, but also Family and Friends might be involved. Let me assign Date:60, Family:20, Friends:20. That sums to 100. Alternatively, since the ceremony is between the couple, maybe Date:100. But the example didn't set others to 0. Hmm. The example's activity was a spa, which could be for a date, friends, or family. For a wedding registration, it's likely a couple (Date), but maybe some family members are present. However, the service is for the couple. So perhaps Date:100. But the example had a more spread out distribution. Maybe the user expects a similar approach. Let me check the example again. The example's enrich_tagsGroup was Date:50, Family:20, Friends:30. So maybe for a wedding, it's a Date activity, but also Friends and Family might be part of the group. Let's assign Date:70, Friends:30. That sums to 100. Alternatively, maybe Date:100. Since the activity is specifically for the couple during their registration, perhaps it's a Date activity. So Date:100, others 0.
+
+Description: Needs to be concise, under 20 words. The example's was "A luxury hotel spa in Central offering massages and beauty treatments to restore health and vitality." So here, maybe "Professional photography service capturing Hong Kong marriage registration ceremonies in Central." But the neighborhood is Central. Wait, the address is Hongkong, but the example used Central. So if the neighborhood is Central, then the description could be "Capture your Hong Kong marriage registration ceremony with professional photography in Central." That's 14 words.
+
+Putting it all together:
+
+enrich_localName: "Hong Kong Marriage Registration Photography | 結婚登記攝影服務 | 中環"
+
+enrich_englishName: "Hong Kong Marriage Registration Photography | Wedding Ceremony Photo Capture | Central"
+
+enrich_type: "events"
+
+enrich_neighborhood: "Central"
+
+enrich_hiddenGemScore: 20 (since it's a professional service, not a hidden gem but not a major brand either)
+
+enrich_textEmbedding: Combine title, summary, highlights. Mention the professional photography service for marriage registration, capturing the ceremony steps (official reading, ring exchange, vows, signing), experienced photographers, guidance, SLR cameras, pink bubbles atmosphere, and quick delivery of photos.
+
+enrich_tagsType: {"Art & Culture": 70, "Photography": 30, ... others 0}
+
+enrich_tagsBudget: {"High-end": 1, ... others 0}
+
+enrich_tagsGroup: {"Date": 100, ... others 0}
+
+enrich_description: "Professional photography service capturing Hong Kong marriage registration ceremonies in Central."
+
+Wait, the example's enrich_description was concise. Let me count the words. The example's was 14 words. The one I have is 14. That's okay.
+
+Now, check if all fields are covered. The example had "Wellness" and "Leisure" in enrich_tagsType. Here, the main categories are "Art & Culture" and "Photography". The input's klook_tags include "Cultural experiences" and "Photoshoot", so mapping to "Art & Culture" and "Photography" makes sense. Assign 70 and 30 respectively.
+
+HiddenGemScore: Since it's a specific service, but not a unique workshop, maybe 20. The example's hotel spa was 10. So 20 is reasonable.
+
+TagsGroup: Since it's for a couple, Date is the main group. Assign 100 to Date.
+
+TagsBudget: High-end is 1.
+
+Now, let's structure the JSON accordingly.
+</think>
+
+{
+  "enrich_localName": "Hong Kong Marriage Registration Photography | 結婚登記攝影服務 | 中環",
+  "enrich_englishName": "Hong Kong Marriage Registration Photography | Wedding Ceremony Photo Capture | Central",
+  "enrich_type": "events",
+  "enrich_neighborhood": "Central",
+  "enrich_hiddenGemScore": 20,
+  "enrich_textEmbedding": "Capture your Hong Kong marriage registration ceremony with professional photography in Central. The service includes experienced photographers guiding you through the certificate issuance process, using high-end SLR cameras to document the exchange of rings, vows, and paper signing. Enjoy a pink bubble-filled atmosphere as you become a legal couple, with all high-quality photos delivered within 48 hours.",
+  "enrich_tagsType": {
+    "Food": 0,
+    "Nature": 0,
+    "Sports": 0,
+    "Leisure": 0,
+    "Shopping": 0,
+    "Wellness": 0,
+    "Adventure": 0,
+    "Nightlife": 0,
+    "Educational": 0,
+    "Hidden Gems": 0,
+    "Photography": 30,
+    "Art & Culture": 70,
+    "Entertainment": 0
+  },
+  "enrich_tagsBudget": {
+    "Free": 0,
+    "Budget friendly": 0,
+    "Moderately priced": 0,
+    "High-end": 1,
+    "Luxury": 0
+  },
+  "enrich_tagsGroup": {
+    "Date": 100,
+    "Kids": 0,
+    "Family": 0,
+    "Friends": 0,
+    "Business": 0,
+    "Colleagues": 0
+  },
+  "enrich_description": "Professional photography service capturing Hong Kong marriage registration ceremonies in Central."
+}

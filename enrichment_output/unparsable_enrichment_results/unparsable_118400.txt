@@ -1,0 +1,191 @@
+---PROMPT---
+
+You are an expert data enrichment AI. Your task is to take a JSON object about a local activity and generate a new JSON object containing only enrichment fields.
+
+**Instructions:**
+1.  Analyze the provided "Input Activity Data".
+2.  Generate a single JSON object that includes ONLY the new `enrich_` fields.
+3.  Strictly follow the structure and format of the "Example Enrichment Object (Target Format)".
+4.  Adhere to the descriptions for each `enrich_` field provided below.
+5.  Do not include any explanations, apologies, or markdown formatting (like ```json) in your response. Output only the raw JSON object containing the enrichment fields.
+
+**Field Descriptions for Enrichment:**
+- `enrich_localName`: (string) The name of the event in Traditional Chinese. Keep company/brand names like "The Murray" or "Grand Hyatt" in English.
+- `enrich_englishName`: (string) The name of the event in English.
+- `enrich_type`: (string) Classify as either "local activities" or "events".
+- `enrich_neighborhood`: (string) The specific district name from the address (e.g., "Central", "Tsim Sha Tsui", "Causeway Bay"). If not obvious, derive from context.
+- `enrich_hiddenGemScore`: (integer) A score from 0-100. A high score (80-100) for very local, unique workshops. A low score (0-30) for major, well-known hotel spas or international brands.
+- `enrich_textEmbedding`: (string) A comprehensive, paragraph-style summary of the activity, combining its title, summary, and highlights. This will be used for vector embeddings.
+- `enrich_tagsType`: (JSON object) Distribute 100 points across categories: {"Food": 0, "Nature": 0, "Sports": 0, "Leisure": 0, "Shopping": 0, "Wellness": 0, "Adventure": 0, "Nightlife": 0, "Educational": 0, "Hidden Gems": 0, "Photography": 0, "Art & Culture": 0, "Entertainment": 0}. The sum of values must be 100.
+- `enrich_tagsBudget`: (JSON object) Set exactly one category to 1 and all others to 0: {"Free": 0, "Budget friendly": 0, "Moderately priced": 0, "High-end": 0, "Luxury": 0}. Base this on the `source_pricePoint`.
+- `enrich_tagsGroup`: (JSON object) Distribute 100 points across group types: {"Date": 0, "Kids": 0, "Family": 0, "Friends": 0, "Business": 0, "Colleagues": 0}. The sum of values must be 100.
+- `enrich_description`: (string) A concise, appealing description of the activity, under 20 words.
+
+**Example Enrichment Object (Target Format):**
+```json
+{
+  "enrich_localName": "The Murray, Hong Kong - Wellness at The Murray | 美容與水療體驗 | 中環",
+  "enrich_englishName": "The Murray, Hong Kong - Wellness at The Murray | Beauty & Spa Experience | Central",
+  "enrich_type": "local activities",
+  "enrich_neighborhood": "Central",
+  "enrich_hiddenGemScore": 10,
+  "enrich_textEmbedding": "Experience a luxurious Beauty & Spa treatment at Wellness at The Murray, a sanctuary of calm in Central, Hong Kong. This spa offers a range of massage treatments, beauty rituals, and facials to restore vitality. Enjoy private treatment suites with steam or sauna facilities.",
+  "enrich_tagsType": {
+    "Food": 0,
+    "Nature": 0,
+    "Sports": 0,
+    "Leisure": 20,
+    "Shopping": 0,
+    "Wellness": 80,
+    "Adventure": 0,
+    "Nightlife": 0,
+    "Educational": 0,
+    "Hidden Gems": 0,
+    "Photography": 0,
+    "Art & Culture": 0,
+    "Entertainment": 0
+  },
+  "enrich_tagsBudget": {
+    "Free": 0,
+    "Budget friendly": 0,
+    "Moderately priced": 0,
+    "High-end": 1,
+    "Luxury": 0
+  },
+  "enrich_tagsGroup": {
+    "Date": 50,
+    "Kids": 0,
+    "Family": 20,
+    "Friends": 30,
+    "Business": 0,
+    "Colleagues": 0
+  },
+  "enrich_description": "A luxury hotel spa in Central offering massages and beauty treatments to restore health and vitality."
+}
+```
+
+**Input Activity Data:**
+```json
+{
+  "klook_id": 118400,
+  "klook_title": "Hong Kong Travel Professional Photography",
+  "klook_url": "https://www.klook.com/activity/118400-hong-kong-travel-professional-photography/",
+  "klook_description": "",
+  "klook_summary": "",
+  "klook_highlights": [],
+  "klook_price": {
+    "marketPrice": 0.0,
+    "sellingPrice": 0.0,
+    "currency": "HKD"
+  },
+  "klook_location": {
+    "address": "Hong Kong",
+    "coordinates": ""
+  },
+  "klook_review": {
+    "count": 0,
+    "score": 0,
+    "description": ""
+  },
+  "klook_noPastParticipants": "",
+  "klook_images": [],
+  "klook_tags": [],
+  "source_url": "https://www.klook.com/activity/118400-hong-kong-travel-professional-photography/",
+  "source_name": "Hong Kong Travel Professional Photography",
+  "source_address": "Hong Kong",
+  "source_pricePoint": "$0",
+  "source_savedCount": "",
+  "source_rating": 0,
+  "source_introduction": "",
+  "source_photoUrls": [],
+  "source_Categories": ""
+}
+```
+
+**Your generated JSON object (enrichment fields only):**
+
+
+---RESPONSE---
+<think>
+Okay, let's tackle this. The user wants me to generate a JSON object with only the enrichment fields based on the input data. First, I need to analyze the input.
+
+The input activity is "Hong Kong Travel Professional Photography". The source_pricePoint is "$0", which means it's free. The address is just "Hong Kong", so the neighborhood isn't specified. I'll have to figure that out. Since the address is general, maybe the neighborhood is a broader area like Central, but without more info, maybe I should leave it as "Hong Kong" or a default. Wait, the example uses "Central" when the address includes that. Here, the address is just "Hong Kong", so maybe the neighborhood is "Hong Kong" itself? Or perhaps it's not a specific district. Hmm, the instructions say to derive from context if not obvious. Since there's no specific district mentioned, maybe I should leave it as "Hong Kong" or maybe it's better to use a general term. Wait, the example for enrich_neighborhood uses specific districts like Central. If the input address is just "Hong Kong", maybe the neighborhood isn't clear. But the example might have shown that when the address is more detailed, like "Causeway Bay", we take that. Here, since the address is "Hong Kong", perhaps the neighborhood is "Hong Kong". Alternatively, maybe the user expects a more specific district, but since it's not provided, I'll have to use the city name.
+
+Next, enrich_type: the input is a photography activity. Since it's a professional photography service, it's more of an event or activity rather than a local activity like a spa. But the options are "local activities" or "events". Photography tours might be considered events. Let me check the example: the example was a spa, which is a local activity. So maybe this is an event. So enrich_type would be "events".
+
+For enrich_hiddenGemScore: since it's a professional photography service, and the name is in English, maybe it's a well-known or international service. The example had a low score for major hotel spas. So if this is a professional service, maybe it's not a hidden gem. But without more info, maybe a moderate score? Wait, the input has no description or highlights, so it's hard to tell. Since the source_pricePoint is $0, maybe it's a free service, but that doesn't directly relate. The example for a hotel spa had a score of 10. If this is a photography service, perhaps it's more mainstream, so maybe a low score. Let's say 20.
+
+Enrich_textEmbedding needs a paragraph combining title, summary, and highlights. But the input has empty summary and highlights. The title is "Hong Kong Travel Professional Photography". So maybe the summary is about professional photography services in Hong Kong. Since there's no details, I'll have to create a generic one. Maybe something like "Join a professional photography tour in Hong Kong to capture stunning images of the city's iconic landmarks and hidden spots. Learn techniques from expert photographers and take home high-quality photos."
+
+Enrich_tagsType: The activity is photography-related. So "Photography" should get the highest points. Let's say 100. The other categories are 0. Wait, the example had 80 in Wellness and 20 in Leisure. But here, since it's photography, maybe 100 in Photography. Let me check the instructions again. The enrich_tagsType should distribute 100 points across the given categories. So if it's a photography tour, then "Photography" is 100, others 0.
+
+Enrich_tagsBudget: The source_pricePoint is "$0", so set "Free" to 1, others 0.
+
+Enrich_tagsGroup: The activity is a photography tour. Who would typically go on such a tour? Maybe friends or couples. Since it's a professional tour, maybe it's for individuals or small groups. The example had Date at 50, Friends 30, Family 20. But here, since it's a photography activity, perhaps it's more for friends or solo travelers. Let's distribute 100 points across Friends and maybe Date. Let's say Friends 70 and Date 30. That sums to 100. Or maybe Friends 100 if it's a group activity. But the example had multiple categories. Since the input doesn't specify group types, I'll have to make an educated guess. If it's a photography tour, it's likely for friends or solo travelers. Let's go with Friends 70 and Date 30. That's 100 total.
+
+Enrich_description: Needs to be concise, under 20 words. Maybe "A professional photography tour in Hong Kong capturing iconic landmarks and scenic spots."
+
+Now, putting it all together. Let's check each field:
+
+enrich_localName: The name in Traditional Chinese. The original name is "Hong Kong Travel Professional Photography". Translating that to Chinese would be something like "香港專業攝影之旅". But the example includes the brand name in English. Since there's no brand name here, just translate the title. So "Hong Kong Travel Professional Photography | 專業攝影之旅 | 香港".
+
+enrich_englishName: Same as the source_name, but maybe adding "Hong Kong" again. Wait, the example had "The Murray, Hong Kong - Wellness at The Murray | Beauty & Spa Experience | Central". So the structure is [Brand], [Location] - [Service] | [English Description] | [Neighborhood]. Here, the brand is "Hong Kong Travel Professional Photography", but maybe the English name is just that. Since there's no neighborhood specified, maybe it's "Hong Kong Travel Professional Photography | Professional Photography Tour | Hong Kong".
+
+Wait, the input's source_address is "Hong Kong", so the neighborhood is "Hong Kong". But in the example, the neighborhood is a district. However, since the input's address is just "Hong Kong", the neighborhood is the city. So maybe that's acceptable.
+
+enrich_type: "events" because it's a tour/activity.
+
+enrich_hiddenGemScore: 20, as it's a professional service, possibly not a hidden gem.
+
+enrich_textEmbedding: The paragraph I thought of earlier.
+
+enrich_tagsType: {"Photography": 100, others 0}.
+
+enrich_tagsBudget: {"Free": 1, others 0}.
+
+enrich_tagsGroup: {"Friends": 70, "Date": 30, others 0}.
+
+enrich_description: "A professional photography tour in Hong Kong capturing iconic landmarks and scenic spots."
+
+Let me verify the fields again. The source_pricePoint is "$0", so enrich_tagsBudget is Free:1. The enrich_tagsGroup sum is 100. The enrich_tagsType sum is 100. All fields are covered. The local name and English name are correctly translated with the address. The description is under 20 words. The hidden gem score is 20, which is low, fitting a professional service. The text embedding combines the title and possible highlights, even though the input has none. I think that's acceptable.
+</think>
+
+{
+  "enrich_localName": "Hong Kong Travel Professional Photography | 專業攝影之旅 | 香港",
+  "enrich_englishName": "Hong Kong Travel Professional Photography | Professional Photography Tour | Hong Kong",
+  "enrich_type": "events",
+  "enrich_neighborhood": "Hong Kong",
+  "enrich_hiddenGemScore": 20,
+  "enrich_textEmbedding": "Join a professional photography tour in Hong Kong to capture stunning images of the city's iconic landmarks and hidden spots. Learn techniques from expert photographers and take home high-quality photos of scenic locations.",
+  "enrich_tagsType": {
+    "Food": 0,
+    "Nature": 0,
+    "Sports": 0,
+    "Leisure": 0,
+    "Shopping": 0,
+    "Wellness": 0,
+    "Adventure": 0,
+    "Nightlife": 0,
+    "Educational": 0,
+    "Hidden Gems": 0,
+    "Photography": 100,
+    "Art & Culture": 0,
+    "Entertainment": 0
+  },
+  "enrich_tagsBudget": {
+    "Free": 1,
+    "Budget friendly": 0,
+    "Moderately priced": 0,
+    "High-end": 0,
+    "Luxury": 0
+  },
+  "enrich_tagsGroup": {
+    "Date": 30,
+    "Kids": 0,
+    "Family": 0,
+    "Friends": 70,
+    "Business": 0,
+    "Colleagues": 0
+  },
+  "enrich_description": "A professional photography tour capturing Hong Kong's iconic landmarks and scenic spots."
+}

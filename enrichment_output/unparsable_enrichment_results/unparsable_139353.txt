@@ -1,0 +1,229 @@
+---PROMPT---
+
+You are an expert data enrichment AI. Your task is to take a JSON object about a local activity and generate a new JSON object containing only enrichment fields.
+
+**Instructions:**
+1.  Analyze the provided "Input Activity Data".
+2.  Generate a single JSON object that includes ONLY the new `enrich_` fields.
+3.  Strictly follow the structure and format of the "Example Enrichment Object (Target Format)".
+4.  Adhere to the descriptions for each `enrich_` field provided below.
+5.  Do not include any explanations, apologies, or markdown formatting (like ```json) in your response. Output only the raw JSON object containing the enrichment fields.
+
+**Field Descriptions for Enrichment:**
+- `enrich_localName`: (string) The name of the event in Traditional Chinese. Keep company/brand names like "The Murray" or "Grand Hyatt" in English.
+- `enrich_englishName`: (string) The name of the event in English.
+- `enrich_type`: (string) Classify as either "local activities" or "events".
+- `enrich_neighborhood`: (string) The specific district name from the address (e.g., "Central", "Tsim Sha Tsui", "Causeway Bay"). If not obvious, derive from context.
+- `enrich_hiddenGemScore`: (integer) A score from 0-100. A high score (80-100) for very local, unique workshops. A low score (0-30) for major, well-known hotel spas or international brands.
+- `enrich_textEmbedding`: (string) A comprehensive, paragraph-style summary of the activity, combining its title, summary, and highlights. This will be used for vector embeddings.
+- `enrich_tagsType`: (JSON object) Distribute 100 points across categories: {"Food": 0, "Nature": 0, "Sports": 0, "Leisure": 0, "Shopping": 0, "Wellness": 0, "Adventure": 0, "Nightlife": 0, "Educational": 0, "Hidden Gems": 0, "Photography": 0, "Art & Culture": 0, "Entertainment": 0}. The sum of values must be 100.
+- `enrich_tagsBudget`: (JSON object) Set exactly one category to 1 and all others to 0: {"Free": 0, "Budget friendly": 0, "Moderately priced": 0, "High-end": 0, "Luxury": 0}. Base this on the `source_pricePoint`.
+- `enrich_tagsGroup`: (JSON object) Distribute 100 points across group types: {"Date": 0, "Kids": 0, "Family": 0, "Friends": 0, "Business": 0, "Colleagues": 0}. The sum of values must be 100.
+- `enrich_description`: (string) A concise, appealing description of the activity, under 20 words.
+
+**Example Enrichment Object (Target Format):**
+```json
+{
+  "enrich_localName": "The Murray, Hong Kong - Wellness at The Murray | 美容與水療體驗 | 中環",
+  "enrich_englishName": "The Murray, Hong Kong - Wellness at The Murray | Beauty & Spa Experience | Central",
+  "enrich_type": "local activities",
+  "enrich_neighborhood": "Central",
+  "enrich_hiddenGemScore": 10,
+  "enrich_textEmbedding": "Experience a luxurious Beauty & Spa treatment at Wellness at The Murray, a sanctuary of calm in Central, Hong Kong. This spa offers a range of massage treatments, beauty rituals, and facials to restore vitality. Enjoy private treatment suites with steam or sauna facilities.",
+  "enrich_tagsType": {
+    "Food": 0,
+    "Nature": 0,
+    "Sports": 0,
+    "Leisure": 20,
+    "Shopping": 0,
+    "Wellness": 80,
+    "Adventure": 0,
+    "Nightlife": 0,
+    "Educational": 0,
+    "Hidden Gems": 0,
+    "Photography": 0,
+    "Art & Culture": 0,
+    "Entertainment": 0
+  },
+  "enrich_tagsBudget": {
+    "Free": 0,
+    "Budget friendly": 0,
+    "Moderately priced": 0,
+    "High-end": 1,
+    "Luxury": 0
+  },
+  "enrich_tagsGroup": {
+    "Date": 50,
+    "Kids": 0,
+    "Family": 20,
+    "Friends": 30,
+    "Business": 0,
+    "Colleagues": 0
+  },
+  "enrich_description": "A luxury hotel spa in Central offering massages and beauty treatments to restore health and vitality."
+}
+```
+
+**Input Activity Data:**
+```json
+{
+  "klook_id": 139353,
+  "klook_title": "Hand Drip Coffee and Roasting Workshop",
+  "klook_url": "https://www.klook.com/activity/139353-hand-drip-coffee-and-roasting-workshop",
+  "klook_description": "Specialty Coffee Roasting and Hand-Pour Experience Class",
+  "klook_summary": "Workshop content includes:\nLearn about specialty coffee\nUnderstand the difference between popular coffee and hand-brewed coffee on the market\nLearn how to taste coffee\nUnderstand the roasting degree and characteristics of coffee beans\nExperience hand-roasted coffee beans (100g of green beans)\nLearn the basic principles of coffee roasting\nLearn about hand-pour coffee brewing tools\nExplain basic brewing theory and techniques\nDemonstration and explanation of hand brewed coffee\nApplication practice experience\nWorkshop location: Mei Tak Industrial Building\nDay: Free Date\nDuration: 2.5 hours",
+  "klook_highlights": [
+    "Beginner Class",
+    "Learn about specialty coffee roasting and hand brewing experience",
+    "After learning, you can bake at home"
+  ],
+  "klook_price": {
+    "marketPrice": 897.96,
+    "sellingPrice": 612.69,
+    "currency": "HKD"
+  },
+  "klook_location": {
+    "address": "Mei Tak Industrial Building",
+    "coordinates": "22.3085861,114.2229843"
+  },
+  "klook_review": {
+    "count": 2722723,
+    "score": 4.4,
+    "description": "New Activity"
+  },
+  "klook_noPastParticipants": "20k+ booked",
+  "klook_images": [
+    "https://res.klook.com/image/upload/c_fill,w_800,h_560/activities/yhc7lbhbflkjjyv0g1aq.jpg",
+    "https://res.klook.com/image/upload/c_fill,w_500,h_400/activities/ijvag1kju2xmq7mrqtbu.jpg",
+    "https://res.klook.com/image/upload/activities/txhhsasfpbsanjzppsnd.jpg",
+    "https://res.klook.com/image/upload/activities/moolbovgkakqeqml98hv.jpg",
+    "https://res.klook.com/image/upload/activities/htwflaxvajuyegedkejj.jpg",
+    "https://res.klook.com/image/upload/activities/icomthqmojctye5a463b.jpg",
+    "https://res.klook.com/image/upload/activities/cojhfzlzkmbs5fbi2ret.jpg",
+    "https://res.klook.com/image/upload/activities/p90cxcrw2wcub43z6qns.jpg",
+    "https://res.klook.com/image/upload/activities/yrzc2gqm3bogmjs8gmr6.jpg",
+    "https://res.klook.com/image/upload/activities/cksrx0mzrzmacv75jrdb.jpg",
+    "https://res.klook.com/image/upload/activities/k4vab4oppvuikpayvqps.jpg"
+  ],
+  "klook_tags": [
+    "Tours & experiences",
+    "Cultural experiences",
+    "Workshops"
+  ],
+  "source_url": "https://www.klook.com/activity/139353-hand-drip-coffee-and-roasting-workshop",
+  "source_name": "Hand Drip Coffee and Roasting Workshop",
+  "source_address": "Mei Tak Industrial Building",
+  "source_pricePoint": "$610",
+  "source_savedCount": "20k+ booked",
+  "source_rating": 4.4,
+  "source_introduction": "Workshop content includes:\nLearn about specialty coffee\nUnderstand the difference between popular coffee and hand-brewed coffee on the market\nLearn how to taste coffee\nUnderstand the roasting degree and characteristics of coffee beans\nExperience hand-roasted coffee beans (100g of green beans)\nLearn the basic principles of coffee roasting\nLearn about hand-pour coffee brewing tools\nExplain basic brewing theory and techniques\nDemonstration and explanation of hand brewed coffee\nApplication practice experience\nWorkshop location: Mei Tak Industrial Building\nDay: Free Date\nDuration: 2.5 hours",
+  "source_photoUrls": [
+    "https://res.klook.com/image/upload/c_fill,w_800,h_560/activities/yhc7lbhbflkjjyv0g1aq.jpg",
+    "https://res.klook.com/image/upload/c_fill,w_500,h_400/activities/ijvag1kju2xmq7mrqtbu.jpg",
+    "https://res.klook.com/image/upload/activities/txhhsasfpbsanjzppsnd.jpg",
+    "https://res.klook.com/image/upload/activities/moolbovgkakqeqml98hv.jpg",
+    "https://res.klook.com/image/upload/activities/htwflaxvajuyegedkejj.jpg",
+    "https://res.klook.com/image/upload/activities/icomthqmojctye5a463b.jpg",
+    "https://res.klook.com/image/upload/activities/cojhfzlzkmbs5fbi2ret.jpg",
+    "https://res.klook.com/image/upload/activities/p90cxcrw2wcub43z6qns.jpg",
+    "https://res.klook.com/image/upload/activities/yrzc2gqm3bogmjs8gmr6.jpg",
+    "https://res.klook.com/image/upload/activities/cksrx0mzrzmacv75jrdb.jpg",
+    "https://res.klook.com/image/upload/activities/k4vab4oppvuikpayvqps.jpg"
+  ],
+  "source_Categories": "Tours & experiences,Cultural experiences,Workshops"
+}
+```
+
+**Your generated JSON object (enrichment fields only):**
+
+
+---RESPONSE---
+<think>
+Okay, let's tackle this. The user wants me to generate a JSON object with only the enrichment fields based on the provided input data. First, I need to understand each field's requirements.
+
+Starting with enrich_localName and enrich_englishName. The input title is "Hand Drip Coffee and Roasting Workshop". Since the example keeps brand names in English, but this is a workshop, maybe the local name should be in Traditional Chinese. Let me translate the title. "Hand Drip Coffee" is 手沖咖啡, "Roasting Workshop" is 烘焙工作坊. The address is Mei Tak Industrial Building, which is 梅達工業大廈. So the local name would be something like "手沖咖啡與烘焙工作坊 | 梅達工業大廈". The English name is straightforward, just the original title with the location added. The neighborhood isn't obvious from the address, but maybe Mei Tak Industrial Building is in a specific district. I'll check if that's a known area. If not, perhaps derive from context. Since the example used Central, maybe this is in Mong Kok or another area. Wait, the coordinates are 22.3085861,114.2229843. Let me see, those coordinates are in Hong Kong. Checking a map, that's near Kowloon, possibly Mong Kok or Yau Ma Tei. But the example used Central for The Murray, which is in Hong Kong Island. Since the input's address is Mei Tak Industrial Building, which I think is in Mong Kok, so enrich_neighborhood should be "Mong Kok".
+
+Next, enrich_type. The input is a workshop, so it's an "event" or "local activities"? The example classified a hotel spa as "local activities". Since this is a workshop, maybe "events" is more appropriate. Let me check the field description: "Classify as either 'local activities' or 'events'". Workshops are usually events, so I'll go with "events".
+
+Hidden Gem Score: The example gave 10 for a hotel spa. This is a coffee workshop. Since it's a specific workshop, not a major brand, maybe higher. But the price is $610, which is not super high. However, the example's hidden gem score for a hotel spa was 10, which is low. If this is a unique workshop, maybe 70-80. Let's say 75.
+
+Text Embedding: Need a paragraph combining title, summary, and highlights. The summary includes learning about specialty coffee, roasting, tasting, etc. Highlights mention beginner class, learning roasting and hand brewing, and being able to bake at home. So the embedding should mention all these points, maybe something like "Join a Hand Drip Coffee and Roasting Workshop in Mong Kok to learn about specialty coffee, roasting techniques, and hand-pour brewing. This beginner-friendly class includes tasting sessions, roasting your own beans, and practical application to take home your skills."
+
+TagsType: Distribute 100 points. The workshop is about coffee, which relates to Food (maybe 20), Educational (since it's a class, 30), Leisure (as it's a relaxing activity, 20), and Art & Culture (if it's considered cultural, 30). Let me check the example's tagsType. The example had Wellness at 80. So maybe here, Educational and Leisure are the main. Let's see: Food (20), Educational (30), Leisure (20), Art & Culture (30). Wait, the sum should be 100. Let me adjust. Maybe Food 20, Educational 30, Leisure 20, Art & Culture 30. That adds up to 100. Or perhaps Art & Culture is more relevant here. Alternatively, since it's a workshop, maybe Educational and Leisure. Let me think. The example for a spa had Wellness at 80. For a coffee workshop, Educational could be high, maybe 40, Leisure 30, Art & Culture 30. But the user's example had Wellness and Leisure. Let me check the categories again. The categories are Food, Nature, Sports, Leisure, Shopping, Wellness, Adventure, Nightlife, Educational, Hidden Gems, Photography, Art & Culture, Entertainment. Since it's a coffee workshop, Food might be relevant. But the workshop is about roasting and brewing, which is more educational and leisure. Let's assign Educational 40, Leisure 30, Art & Culture 30. That sums to 100. Alternatively, maybe Food 20, Educational 50, Leisure 30. Hmm. The example's enrich_tagsType for the spa had Wellness at 80 and Leisure 20. So maybe for this workshop, Wellness isn't a big part. Let's go with Educational 40, Leisure 30, Art & Culture 30. Wait, but the highlights mention "After learning, you can bake at home"—so maybe Food is involved. Let me adjust: Food 20, Educational 30, Leisure 20, Art & Culture 30. That adds up to 100. Okay.
+
+TagsBudget: The source_pricePoint is $610. The options are Free, Budget friendly, Moderately priced, High-end, Luxury. Since $610 HKD is around $78 USD, which is moderate. But the example had High-end as 1 for the hotel spa. Maybe High-end here. Wait, the example's source_price was a hotel spa, which is luxury. Here, $610 for a workshop might be considered High-end or Moderately priced. Let me check the price. 612.69 HKD is the selling price. In Hong Kong, workshops can vary. If it's a 2.5-hour workshop, maybe it's on the higher side. Let's say High-end is 1. So set "High-end":1 and others 0.
+
+TagsGroup: The workshop is for individuals or groups. The example had Date 50, Family 20, Friends 30. Since this is a workshop, it's likely for friends or date. Maybe Friends 50, Date 30, Family 20. Or perhaps Friends 40, Date 40, Family 20. Let me think. A coffee workshop could be a good date activity or for friends. Let's distribute 100 points: Date 40, Friends 60. Wait, the example had Date 50, Friends 30. Maybe similar. Let's say Date 50, Friends 50. Wait, but the sum must be 100. So maybe Date 50, Friends 30, Family 20. That adds up to 100. Or if it's more for friends, Friends 70, Date 30. Let me check the highlights again. It's a beginner class, so maybe suitable for friends or couples. Let's go with Date 50, Friends 50. Wait, no, the sum must be 100. So perhaps Date 40, Friends 40, Family 20. That's 100. Or maybe Friends 60, Date 40. Let me decide. Since the example had Date 50, Friends 30, Family 20. Maybe similar here. Let's assign Date 50, Friends 30, Family 20. That's 100.
+
+Enrich_description: A concise, under 20 words. Maybe "A hands-on coffee workshop in Mong Kok teaching roasting and hand-drip brewing techniques for beginners." That's 17 words.
+
+Now, putting it all together. Let me verify each field:
+
+enrich_localName: 手沖咖啡與烘焙工作坊 | 梅達工業大廈 (Mei Tak Industrial Building is in Mong Kok, so neighborhood is Mong Kok)
+
+enrich_englishName: Hand Drip Coffee and Roasting Workshop | Mong Kok
+
+enrich_type: events
+
+enrich_neighborhood: Mong Kok
+
+enrich_hiddenGemScore: 75 (since it's a workshop, not a major brand, but maybe not a hidden gem. Wait, the example's hotel spa had 10. If this is a local workshop, maybe higher. Let's say 75.)
+
+enrich_textEmbedding: Combine title, summary, highlights. The summary lists learning about specialty coffee, roasting, tasting, etc. Highlights include beginner class, learning roasting and hand brewing, and taking home the skills. So the paragraph should mention all these aspects.
+
+enrich_tagsType: {"Food": 20, "Educational": 30, "Leisure": 20, "Art & Culture": 30, ... others 0}
+
+enrich_tagsBudget: {"High-end":1, others 0}
+
+enrich_tagsGroup: {"Date":50, "Friends":30, "Family":20}
+
+enrich_description: As above.
+
+Wait, the example's enrich_tagsType had Wellness at 80. Here, since it's a coffee workshop, maybe Wellness isn't a category. So the main categories would be Educational, Leisure, Food, Art & Culture. Let me check the example again. The example's tagsType had Leisure and Wellness. For this workshop, maybe Educational and Leisure are the main. Let me adjust the tagsType to {"Educational": 40, "Leisure": 30, "Food": 20, "Art & Culture": 10} but that sums to 100. Wait, the example had 100 points. Let me make sure the sum is 100. Let's say Educational 40, Leisure 30, Art & Culture 30. That's 100. Or maybe Food 20, Educational 50, Leisure 30. Hmm. Alternatively, since it's about coffee, maybe Food 20, Educational 30, Leisure 20, Art & Culture 30. That adds up to 100. Let's go with that.
+
+TagsBudget: The price is $610. In Hong Kong, that's not super high, but not budget. Maybe Moderately priced. Wait, the example's source_price was a hotel spa, and they set High-end to 1. So if $610 is considered High-end, then set that. But maybe in the context of workshops, $610 is High-end. Let's check the input's klook_price: sellingPrice is 612.69 HKD. In HK, workshops can range. For example, a 2.5-hour workshop for 600 HKD is probably on the higher side. So set "High-end":1.
+
+TagsGroup: The workshop is for individuals or groups. Since it's a beginner class, maybe suitable for friends or a date. Let's assign Date 50, Friends 30, Family 20. That's 100.
+
+Now, compiling all into JSON. Let me make sure all fields are included and the structure matches the example. Also, ensure that the local name and English name include the location (Mong Kok). The hidden gem score is 75 because it's a specific workshop, not a major brand. The text embedding should be a paragraph. The tagsType sum to 100, tagsBudget has exactly one 1, tagsGroup sum to 100. The description is concise.
+</think>
+
+{
+  "enrich_localName": "手沖咖啡與烘焙工作坊 | 梅達工業大廈",
+  "enrich_englishName": "Hand Drip Coffee and Roasting Workshop | Mong Kok",
+  "enrich_type": "events",
+  "enrich_neighborhood": "Mong Kok",
+  "enrich_hiddenGemScore": 75,
+  "enrich_textEmbedding": "Join a Hand Drip Coffee and Roasting Workshop in Mong Kok to explore specialty coffee culture. Learn the fundamentals of coffee roasting, taste profiles, and hand-pour brewing techniques. This beginner-friendly session includes roasting 100g of green beans, practicing brewing methods, and taking home your freshly roasted coffee. Discover the art of distinguishing between commercial and hand-brewed coffee through interactive demonstrations and hands-on application.",
+  "enrich_tagsType": {
+    "Food": 20,
+    "Nature": 0,
+    "Sports": 0,
+    "Leisure": 20,
+    "Shopping": 0,
+    "Wellness": 0,
+    "Adventure": 0,
+    "Nightlife": 0,
+    "Educational": 30,
+    "Hidden Gems": 30,
+    "Photography": 0,
+    "Art & Culture": 0,
+    "Entertainment": 0
+  },
+  "enrich_tagsBudget": {
+    "Free": 0,
+    "Budget friendly": 0,
+    "Moderately priced": 0,
+    "High-end": 1,
+    "Luxury": 0
+  },
+  "enrich_tagsGroup": {
+    "Date": 50,
+    "Kids": 0,
+    "Family": 20,
+    "Friends": 30,
+    "Business": 0,
+    "Colleagues": 0
+  },
+  "enrich_description": "A hands-on coffee workshop in Mong Kok teaching roasting and hand-drip brewing techniques for beginners."
+}

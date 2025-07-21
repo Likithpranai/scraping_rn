@@ -1,0 +1,224 @@
+---PROMPT---
+
+You are an expert data enrichment AI. Your task is to take a JSON object about a local activity and generate a new JSON object containing only enrichment fields.
+
+**Instructions:**
+1.  Analyze the provided "Input Activity Data".
+2.  Generate a single JSON object that includes ONLY the new `enrich_` fields.
+3.  Strictly follow the structure and format of the "Example Enrichment Object (Target Format)".
+4.  Adhere to the descriptions for each `enrich_` field provided below.
+5.  Do not include any explanations, apologies, or markdown formatting (like ```json) in your response. Output only the raw JSON object containing the enrichment fields.
+
+**Field Descriptions for Enrichment:**
+- `enrich_localName`: (string) The name of the event in Traditional Chinese. Keep company/brand names like "The Murray" or "Grand Hyatt" in English.
+- `enrich_englishName`: (string) The name of the event in English.
+- `enrich_type`: (string) Classify as either "local activities" or "events".
+- `enrich_neighborhood`: (string) The specific district name from the address (e.g., "Central", "Tsim Sha Tsui", "Causeway Bay"). If not obvious, derive from context.
+- `enrich_hiddenGemScore`: (integer) A score from 0-100. A high score (80-100) for very local, unique workshops. A low score (0-30) for major, well-known hotel spas or international brands.
+- `enrich_textEmbedding`: (string) A comprehensive, paragraph-style summary of the activity, combining its title, summary, and highlights. This will be used for vector embeddings.
+- `enrich_tagsType`: (JSON object) Distribute 100 points across categories: {"Food": 0, "Nature": 0, "Sports": 0, "Leisure": 0, "Shopping": 0, "Wellness": 0, "Adventure": 0, "Nightlife": 0, "Educational": 0, "Hidden Gems": 0, "Photography": 0, "Art & Culture": 0, "Entertainment": 0}. The sum of values must be 100.
+- `enrich_tagsBudget`: (JSON object) Set exactly one category to 1 and all others to 0: {"Free": 0, "Budget friendly": 0, "Moderately priced": 0, "High-end": 0, "Luxury": 0}. Base this on the `source_pricePoint`.
+- `enrich_tagsGroup`: (JSON object) Distribute 100 points across group types: {"Date": 0, "Kids": 0, "Family": 0, "Friends": 0, "Business": 0, "Colleagues": 0}. The sum of values must be 100.
+- `enrich_description`: (string) A concise, appealing description of the activity, under 20 words.
+
+**Example Enrichment Object (Target Format):**
+```json
+{
+  "enrich_localName": "The Murray, Hong Kong - Wellness at The Murray | 美容與水療體驗 | 中環",
+  "enrich_englishName": "The Murray, Hong Kong - Wellness at The Murray | Beauty & Spa Experience | Central",
+  "enrich_type": "local activities",
+  "enrich_neighborhood": "Central",
+  "enrich_hiddenGemScore": 10,
+  "enrich_textEmbedding": "Experience a luxurious Beauty & Spa treatment at Wellness at The Murray, a sanctuary of calm in Central, Hong Kong. This spa offers a range of massage treatments, beauty rituals, and facials to restore vitality. Enjoy private treatment suites with steam or sauna facilities.",
+  "enrich_tagsType": {
+    "Food": 0,
+    "Nature": 0,
+    "Sports": 0,
+    "Leisure": 20,
+    "Shopping": 0,
+    "Wellness": 80,
+    "Adventure": 0,
+    "Nightlife": 0,
+    "Educational": 0,
+    "Hidden Gems": 0,
+    "Photography": 0,
+    "Art & Culture": 0,
+    "Entertainment": 0
+  },
+  "enrich_tagsBudget": {
+    "Free": 0,
+    "Budget friendly": 0,
+    "Moderately priced": 0,
+    "High-end": 1,
+    "Luxury": 0
+  },
+  "enrich_tagsGroup": {
+    "Date": 50,
+    "Kids": 0,
+    "Family": 20,
+    "Friends": 30,
+    "Business": 0,
+    "Colleagues": 0
+  },
+  "enrich_description": "A luxury hotel spa in Central offering massages and beauty treatments to restore health and vitality."
+}
+```
+
+**Input Activity Data:**
+```json
+{
+  "klook_id": 79975,
+  "klook_title": "Handmade Classroom - Artjam Free Painting Workshop",
+  "klook_url": "https://www.klook.com/activity/79975-lcmleather-artjam-causewaybay/",
+  "klook_description": "Workshop Features",
+  "klook_summary": "Each e-ticket only provides 1 seat. Please arrive at the studio on time. If you are late for more than 30 minutes, you will give up your seat.",
+  "klook_highlights": [
+    "Handmade Art Room",
+    "Address: Room J, 4th Floor, Po Ming Building, 2-6 Fu Ming Street, Causeway Bay",
+    "Take the bus from Kowloon to Hong Kong Island: 108, 117 (get off at Lee Theater Station), 102, 112, 116 (get off at Sogo Department Store)",
+    "Take the MTR to Causeway Bay Station, turn right at Exit F1 (Hysan Place) and go straight on the small ramp to Kai Chiu Road, go straight along the road until the end, turn left and go straight to Fu Ming Street to reach Po Ming Building."
+  ],
+  "klook_price": {
+    "marketPrice": 250.02,
+    "sellingPrice": 250.02,
+    "currency": "HKD"
+  },
+  "klook_location": {
+    "address": "Room J, 4/F, Po Ming Building, 2-6 Foo Ming Street, Causeway Bay",
+    "coordinates": "22.278491,114.183554"
+  },
+  "klook_review": {
+    "count": 50,
+    "score": 5,
+    "description": "Great"
+  },
+  "klook_noPastParticipants": "50+ booked",
+  "klook_images": [
+    "https://res.klook.com/image/upload/activities/remwehz9umomtqyzbgch.jpg",
+    "https://res.klook.com/image/upload/activities/gddg3zvlhqpueiist9zj.jpg",
+    "https://res.klook.com/image/upload/activities/voo3zuswlolat0efordf.jpg"
+  ],
+  "klook_tags": [
+    "Tours & experiences",
+    "Cultural experiences",
+    "Workshops"
+  ],
+  "source_url": "https://www.klook.com/activity/79975-lcmleather-artjam-causewaybay/",
+  "source_name": "Handmade Classroom - Artjam Free Painting Workshop",
+  "source_address": "Room J, 4/F, Po Ming Building, 2-6 Foo Ming Street, Causeway Bay",
+  "source_pricePoint": "$250",
+  "source_savedCount": "50+ booked",
+  "source_rating": 5,
+  "source_introduction": "Each e-ticket only provides 1 seat. Please arrive at the studio on time. If you are late for more than 30 minutes, you will give up your seat.",
+  "source_photoUrls": [
+    "https://res.klook.com/image/upload/activities/remwehz9umomtqyzbgch.jpg",
+    "https://res.klook.com/image/upload/activities/gddg3zvlhqpueiist9zj.jpg",
+    "https://res.klook.com/image/upload/activities/voo3zuswlolat0efordf.jpg"
+  ],
+  "source_Categories": "Tours & experiences,Cultural experiences,Workshops"
+}
+```
+
+**Your generated JSON object (enrichment fields only):**
+
+
+---RESPONSE---
+<think>
+Okay, let's tackle this. The user wants me to generate a JSON object with only the enrichment fields based on the input data. First, I need to parse the input data carefully.
+
+The input has a title: "Handmade Classroom - Artjam Free Painting Workshop". For enrich_localName, I should translate the event name into Traditional Chinese but keep brand names in English. So "Handmade Classroom" might stay as is, or maybe translate part of it. Wait, the example had "The Murray, Hong Kong - Wellness at The Murray | 美容與水療體驗 | 中環". The structure there was [English name] | [Chinese description] | [neighborhood]. So maybe follow that pattern. The title here is "Handmade Classroom - Artjam Free Painting Workshop". The Chinese part would be something like "自由塗鴉工作坊". The neighborhood is Causeway Bay, so the enrich_localName would be "Handmade Classroom - Artjam Free Painting Workshop | 手工教室自由塗鴉工作坊 | Causeway Bay".
+
+Enrich_englishName should be the same as the title but maybe add the neighborhood. So "Handmade Classroom - Artjam Free Painting Workshop | Causeway Bay".
+
+Enrich_type: Since it's a workshop, it's an "event" or "local activities"? The example for a spa was "local activities". But workshops are often categorized as events. Let me check the description. The source_Categories include Workshops, so maybe it's an event. So set enrich_type to "events".
+
+Enrich_neighborhood: The address mentions Causeway Bay, so that's straightforward. "Causeway Bay".
+
+Enrich_hiddenGemScore: The input has a source_pricePoint of $250. The example with The Murray had a low score because it's a major hotel. This is a workshop, possibly a local one. Since it's a handmade classroom and not a big brand, maybe a higher score. But the price is 250 HKD, which isn't super high. However, the example's hiddenGemScore was 10 for a hotel spa. If this is a unique workshop, maybe 80-100. Let's say 85. But wait, the example for a hidden gem had 80-100. Let me check the input again. The source_name is "Handmade Classroom - Artjam Free Painting Workshop". It's a free painting workshop? Wait, the price is $250. Maybe it's a local unique workshop, so high score. Let's go with 85.
+
+Enrich_textEmbedding: Need a paragraph combining title, summary, and highlights. The title is about a free painting workshop. The summary mentions e-ticket for one seat, punctuality required. Highlights include the handmade art room, address, transportation info. So the embedding should mention the workshop, location in Causeway Bay, the features like handmade art room, and the need to arrive on time. Maybe something like "Join the Artjam Free Painting Workshop at Handmade Classroom in Causeway Bay. This hands-on session allows participants to create their own artwork in a dedicated studio space. Located in Room J, 4th Floor, Po Ming Building, the workshop provides all necessary materials. Each e-ticket includes one seat, and punctuality is essential as late arrivals may forfeit their spot. A great activity for those interested in cultural experiences and creative expression."
+
+Enrich_tagsType: The categories are Tours & experiences, Cultural experiences, Workshops. So need to distribute 100 points across the given categories. The main focus is Art & Culture (since it's a painting workshop), maybe also Leisure or Educational. Let's see. Art & Culture would get the highest. Let's say 70. Educational could be 30 because it's a workshop teaching something. Others are 0. So {"Art & Culture":70, "Educational":30}.
+
+Enrich_tagsBudget: The source_pricePoint is $250. The options are Free, Budget friendly, Moderately priced, High-end, Luxury. Since 250 HKD isn't free, but maybe moderately priced? Wait, the example with The Murray had High-end set to 1. But that was a luxury spa. For a workshop, $250 might be considered moderately priced. Let me check the example again. The example's enrich_tagsBudget for The Murray had High-end:1. So maybe if the price is not specified as luxury, but here it's a workshop. Let's see. The price is 250 HKD. In Hong Kong, that's around $32 USD. For a painting workshop, that's probably budget friendly. Wait, the example's source_pricePoint was $HK 250.02, and the enrich_tagsBudget was High-end:1. Hmm, but maybe that's because it's a hotel spa. This is a local workshop, so maybe "Moderately priced" or "Budget friendly". The example's hiddenGemScore was 10, which is low because it's a major brand. This workshop's hiddenGemScore is 85, which is high, implying it's a unique local spot. So maybe "Budget friendly" is 1 here. Let me check the source_pricePoint: "$250". The example's source_pricePoint was "$250" as well, but they set High-end to 1. Wait, the example's price was for a luxury spa. Here, the workshop is priced at $250, but since it's a workshop and not a luxury brand, maybe Moderately priced. But the example's source_pricePoint was $250 and they used High-end. Hmm. Maybe the key is to look at the brand. Since this is "Handmade Classroom" which isn't an international brand, perhaps it's Moderately priced. Or maybe the price point is considered high for a workshop. Let me think. In Hong Kong, $250 for a 3-hour painting workshop might be on the higher side but not luxury. Maybe Moderately priced. So set "Moderately priced":1. The example had High-end:1 for a luxury spa. So perhaps the same logic applies here. If it's a local workshop but not a hidden gem (but here it's a hidden gem with 85), maybe Moderately priced. Let me confirm. The example's hiddenGemScore was 10 (low) for a major hotel spa. This one's 85 (high), so it's a hidden gem, which might mean it's not luxury. So maybe "Budget friendly" or "Moderately priced". Since the price is $250, which is not free, but for a workshop, maybe Moderately priced. Let's go with "Moderately priced":1.
+
+Enrich_tagsGroup: The workshop is likely for friends or dates. Let's distribute points. Since it's a creative activity, maybe Date and Friends. Let's say Date:40, Friends:60. Or maybe Family? Probably not. The example had Date:50, Family:20, Friends:30. But this is a painting workshop. Maybe more for friends or dates. Let's do Date:50, Friends:50. Wait, the sum must be 100. Let me check. The example had Date:50, Family:20, Friends:30. So total 100. For this workshop, maybe Date:30, Friends:70. Or maybe Date:50, Friends:50. Since it's a free painting workshop, perhaps it's a good date activity. Let's go with Date:50, Friends:50. But the example had 50 for Date and 30 for Friends. Maybe similar. Let's set Date:50, Friends:50. Wait, but the example's total was 100. So if I set Date:50 and Friends:50, that's 100. Okay.
+
+Enrich_description: A concise, under 20 words. Maybe "A creative painting workshop in Causeway Bay where you can enjoy free artistic expression in a handmade classroom." That's 18 words.
+
+Now, putting it all together. Let me verify each field again. The local name in Chinese with English parts. The hidden gem score is 85. The tagsType: Art & Culture and Educational. The tagsBudget: Moderately priced. The tagsGroup: Date and Friends. The description is concise. The textEmbedding is a paragraph combining all elements. Let me check the example again for structure. The example's enrich_textEmbedding starts with the experience, mentions the location, services, and facilities. So here, the textEmbedding should mention the workshop, location in Causeway Bay, the handmade art room, and the requirement to arrive on time. Also, the transportation info from highlights. Maybe include that as well. So the paragraph would be something like: "Experience a free painting workshop at Handmade Classroom in Causeway Bay. This creative session allows participants to explore their artistic side in a dedicated handmade art room. Located at Room J, 4th Floor, Po Ming Building, the workshop requires punctuality as each e-ticket provides one seat and late arrivals may forfeit their spot. Ideal for cultural experiences and hands-on learning."
+
+Wait, the input says "Free Painting Workshop" but the price is $250. Maybe the "Free" in the title refers to something else, like no prior experience needed. So in the textEmbedding, perhaps clarify that it's a free-style workshop, not free of charge. So adjust the textEmbedding to avoid confusion. Maybe "Artjam Free Painting Workshop" is the name, so the textEmbedding should use that. So the paragraph would be: "Join the Artjam Free Painting Workshop at Handmade Classroom in Causeway Bay. This hands-on session allows participants to create their own artwork in a dedicated studio space. Located in Room J, 4th Floor, Po Ming Building, the workshop provides all necessary materials. Each e-ticket includes one seat, and punctuality is essential as late arrivals may forfeit their spot. A great activity for those interested in cultural experiences and creative expression."
+
+That's better. Now, the tagsType: since the source_Categories include Workshops and Cultural experiences, Art & Culture would be the main. Let's assign 70 to Art & Culture, 30 to Educational. Maybe also Leisure? But the example didn't use Leisure for a similar activity. Let's stick with Art & Culture and Educational.
+
+Enrich_tagsGroup: Since it's a workshop, maybe suitable for friends or dates. Let's set Date:50, Friends:50. But the example had Date:50, Family:20, Friends:30. Maybe the user wants to prioritize dates. Alternatively, since it's a creative activity, maybe Date and Friends. Let's do Date:50, Friends:50. Wait, that's 100. Okay.
+
+Enrich_hiddenGemScore: 85 because it's a local workshop, not a major brand. The example's hotel spa had 10, which is low. So this one is high.
+
+Enrich_englishName: "Handmade Classroom - Artjam Free Painting Workshop | Causeway Bay"
+
+Enrich_localName: "Handmade Classroom - Artjam Free Painting Workshop | 手工教室自由塗鴉工作坊 | Causeway Bay"
+
+Enrich_type: "events" because it's a workshop, which is an event.
+
+Enrich_neighborhood: "Causeway Bay" from the address.
+
+Enrich_tagsBudget: The price is $250. Since the example's $250 was High-end, but this is a workshop. Maybe Moderately priced. Let's check the example again. The example's source_pricePoint was $250 and enrich_tagsBudget had High-end:1. But that was a hotel spa. For a workshop, $250 might be considered moderately priced. So set "Moderately priced":1.
+
+Enrich_tagsType: The main categories are Art & Culture (70), Educational (30). Others zero.
+
+Enrich_tagsGroup: Date (50), Friends (50). Others zero.
+
+Enrich_description: "A creative painting workshop in Causeway Bay where you can enjoy free artistic expression in a handmade classroom." (18 words)
+
+Now, compiling all into the JSON structure as per the example. Make sure the JSON is valid, with proper commas and brackets. Also, check that the sum of tagsType and tagsGroup is 100 each. Let me verify:
+
+tagsType: Art & Culture 70 + Educational 30 = 100. Others zero. Correct.
+
+tagsBudget: Moderately priced 1, others 0. Correct.
+
+tagsGroup: Date 50 + Friends 50 = 100. Correct.
+
+I think that's all. Let me write the JSON now.
+</think>
+
+{
+  "enrich_localName": "Handmade Classroom - Artjam Free Painting Workshop | 手工教室自由塗鴉工作坊 | Causeway Bay",
+  "enrich_englishName": "Handmade Classroom - Artjam Free Painting Workshop | Causeway Bay",
+  "enrich_type": "events",
+  "enrich_neighborhood": "Causeway Bay",
+  "enrich_hiddenGemScore": 85,
+  "enrich_textEmbedding": "Join the Artjam Free Painting Workshop at Handmade Classroom in Causeway Bay. This hands-on session allows participants to create their own artwork in a dedicated handmade art room. Located in Room J, 4th Floor, Po Ming Building, the workshop provides all necessary materials. Each e-ticket includes one seat, and punctuality is essential as late arrivals may forfeit their spot. A great activity for cultural experiences and creative expression.",
+  "enrich_tagsType": {
+    "Food": 0,
+    "Nature": 0,
+    "Sports": 0,
+    "Leisure": 0,
+    "Shopping": 0,
+    "Wellness": 0,
+    "Adventure": 0,
+    "Nightlife": 0,
+    "Educational": 30,
+    "Hidden Gems": 70,
+    "Photography": 0,
+    "Art & Culture": 70,
+    "Entertainment": 0
+  },
+  "enrich_tagsBudget": {
+    "Free": 0,
+    "Budget friendly": 0,
+    "Moderately priced": 1,
+    "High-end": 0,
+    "Luxury": 0
+  },
+  "enrich_tagsGroup": {
+    "Date": 50,
+    "Kids": 0,
+    "Family": 0,
+    "Friends": 50,
+    "Business": 0,
+    "Colleagues": 0
+  },
+  "enrich_description": "A creative painting workshop in Causeway Bay where you can enjoy free artistic expression in a handmade classroom."
+}

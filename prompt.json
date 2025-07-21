@@ -1,0 +1,89 @@
+{
+        "klook_id": 90278,
+        "klook_title": "The Murray, Hong Kong - Wellness at The Murray | Beauty & Spa Experience | Central",
+        "klook_url": "https://www.klook.com/activity/90278-hong-kong-murray-hotel-niccolo-spa-treatment-beauty/",
+        "klook_description": "Reserve The Murra Hong Kong, Wellness at The Murray's treatment on Klook now!",
+        "klook_summary": "A sanctuary of calm and holistic wellness, Wellness at The Murray offers a range of massage treatments and beauty rituals at the spa, to restore one’s health and vitality. The spa offers three single plus two couple treatment suites, each with its own private steam or sauna facility. In addition to bespoke massages, guests may also enjoy facials and other beauty treats.",
+        "klook_highlights": [
+            "A sanctuary of calm and holistic wellness, Wellness at The Murray offers a range of massage treatments and beauty rituals at the spa, to restore one’s health and vitality.",
+            "The spa offers three single plus two couple treatment suites, each with its own private steam or sauna facility. In addition to bespoke massages, guests may also enjoy facials and other beauty treats."
+        ],
+        "klook_price": {
+            "marketPrice": 2179.94,
+            "sellingPrice": 1480.12,
+            "currency": "HKD"
+        },
+        "klook_location": {
+            "address": "22 Cotton Tree Dr, Central, Hong Kong",
+            "coordinates": "22.278087,114.160103"
+        },
+        "klook_review": {
+            "count": 11,
+            "score": 4.8,
+            "description": "Fantastic"
+        },
+        "klook_noPastParticipants": "200+ booked",
+        "klook_images": [
+            "https://res.klook.com/image/upload/activities/ec0bwwi0fg69croyccrm.jpg",
+            "https://res.klook.com/image/upload/activities/r8p0mebp6exieut7nxmi.jpg",
+            "https://res.klook.com/image/upload/activities/l6mb0k9day1pri3kv5yt.jpg"
+        ],
+        "klook_tags": [
+            "Tours & experiences",
+            "Massages",
+            "Spa & massages"
+        ],
+        "source_url": "https://www.klook.com/activity/90278-hong-kong-murray-hotel-niccolo-spa-treatment-beauty/",
+        "source_name": "The Murray, Hong Kong - Wellness at The Murray | Beauty & Spa Experience | Central",
+        "source_address": "22 Cotton Tree Dr, Central, Hong Kong",
+        "source_pricePoint": {
+            "marketPrice": 2179.94,
+            "sellingPrice": 1480.12,
+            "currency": "HKD"
+        },
+        "source_savedCount": "200+ booked",
+        "source_rating": 4.8,
+        "source_introduction": "A sanctuary of calm and holistic wellness, Wellness at The Murray offers a range of massage treatments and beauty rituals at the spa, to restore one’s health and vitality. The spa offers three single plus two couple treatment suites, each with its own private steam or sauna facility. In addition to bespoke massages, guests may also enjoy facials and other beauty treats.",
+        "source_photoUrls": [
+            "https://res.klook.com/image/upload/activities/ec0bwwi0fg69croyccrm.jpg",
+            "https://res.klook.com/image/upload/activities/r8p0mebp6exieut7nxmi.jpg",
+            "https://res.klook.com/image/upload/activities/l6mb0k9day1pri3kv5yt.jpg"
+        ],
+        "source_Categories": "Tours & experiences,Massages,Spa & massages"
+    }
+
+
+
+enrich_localName text null, <- the name of the event in Traditional Chinese. Mind that dont translate the organizing company and it should stay in english. the event name should be translated to Traditional Chinese
+enrich_englishName text null, <- the name of the event in english
+enrich_type text null, <- either "local activities" or "events"
+enrich_neighborhood text null, <- district name within address
+enrich_hiddenGemScore bigint null, <- guesstimate a score of how "local" is this event. if it is a world tour concert then low, if it is a local workshop then high
+enrich_textEmbedding text null, <- a comprehensive description to be used to generate embedding vector
+enrich_tagsType jsonb null, <- An object with percentages e.g.:{
+  "Food": 60,
+  "Nature": 20,
+  "Sports": 0,
+  "Leisure": 10,
+  "Shopping": 0,
+  "Wellness": 0,
+  "Adventure": 0,
+  "Nightlife": 0,
+  "Educational": 0,
+  "Hidden Gems": 0,
+  "Photography": 5,
+  "Art & Culture": 0,
+  "Entertainment": 5
+}, Ensure the percentages add up to 100 and accurately reflect the spot's primary characteristics.
+enrich_tagsBudget jsonb null, <- An object where only one category ("Free", "Budget friendly", "Moderately priced", "High-end", "Luxury") is 1, and all others are 0.
+enrich_tagsGroup jsonb null, <- An object with percentages for group suitability (e.g., {
+  "Date": 20,
+  "Kids": 10,
+  "Family": 30,
+  "Friends": 30,
+  "Business": 0,
+  "Colleagues": 10
+}). Ensure the percentages add up to 100.
+enrich_description text null, <- a < 20 words description of this activity
+
+try to add these fields to the object on top and return the whole new object as json

@@ -1,0 +1,241 @@
+---PROMPT---
+
+You are an expert data enrichment AI. Your task is to take a JSON object about a local activity and enrich it with several new fields.
+
+**Instructions:**
+1.  Analyze the provided "Input Activity Data".
+2.  Generate a single, complete JSON object that includes all original fields plus the new `enrich_` fields.
+3.  Strictly follow the structure and format of the "Example Enriched Object".
+4.  Adhere to the descriptions for each new `enrich_` field provided below.
+5.  Do not include any explanations, apologies, or markdown formatting (like ```json) in your response. Output only the raw, complete JSON object.
+
+**Field Descriptions for Enrichment:**
+- `enrich_localName`: (string) The name of the event in Traditional Chinese. Keep company/brand names like "The Murray" or "Grand Hyatt" in English.
+- `enrich_englishName`: (string) The name of the event in English.
+- `enrich_type`: (string) Classify as either "local activities" or "events".
+- `enrich_neighborhood`: (string) The specific district name from the address (e.g., "Central", "Tsim Sha Tsui", "Causeway Bay"). If not obvious, derive from context.
+- `enrich_hiddenGemScore`: (integer) A score from 0-10. A high score (8-10) for very local, unique workshops. A low score (0-3) for major, well-known hotel spas or international brands.
+- `enrich_textEmbedding`: (string) A comprehensive, paragraph-style summary of the activity, combining its title, summary, and highlights. This will be used for vector embeddings.
+- `enrich_tagsType`: (JSON object) Distribute 100 points across categories: {"Food": 0, "Nature": 0, "Sports": 0, "Leisure": 0, "Shopping": 0, "Wellness": 0, "Adventure": 0, "Nightlife": 0, "Educational": 0, "Hidden Gems": 0, "Photography": 0, "Art & Culture": 0, "Entertainment": 0}. The sum of values must be 100.
+- `enrich_tagsBudget`: (JSON object) Set exactly one category to 1 and all others to 0: {"Free": 0, "Budget friendly": 0, "Moderately priced": 0, "High-end": 0, "Luxury": 0}. Base this on the `source_pricePoint`.
+- `enrich_tagsGroup`: (JSON object) Distribute 100 points across group types: {"Date": 0, "Kids": 0, "Family": 0, "Friends": 0, "Business": 0, "Colleagues": 0}. The sum of values must be 100.
+- `enrich_description`: (string) A concise, appealing description of the activity, under 20 words.
+
+**Example Enriched Object (Target Format):**
+```json
+{
+  "klook_id": 90278,
+  "klook_title": "The Murray, Hong Kong - Wellness at The Murray | Beauty & Spa Experience | Central",
+  "klook_url": "https://www.klook.com/activity/90278-hong-kong-murray-hotel-niccolo-spa-treatment-beauty/",
+  "klook_description": "Reserve The Murra Hong Kong, Wellness at The Murray's treatment on Klook now!",
+  "klook_summary": "A sanctuary of calm and holistic wellness, Wellness at The Murray offers a range of massage treatments and beauty rituals at the spa, to restore one’s health and vitality. The spa offers three single plus two couple treatment suites, each with its own private steam or sauna facility. In addition to bespoke massages, guests may also enjoy facials and other other beauty treats.",
+  "klook_highlights": [
+    "A sanctuary of calm and holistic wellness, Wellness at The Murray offers a range of massage treatments and beauty rituals at the spa, to restore one’s health and vitality.",
+    "The spa offers three single plus two couple treatment suites, each with its own private steam or sauna facility. In addition to bespoke massages, guests may also enjoy facials and other beauty treats."
+  ],
+  "klook_price": {
+    "marketPrice": 2179.94,
+    "sellingPrice": 1480.12,
+    "currency": "HKD"
+  },
+  "klook_location": {
+    "address": "22 Cotton Tree Dr, Central, Hong Kong",
+    "coordinates": "22.278087,114.160103"
+  },
+  "klook_review": {
+    "count": 11,
+    "score": 4.8,
+    "description": "Fantastic"
+  },
+  "klook_noPastParticipants": "200+ booked",
+  "klook_images": [
+    "https://res.klook.com/image/upload/activities/ec0bwwi0fg69croyccrm.jpg",
+    "https://res.klook.com/image/upload/activities/r8p0mebp6exieut7nxmi.jpg",
+    "https://res.klook.com/image/upload/activities/l6mb0k9day1pri3kv5yt.jpg"
+  ],
+  "klook_tags": [
+    "Tours & experiences",
+    "Massages",
+    "Spa & massages"
+  ],
+  "source_url": "https://www.klook.com/activity/90278-hong-kong-murray-hotel-niccolo-spa-treatment-beauty/",
+  "source_name": "The Murray, Hong Kong - Wellness at The Murray | Beauty & Spa Experience | Central",
+  "source_address": "22 Cotton Tree Dr, Central, Hong Kong",
+  "source_pricePoint": {
+    "marketPrice": 2179.94,
+    "sellingPrice": 1480.12,
+    "currency": "HKD"
+  },
+  "source_savedCount": "200+ booked",
+  "source_rating": 4.8,
+  "source_introduction": "A sanctuary of calm and holistic wellness, Wellness at The Murray offers a range of massage treatments and beauty rituals at the spa, to restore one’s health and vitality. The spa offers three single plus two couple treatment suites, each with its own private steam or sauna facility. In addition to bespoke massages, guests may also enjoy facials and other beauty treats.",
+  "source_photoUrls": [
+    "https://res.klook.com/image/upload/activities/ec0bwwi0fg69croyccrm.jpg",
+    "https://res.klook.com/image/upload/activities/r8p0mebp6exieut7nxmi.jpg",
+    "https://res.klook.com/image/upload/activities/l6mb0k9day1pri3kv5yt.jpg"
+  ],
+  "source_Categories": "Tours & experiences,Massages,Spa & massages",
+  "enrich_localName": "The Murray, Hong Kong - Wellness at The Murray | 美容與水療體驗 | 中環",
+  "enrich_englishName": "The Murray, Hong Kong - Wellness at The Murray | Beauty & Spa Experience | Central",
+  "enrich_type": "local activities",
+  "enrich_neighborhood": "Central",
+  "enrich_hiddenGemScore": 10,
+  "enrich_textEmbedding": "Experience a luxurious Beauty & Spa treatment at Wellness at The Murray, a sanctuary of calm in Central, Hong Kong. This spa offers a range of massage treatments, beauty rituals, and facials to restore vitality. Enjoy private treatment suites with steam or sauna facilities.",
+  "enrich_tagsType": {
+    "Food": 0,
+    "Nature": 0,
+    "Sports": 0,
+    "Leisure": 20,
+    "Shopping": 0,
+    "Wellness": 80,
+    "Adventure": 0,
+    "Nightlife": 0,
+    "Educational": 0,
+    "Hidden Gems": 0,
+    "Photography": 0,
+    "Art & Culture": 0,
+    "Entertainment": 0
+  },
+  "enrich_tagsBudget": {
+    "Free": 0,
+    "Budget friendly": 0,
+    "Moderately priced": 0,
+    "High-end": 1,
+    "Luxury": 0
+  },
+  "enrich_tagsGroup": {
+    "Date": 50,
+    "Kids": 0,
+    "Family": 20,
+    "Friends": 30,
+    "Business": 0,
+    "Colleagues": 0
+  },
+  "enrich_description": "A luxury hotel spa in Central offering massages and beauty treatments to restore health and vitality."
+}
+```
+
+**Input Activity Data:**
+```json
+{
+  "klook_id": 90278,
+  "klook_title": "The Murray, Hong Kong - Wellness at The Murray | Beauty & Spa Experience | Central",
+  "klook_url": "https://www.klook.com/activity/90278-hong-kong-murray-hotel-niccolo-spa-treatment-beauty/",
+  "klook_description": "Reserve The Murra Hong Kong, Wellness at The Murray's treatment on Klook now!",
+  "klook_summary": "A sanctuary of calm and holistic wellness, Wellness at The Murray offers a range of massage treatments and beauty rituals at the spa, to restore one’s health and vitality. The spa offers three single plus two couple treatment suites, each with its own private steam or sauna facility. In addition to bespoke massages, guests may also enjoy facials and other beauty treats.",
+  "klook_highlights": [
+    "A sanctuary of calm and holistic wellness, Wellness at The Murray offers a range of massage treatments and beauty rituals at the spa, to restore one’s health and vitality.",
+    "The spa offers three single plus two couple treatment suites, each with its own private steam or sauna facility. In addition to bespoke massages, guests may also enjoy facials and other beauty treats."
+  ],
+  "klook_price": {
+    "marketPrice": 2179.94,
+    "sellingPrice": 1480.12,
+    "currency": "HKD"
+  },
+  "klook_location": {
+    "address": "22 Cotton Tree Dr, Central, Hong Kong",
+    "coordinates": "22.278087,114.160103"
+  },
+  "klook_review": {
+    "count": 11,
+    "score": 4.8,
+    "description": "Fantastic"
+  },
+  "klook_noPastParticipants": "200+ booked",
+  "klook_images": [
+    "https://res.klook.com/image/upload/activities/ec0bwwi0fg69croyccrm.jpg",
+    "https://res.klook.com/image/upload/activities/r8p0mebp6exieut7nxmi.jpg",
+    "https://res.klook.com/image/upload/activities/l6mb0k9day1pri3kv5yt.jpg"
+  ],
+  "klook_tags": [
+    "Tours & experiences",
+    "Massages",
+    "Spa & massages"
+  ],
+  "source_url": "https://www.klook.com/activity/90278-hong-kong-murray-hotel-niccolo-spa-treatment-beauty/",
+  "source_name": "The Murray, Hong Kong - Wellness at The Murray | Beauty & Spa Experience | Central",
+  "source_address": "22 Cotton Tree Dr, Central, Hong Kong",
+  "source_pricePoint": "$1480",
+  "source_savedCount": "200+ booked",
+  "source_rating": 4.8,
+  "source_introduction": "A sanctuary of calm and holistic wellness, Wellness at The Murray offers a range of massage treatments and beauty rituals at the spa, to restore one’s health and vitality. The spa offers three single plus two couple treatment suites, each with its own private steam or sauna facility. In addition to bespoke massages, guests may also enjoy facials and other beauty treats.",
+  "source_photoUrls": [
+    "https://res.klook.com/image/upload/activities/ec0bwwi0fg69croyccrm.jpg",
+    "https://res.klook.com/image/upload/activities/r8p0mebp6exieut7nxmi.jpg",
+    "https://res.klook.com/image/upload/activities/l6mb0k9day1pri3kv5yt.jpg"
+  ],
+  "source_Categories": "Tours & experiences,Massages,Spa & massages"
+}
+```
+
+**Your generated complete and enriched JSON object:**
+
+
+---RESPONSE---
+<think>
+Okay, let's tackle this. The user wants me to enrich the given JSON object with several new fields. First, I need to understand each of the required fields and how to generate them based on the input data.
+
+Starting with enrich_localName. The original title is in English, so I need to translate the event name into Traditional Chinese. The example shows that "Wellness at The Murray" becomes "Wellness at The Murray | 美容與水療體驗 | 中環". I should follow the same pattern. The input activity is a spa at The Murray hotel in Central. The name should keep "The Murray" in English and translate the rest. So maybe "The Murray, Hong Kong - Wellness at The Murray | 美容與水療體驗 | 中環".
+
+Next, enrich_englishName. It seems like it's just the original title, so I can copy that directly. The example uses the same as the klook_title, so I'll do the same here.
+
+For enrich_type, the example classified it as "local activities". The input data is about a hotel spa, which is a local service, so "local activities" makes sense here.
+
+enrich_neighborhood is straightforward. The address is "22 Cotton Tree Dr, Central, Hong Kong", so the neighborhood is "Central".
+
+enrich_hiddenGemScore: The example gave 10, but the input here is a well-known hotel, The Murray. The instructions say to give a low score (0-3) for major, well-known hotel spas. So maybe 2? But wait, the example had a high score for a local workshop. Since this is a hotel spa, perhaps 2 is appropriate. Let me check the example again. The example's enrich_hiddenGemScore was 10, but the input there was a local activity. Here, since it's a hotel spa, maybe 2. But the example's input was a hotel spa and they gave 10. Wait, no, the example's input was a hotel spa, but the enrich_hiddenGemScore was 10. Wait, that seems contradictory. Wait, looking back: the example's input is "Wellness at The Murray" and the enrich_hiddenGemScore is 10. But the instructions say to give high scores for very local, unique workshops and low for major hotel spas. Hmm, maybe the example is incorrect? Or maybe the user made a mistake. Wait, the example's enrich_hiddenGemScore is 10, but the input is a hotel spa. That's confusing. Wait, maybe the example is a local activity, not a major brand. Let me check the example's input again. The example's input has "source_pricePoint": {"marketPrice": 2179.94, "sellingPrice": 1480.12, "currency": "HKD"}, which is a high-end price. The enrich_hiddenGemScore in the example is 10, but according to the instructions, major hotel spas should have low scores. So maybe the example is wrong, but I have to follow the instructions. So for the current input, which is a hotel spa (The Murray), the hiddenGemScore should be low. Let's say 2.
+
+enrich_textEmbedding needs a paragraph combining title, summary, and highlights. The example's version is a concise summary. Let me take the source_introduction and combine it with the highlights. The original summary mentions the sanctuary, massage treatments, beauty rituals, private steam/sauna, facials, etc. So the embedding could be something like "Experience a luxurious Beauty & Spa treatment at Wellness at The Murray, a sanctuary of calm in Central, Hong Kong. This spa offers a range of massage treatments, beauty rituals, and facials to restore vitality. Enjoy private treatment suites with steam or sauna facilities."
+
+enrich_tagsType: The example distributed 80 to Wellness and 20 to Leisure. Since this is a spa, Wellness is the main category. Let's assign 80 to Wellness and maybe 20 to Leisure. The other categories like Food, Nature, etc., are 0.
+
+enrich_tagsBudget: The source_pricePoint is "$1480", which is high. The example used "High-end":1. So here, High-end should be 1, others 0.
+
+enrich_tagsGroup: The example gave Date 50, Family 20, Friends 30. Since it's a spa, it's suitable for dates, maybe some family, and friends. Let's do the same distribution.
+
+enrich_description: A concise, under 20 words. The example's is "A luxury hotel spa in Central offering massages and beauty treatments to restore health and vitality." So similar here, maybe "A luxury hotel spa in Central offering massages and beauty treatments to restore health and vitality."
+
+Wait, the input's source_pricePoint is "$1480" as a string, but in the example, the source_pricePoint is an object. The user's input here has "source_pricePoint": "$1480", but in the example, it's an object with marketPrice and sellingPrice. However, the example's enrich_tagsBudget is based on the source_pricePoint. In the example, the source_pricePoint is an object with sellingPrice 1480.12, and enrich_tagsBudget is High-end:1. So here, the input's source_pricePoint is "$1480", which is a string. How to determine the budget? The example's source_pricePoint was an object with sellingPrice 1480.12, which is high. Here, the input's source_pricePoint is "$1480", which is also high. So High-end should be 1.
+
+Putting it all together. Let me check each field again to make sure I follow the example's structure and the instructions. The localName is in Traditional Chinese, keeping the hotel name in English. The hiddenGemScore is 2 because it's a major hotel spa. The tagsType has Wellness at 80 and Leisure at 20. The tagsBudget has High-end at 1. The tagsGroup is Date 50, Family 20, Friends 30. The description is concise and under 20 words. The textEmbedding is a paragraph combining all key info. The neighborhood is Central. The type is local activities. All the new fields are added without any markdown. I think that's it.
+</think>
+
+{
+  "enrich_localName": "The Murray, Hong Kong - Wellness at The Murray | 美容與水療體驗 | 中環",
+  "enrich_englishName": "The Murray, Hong Kong - Wellness at The Murray | Beauty & Spa Experience | Central",
+  "enrich_type": "local activities",
+  "enrich_neighborhood": "Central",
+  "enrich_hiddenGemScore": 2,
+  "enrich_textEmbedding": "Experience a high-end Beauty & Spa treatment at Wellness at The Murray, a luxury hotel spa in Central, Hong Kong. This sanctuary offers a range of massage therapies, bespoke beauty rituals, and private treatment suites equipped with steam or sauna facilities. Guests can enjoy facials and other premium wellness services to restore health and vitality.",
+  "enrich_tagsType": {
+    "Food": 0,
+    "Nature": 0,
+    "Sports": 0,
+    "Leisure": 20,
+    "Shopping": 0,
+    "Wellness": 80,
+    "Adventure": 0,
+    "Nightlife": 0,
+    "Educational": 0,
+    "Hidden Gems": 0,
+    "Photography": 0,
+    "Art & Culture": 0,
+    "Entertainment": 0
+  },
+  "enrich_tagsBudget": {
+    "Free": 0,
+    "Budget friendly": 0,
+    "Moderately priced": 0,
+    "High-end": 1,
+    "Luxury": 0
+  },
+  "enrich_tagsGroup": {
+    "Date": 50,
+    "Kids": 0,
+    "Family": 20,
+    "Friends": 30,
+    "Business": 0,
+    "Colleagues": 0
+  },
+  "enrich_description": "A luxury hotel spa in Central offering massages and beauty treatments to restore health and vitality."
+}

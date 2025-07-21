@@ -1,0 +1,121 @@
+```json
+{
+  "id": 99019,
+  "title": "Hong Kong WeHUG Health Check Plan - Basic Health Check for Cat & Dogs | Yuen Long",
+  "url": "https://www.klook.com/activity/99019-wehug-health-check-for-cats-dogs-animal-medical-centre-hong-kong/",
+  "description": "WeHUG is an animal medical centre, located in Yuen Long. It is awarded \"Gold\" cat friendly clinic in 2023. It provides a comprehensive Physical Examination with Palpation and Auscultation for your cats and dogs!",
+  "summary": "",
+  "highlights": [
+    "Comprehensive Physical Examination with Palpation and Auscultation",
+    "Comprehensive Blood Test (CBC+Chem 17+Lyte 4)",
+    "In-Depth Ophthalmic Examination",
+    "Urinalysis(urine protein, urine glucose, pH level, specific gravity, bilirubin, urobilinogen, ketones, nitrite, hematuria, and sediment under a microscope to determine if they are normal)",
+    "Pro BNP Heart Disease Rapid Test",
+    "Cat FIV/FeLV Test",
+    "Dog 4DX (Rapid Tests for Heartworm Disease, Ehrlichiosis, Lyme Disease, and Anaplasmosis)"
+  ],
+  "price": {
+    "marketPrice": "467.55",
+    "sellingPrice": "456.05",
+    "currency": "USD"
+  },
+  "location": {
+    "address": "Shop 1,3 &4, G/F, Crystal Park, 50 Ma Tin Road, Yuen Long",
+    "coordinates": "22.440963,114.024502",
+    "imageUrl": "https://res.klook.com/image/upload/activities/ryamsei66na6jrdeeyhl.png"
+  },
+  "review": {
+    "count": 1333,
+    "score": 4.4,
+    "description": "Great"
+  },
+  "noPastParticipants": "1333+ booked",
+  "images": [
+    {
+      "url": "https://res.klook.com/image/upload/activities/emh6pwlztgye9shiu2t4.jpg",
+      "description": null,
+      "alt": "WeHUG Animal Medical Centre",
+      "width": 2000,
+      "height": 1333
+    },
+    {
+      "url": "https://res.klook.com/image/upload/activities/tbqhnre4amvxw8congjv.jpg",
+      "description": null,
+      "alt": null,
+      "width": 2000,
+      "height": 1333
+    },
+    {
+      "url": "https://res.klook.com/image/upload/activities/nu45yaha296rdv0kafoq.jpg",
+      "description": "Female sauna with \u201c Himalayan salt stone\u201d",
+      "alt": "Himalayan salt stone at bliss spa",
+      "width": 1620,
+      "height": 1080
+    },
+    {
+      "url": "https://res.klook.com/image/upload/activities/noryjogxt9r8bla7eojc.jpg",
+      "description": null,
+      "alt": null,
+      "width": 2000,
+      "height": 1333
+    },
+    {
+      "url": "https://res.klook.com/image/upload/activities/s51okmmonamgisld8iim.jpg",
+      "description": null,
+      "alt": null,
+      "width": 2000,
+      "height": 1333
+    },
+    {
+      "url": "https://res.klook.com/image/upload/activities/r7iecxseugitksulq6rj.jpg",
+      "description": null,
+      "alt": null,
+      "width": 2000,
+      "height": 1333
+    },
+    {
+      "url": "https://res.klook.com/image/upload/activities/z7fyfumllgic4xvslcdz.jpg",
+      "description": null,
+      "alt": null,
+      "width": 2000,
+      "height": 1333
+    },
+    {
+      "url": "https://res.klook.com/image/upload/activities/nmdzhb8jxedw4on5d8yk.jpg",
+      "description": null,
+      "alt": null,
+      "width": 2000,
+      "height": 1333
+    },
+    {
+      "url": "https://res.klook.com/image/upload/activities/wsdyzwhtkhdgubzbhizk.jpg",
+      "description": null,
+      "alt": null,
+      "width": 2000,
+      "height": 1333
+    }
+  ],
+  "breadcrumbs": [
+    {
+      "name": "Klook Travel",
+      "url": "/"
+    },
+    {
+      "name": "Hong Kong",
+      "url": "/city/2-hong-kong-things-to-do/"
+    },
+    {
+      "name": "Tours & experiences",
+      "url": "/experiences/list/hong-kong-tours-experiences/c2/"
+    },
+    {
+      "name": "Outdoor & sports activities",
+      "url": "/experiences/list/hong-kong-outdoor-sports-activities/c2-cate15/"
+    },
+    {
+      "name": "Animal-watching interaction",
+      "url": "/experiences/list/hong-kong-animal-watching-interaction/c2-cate118/"
+    }
+  ]
+}
+```

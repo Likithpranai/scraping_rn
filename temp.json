@@ -1,0 +1,2086 @@
+{
+    "basic_data": {
+        "activity_id": "u",
+        "published": "e",
+        "support_language": [
+            "en_US",
+            "zh_HK",
+            "zh_CN",
+            "zh_TW",
+            "en_NZ",
+            "en_CA",
+            "en_HK",
+            "en_PH",
+            "aE",
+            "fr_FR",
+            "de_DE",
+            "en_IN",
+            "ru_RU",
+            "it_IT",
+            "en_SG",
+            "en_GB",
+            "en_AU",
+            "en_MY",
+            "es_ES",
+            "vi_VN",
+            "ko_KR",
+            "id_ID",
+            "ja_JP",
+            "th_TH",
+            "ms_MY"
+        ],
+        "sold_out": "b",
+        "city_id": "p",
+        "city_name": "J",
+        "country_id": "p",
+        "country_name": "bq",
+        "sub_category_id": "p",
+        "leaf_category_id": 156,
+        "template_id": "p",
+        "template_name": "a",
+        "discount": 65,
+        "activity_ticket_type": "d",
+        "review_count": "W",
+        "frontend_tree": [
+            {
+                "id": "d",
+                "name": "_",
+                "level": "f",
+                "seo_url": "experiences"
+            },
+            {
+                "id": "$",
+                "name": "aa",
+                "level": "d",
+                "seo_url": "cruises"
+            },
+            {
+                "id": "ab",
+                "name": "ac",
+                "level": "p",
+                "seo_url": "sightseeing-cruises"
+            }
+        ],
+        "card_tags": {},
+        "seo": {
+            "no_hreflang": "b",
+            "no_index": "b",
+            "no_canonical": "b",
+            "activity_id": "u",
+            "template_id": "p",
+            "published": "e",
+            "card_tags": {},
+            "title": "Skyline Cruise Victoria Harbour Tour",
+            "seo_url": "hongkong-skyline-cruise-victoria-harbour-tour",
+            "banner_url": "kbwa4svdmbattdscy7ws.jpg",
+            "video_url": "a",
+            "review_count": "W",
+            "selling_price": "ad",
+            "score": "br",
+            "currency": "Q",
+            "city_id": "p",
+            "city_seo": "hong-kong",
+            "city_name": "J",
+            "country_id": "p",
+            "country_seo_url": "hong-kong-macau",
+            "country_name": "bq",
+            "last_updated_time": "2025-07-15 06:24:33",
+            "description": "Enjoy the stunning views of Victoria Harbor and the world's largest light and music show: A Symphony of Lights from an excellent location!",
+            "overview": "a",
+            "keywords": "Skyline,Cruise,Victoria Harbour,Tour,hk tour,cruise tour",
+            "top_keywords": "a",
+            "usage_images": "c",
+            "images": [
+                {
+                    "image_url": "bs",
+                    "banner_display": "d",
+                    "image_desc": "a",
+                    "image_alt": "a",
+                    "size": "bt",
+                    "width": "E",
+                    "height": "F",
+                    "is_default": "d",
+                    "pre_process": "a",
+                    "size_type": "a",
+                    "image_url_host": "bu",
+                    "prefix": "a",
+                    "suffix": "a",
+                    "seo_title": "a",
+                    "has_water_mark": "e"
+                },
+                {
+                    "image_url": "bv",
+                    "banner_display": "d",
+                    "image_desc": "a",
+                    "image_alt": "a",
+                    "size": "bw",
+                    "width": "E",
+                    "height": "F",
+                    "is_default": "d",
+                    "pre_process": "a",
+                    "size_type": "a",
+                    "image_url_host": "bx",
+                    "prefix": "a",
+                    "suffix": "a",
+                    "seo_title": "a",
+                    "has_water_mark": "e"
+                },
+                {
+                    "image_url": "by",
+                    "banner_display": "d",
+                    "image_desc": "a",
+                    "image_alt": "a",
+                    "size": "bz",
+                    "width": "ae",
+                    "height": "S",
+                    "is_default": "d",
+                    "pre_process": "a",
+                    "size_type": "a",
+                    "image_url_host": "bA",
+                    "prefix": "a",
+                    "suffix": "a",
+                    "seo_title": "a",
+                    "has_water_mark": "e"
+                },
+                {
+                    "image_url": "bB",
+                    "banner_display": "d",
+                    "image_desc": "a",
+                    "image_alt": "a",
+                    "size": "bC",
+                    "width": "af",
+                    "height": "ag",
+                    "is_default": "d",
+                    "pre_process": "a",
+                    "size_type": "a",
+                    "image_url_host": "bD",
+                    "prefix": "a",
+                    "suffix": "a",
+                    "seo_title": "a",
+                    "has_water_mark": "e"
+                },
+                {
+                    "image_url": "bE",
+                    "banner_display": "d",
+                    "image_desc": "a",
+                    "image_alt": "a",
+                    "size": "bF",
+                    "width": "ah",
+                    "height": "ai",
+                    "is_default": "d",
+                    "pre_process": "a",
+                    "size_type": "a",
+                    "image_url_host": "bG",
+                    "prefix": "a",
+                    "suffix": "a",
+                    "seo_title": "a",
+                    "has_water_mark": "e"
+                },
+                {
+                    "image_url": "bH",
+                    "banner_display": "d",
+                    "image_desc": "aj",
+                    "image_alt": "ak",
+                    "size": "bI",
+                    "width": "v",
+                    "height": "w",
+                    "is_default": "d",
+                    "pre_process": "a",
+                    "size_type": "a",
+                    "image_url_host": "bJ",
+                    "prefix": "a",
+                    "suffix": "a",
+                    "seo_title": "a",
+                    "has_water_mark": "e"
+                },
+                {
+                    "image_url": "bK",
+                    "banner_display": "d",
+                    "image_desc": "al",
+                    "image_alt": "am",
+                    "size": "bL",
+                    "width": "an",
+                    "height": "ao",
+                    "is_default": "d",
+                    "pre_process": "a",
+                    "size_type": "a",
+                    "image_url_host": "bM",
+                    "prefix": "a",
+                    "suffix": "a",
+                    "seo_title": "a",
+                    "has_water_mark": "e"
+                },
+                {
+                    "image_url": "bN",
+                    "banner_display": "d",
+                    "image_desc": "a",
+                    "image_alt": "a",
+                    "size": "bO",
+                    "width": "ap",
+                    "height": "aq",
+                    "is_default": "d",
+                    "pre_process": "a",
+                    "size_type": "a",
+                    "image_url_host": "bP",
+                    "prefix": "a",
+                    "suffix": "a",
+                    "seo_title": "a",
+                    "has_water_mark": "e"
+                },
+                {
+                    "image_url": "bQ",
+                    "banner_display": "d",
+                    "image_desc": "a",
+                    "image_alt": "a",
+                    "size": "bR",
+                    "width": "ar",
+                    "height": "U",
+                    "is_default": "d",
+                    "pre_process": "a",
+                    "size_type": "a",
+                    "image_url_host": "bS",
+                    "prefix": "a",
+                    "suffix": "a",
+                    "seo_title": "a",
+                    "has_water_mark": "e"
+                },
+                {
+                    "image_url": "bT",
+                    "banner_display": "d",
+                    "image_desc": "a",
+                    "image_alt": "a",
+                    "size": "bU",
+                    "width": "as",
+                    "height": "T",
+                    "is_default": "d",
+                    "pre_process": "a",
+                    "size_type": "a",
+                    "image_url_host": "bV",
+                    "prefix": "a",
+                    "suffix": "a",
+                    "seo_title": "a",
+                    "has_water_mark": "e"
+                },
+                {
+                    "image_url": "bW",
+                    "banner_display": "d",
+                    "image_desc": "at",
+                    "image_alt": "au",
+                    "size": "bX",
+                    "width": "v",
+                    "height": "w",
+                    "is_default": "d",
+                    "pre_process": "a",
+                    "size_type": "a",
+                    "image_url_host": "bY",
+                    "prefix": "a",
+                    "suffix": "a",
+                    "seo_title": "a",
+                    "has_water_mark": "e"
+                },
+                {
+                    "image_url": "bZ",
+                    "banner_display": "d",
+                    "image_desc": "av",
+                    "image_alt": "aw",
+                    "size": "b_",
+                    "width": "v",
+                    "height": "w",
+                    "is_default": "d",
+                    "pre_process": "a",
+                    "size_type": "a",
+                    "image_url_host": "b$",
+                    "prefix": "a",
+                    "suffix": "a",
+                    "seo_title": "a",
+                    "has_water_mark": "e"
+                }
+            ],
+            "hide_water_mark": "f",
+            "bread_crumb": [
+                {
+                    "deep_link": "ca",
+                    "name": "cb",
+                    "type": "cc",
+                    "id": "f"
+                },
+                {
+                    "deep_link": "cd",
+                    "name": "J",
+                    "type": "ce",
+                    "id": "p"
+                },
+                {
+                    "deep_link": "cf",
+                    "name": "_",
+                    "type": "G",
+                    "id": "d"
+                },
+                {
+                    "deep_link": "cg",
+                    "name": "aa",
+                    "type": "G",
+                    "id": "$"
+                },
+                {
+                    "deep_link": "ch",
+                    "name": "ac",
+                    "type": "G",
+                    "id": "ab"
+                }
+            ],
+            "latest_best_review": "c"
+        },
+        "price": {
+            "market_price": "a",
+            "selling_price": "ad",
+            "from_price": "ad",
+            "price_desc": "a",
+            "best_price_guarantee": "d",
+            "price_show": {
+                "underline_price": "US$ 32.89",
+                "save_price": "a",
+                "sale_price": "US$ 11.55",
+                "from_price": "a"
+            }
+        },
+        "share": {
+            "share_activity": {
+                "title": "i",
+                "sub_title": "Check out this activity on Klook 👉",
+                "image": "http://res.klook.com/image/upload/fl_lossy.progressive,q_65/c_fill,w_800,h_560/activities/hxncnzm24esknyg9kbqp.jpg",
+                "url": "https://www.klook.com/activity/83981"
+            },
+            "wx_app_share": {
+                "wx_app_id": "gh_b0fb4a114aa2",
+                "share_path": "/pages/activity/index?id=83981",
+                "program_type": "release",
+                "image_url": "http://res.klook.com/image/upload/fl_lossy.progressive,q_65/c_fill,w_500,h_400/activities/hxncnzm24esknyg9kbqp.jpg"
+            }
+        },
+        "chat_info": {
+            "is_open_chat": "b",
+            "chat_url": "a",
+            "activity_id": "u",
+            "activity_title": "i",
+            "is_srv_activity": "b"
+        },
+        "is_nsw_activity": "b",
+        "is_srv_activity": "b",
+        "notice": [],
+        "activity_page_template_id": 1220,
+        "is_jump_old_settlement": "b",
+        "is_line_page": "b",
+        "is_in_flash_sale": "b",
+        "act_product_type": "a",
+        "show_challenge": "b",
+        "publish_info": {
+            "publish_status": "d",
+            "publish_status_desc": "a"
+        },
+        "is_support_shopping_cart": "e",
+        "vertical_type": "100",
+        "vertical": "tna",
+        "platform_template_id": "d",
+        "aggregate_id": "u"
+    },
+    "theme": {
+        "name": "O",
+        "color": {
+            "primary": "K",
+            "primary-background": "K",
+            "primary-click": "K",
+            "primary-disabled": "K",
+            "primary-hover": "K"
+        }
+    },
+    "sections": [
+        {
+            "meta": {
+                "type": "t",
+                "placeholder": "a",
+                "track": "c",
+                "component": "ax",
+                "name": "ax",
+                "render_type": "g"
+            },
+            "attr": "c",
+            "fields": [
+                {
+                    "key": "L",
+                    "value": "d"
+                }
+            ],
+            "source": {
+                "name": [
+                    "ax"
+                ]
+            }
+        },
+        {
+            "meta": {
+                "type": "t",
+                "placeholder": "a",
+                "track": "c",
+                "component": "ci",
+                "name": "ci",
+                "render_type": "g"
+            },
+            "attr": "c",
+            "fields": [
+                {
+                    "key": "L",
+                    "value": "d"
+                }
+            ],
+            "source": {
+                "name": [
+                    "activity_breadCrumb"
+                ]
+            }
+        },
+        {
+            "meta": {
+                "type": "t",
+                "placeholder": "a",
+                "track": "c",
+                "component": "ay",
+                "name": "ay",
+                "render_type": "g"
+            },
+            "attr": "c",
+            "fields": [
+                {
+                    "key": "L",
+                    "value": "d"
+                }
+            ],
+            "source": {
+                "name": [
+                    "ay"
+                ]
+            }
+        },
+        {
+            "meta": {
+                "type": "j",
+                "placeholder": "a",
+                "track": "c",
+                "component": "k",
+                "name": "l",
+                "render_type": "g"
+            },
+            "attr": {
+                "color": "q",
+                "height": "p"
+            },
+            "source": {
+                "name": "c"
+            }
+        },
+        {
+            "meta": {
+                "type": "t",
+                "placeholder": "a",
+                "track": "c",
+                "component": "cj",
+                "name": "cj",
+                "render_type": "g"
+            },
+            "attr": "c",
+            "source": {
+                "name": [
+                    "activity_product_tags"
+                ]
+            }
+        },
+        {
+            "meta": {
+                "type": "j",
+                "placeholder": "a",
+                "track": "c",
+                "component": "k",
+                "name": "l",
+                "render_type": "g"
+            },
+            "attr": {
+                "color": "q",
+                "height": 3
+            },
+            "source": {
+                "name": "c"
+            }
+        },
+        {
+            "meta": {
+                "type": "t",
+                "placeholder": "a",
+                "track": "c",
+                "component": "ck",
+                "name": "ck",
+                "render_type": "g"
+            },
+            "attr": "c",
+            "fields": [
+                {
+                    "key": "L",
+                    "value": "d"
+                },
+                {
+                    "key": "cl",
+                    "value": "d"
+                },
+                {
+                    "key": "activity_reopen",
+                    "value": "d"
+                },
+                {
+                    "key": "score_participants_version",
+                    "value": "bg"
+                }
+            ],
+            "source": {
+                "name": [
+                    "activity_score_participants",
+                    "cl",
+                    "activity_reviews",
+                    "cm",
+                    "activity_basic",
+                    "mini_review"
+                ]
+            }
+        },
+        {
+            "meta": {
+                "type": "j",
+                "placeholder": "a",
+                "track": "c",
+                "component": "k",
+                "name": "l",
+                "render_type": "g"
+            },
+            "attr": {
+                "color": "q",
+                "height": "H"
+            },
+            "source": {
+                "name": "c"
+            }
+        },
+        {
+            "meta": {
+                "type": "x",
+                "placeholder": "a",
+                "track": "c",
+                "component": "cn",
+                "name": "cn",
+                "render_type": "g"
+            },
+            "attr": {
+                "is_navigation": "b",
+                "title": "a",
+                "nav_title": "a",
+                "sub_title": "a",
+                "explore": "a",
+                "explore_link": "a",
+                "bottom_button_title": "a",
+                "bottom_button_link": "a"
+            },
+            "fields": [
+                {
+                    "key": "L",
+                    "value": "d"
+                }
+            ],
+            "source": {
+                "name": [
+                    "activity_banner",
+                    "cm",
+                    "bottom_button_text",
+                    "activity_right_price_http"
+                ]
+            }
+        },
+        {
+            "meta": {
+                "type": "j",
+                "placeholder": "a",
+                "track": "c",
+                "component": "k",
+                "name": "l",
+                "render_type": "g"
+            },
+            "attr": {
+                "color": "q",
+                "height": "H"
+            },
+            "source": {
+                "name": "c"
+            }
+        },
+        {
+            "meta": {
+                "type": "t",
+                "placeholder": "a",
+                "track": "c",
+                "component": "co",
+                "name": "co",
+                "render_type": "g"
+            },
+            "attr": "c",
+            "fields": [
+                {
+                    "key": "klook_insider",
+                    "value": "d"
+                },
+                {
+                    "key": "reopen",
+                    "value": "f"
+                },
+                {
+                    "key": "address_image",
+                    "value": "f"
+                }
+            ],
+            "source": {
+                "name": [
+                    "activity_klook_insider"
+                ]
+            }
+        },
+        {
+            "meta": {
+                "type": "j",
+                "placeholder": "a",
+                "track": "c",
+                "component": "k",
+                "name": "l",
+                "render_type": "g"
+            },
+            "attr": {
+                "color": "q",
+                "height": "r"
+            },
+            "source": {
+                "name": "c"
+            }
+        },
+        {
+            "meta": {
+                "type": "t",
+                "placeholder": "a",
+                "track": {
+                    "name": "ActivityHighlightDetail"
+                },
+                "component": "cp",
+                "name": "cq",
+                "render_type": "g"
+            },
+            "attr": "c",
+            "fields": [
+                {
+                    "key": "cq",
+                    "value": "cr"
+                },
+                {
+                    "key": "show_style_version",
+                    "value": "d"
+                }
+            ],
+            "source": {
+                "name": [
+                    "cr"
+                ]
+            }
+        },
+        {
+            "meta": {
+                "type": "j",
+                "placeholder": "a",
+                "track": "c",
+                "component": "k",
+                "name": "l",
+                "render_type": "g"
+            },
+            "attr": {
+                "color": "q",
+                "height": "H"
+            },
+            "source": {
+                "name": "c"
+            }
+        },
+        {
+            "meta": {
+                "type": "t",
+                "placeholder": "a",
+                "track": "c",
+                "component": "cs",
+                "name": "cs",
+                "render_type": "g"
+            },
+            "attr": "c",
+            "source": {
+                "name": [
+                    "activity_promo_tag"
+                ]
+            }
+        },
+        {
+            "meta": {
+                "type": "x",
+                "placeholder": "a",
+                "track": {
+                    "name": "PackageType_LIST"
+                },
+                "component": "package_options_spec_type",
+                "name": "package_option",
+                "render_type": "y"
+            },
+            "attr": {
+                "is_navigation": "e",
+                "title": "ct",
+                "nav_title": "ct",
+                "sub_title": "a",
+                "explore": "a",
+                "explore_link": "a",
+                "bottom_button_title": "a",
+                "bottom_button_link": "a"
+            },
+            "fields": [
+                {
+                    "key": "activity_package_promotion",
+                    "value": "d"
+                },
+                {
+                    "key": "activity_custom_config_hide_credit",
+                    "value": "f"
+                },
+                {
+                    "key": "activity_custom_config_hide_price_guarantee",
+                    "value": "f"
+                },
+                {
+                    "key": "activity_status_show_component",
+                    "value": [
+                        "published",
+                        "suspended"
+                    ]
+                }
+            ],
+            "source": {
+                "name": [
+                    "activity_package_option_http"
+                ]
+            }
+        },
+        {
+            "meta": {
+                "type": "j",
+                "placeholder": "a",
+                "track": "c",
+                "component": "k",
+                "name": "l",
+                "render_type": "g"
+            },
+            "attr": {
+                "color": "q",
+                "height": "r"
+            },
+            "source": {
+                "name": "c"
+            }
+        },
+        {
+            "meta": {
+                "type": "x",
+                "placeholder": "a",
+                "track": "c",
+                "component": "cu",
+                "name": "cu",
+                "render_type": "y"
+            },
+            "attr": {
+                "is_navigation": "b",
+                "title": "a",
+                "nav_title": "a",
+                "sub_title": "a",
+                "explore": "a",
+                "explore_link": "a",
+                "bottom_button_title": "a",
+                "bottom_button_link": "a"
+            },
+            "source": {
+                "name": [
+                    "pass_info"
+                ]
+            }
+        },
+        {
+            "meta": {
+                "type": "j",
+                "placeholder": "a",
+                "track": "c",
+                "component": "k",
+                "name": "l",
+                "render_type": "g"
+            },
+            "attr": {
+                "color": "q",
+                "height": "r"
+            },
+            "source": {
+                "name": "c"
+            }
+        },
+        {
+            "meta": {
+                "type": "x",
+                "placeholder": "a",
+                "track": "c",
+                "component": "cp",
+                "name": "cv",
+                "render_type": "y"
+            },
+            "attr": {
+                "is_navigation": "e",
+                "title": "cw",
+                "nav_title": "cw",
+                "sub_title": "a",
+                "explore": "a",
+                "explore_link": "a",
+                "bottom_button_title": "a",
+                "bottom_button_link": "a"
+            },
+            "fields": [
+                {
+                    "key": "fold_switch",
+                    "value": "f"
+                },
+                {
+                    "key": "fold_min_height",
+                    "value": "a"
+                },
+                {
+                    "key": "fold_style_type",
+                    "value": "f"
+                },
+                {
+                    "key": "is_hero_page",
+                    "value": "f"
+                }
+            ],
+            "source": {
+                "name": [
+                    "cv"
+                ]
+            }
+        },
+        {
+            "meta": {
+                "type": "j",
+                "placeholder": "a",
+                "track": "c",
+                "component": "k",
+                "name": "l",
+                "render_type": "g"
+            },
+            "attr": {
+                "color": "M",
+                "height": "r"
+            },
+            "source": {
+                "name": "c"
+            }
+        },
+        {
+            "meta": {
+                "type": "x",
+                "placeholder": "a",
+                "track": {
+                    "name": "ContactUs"
+                },
+                "component": "cx",
+                "name": "cx",
+                "render_type": "g"
+            },
+            "attr": {
+                "is_navigation": "b",
+                "title": "cy",
+                "nav_title": "cy",
+                "sub_title": "a",
+                "explore": "a",
+                "explore_link": "a",
+                "bottom_button_title": "a",
+                "bottom_button_link": "a"
+            },
+            "source": {
+                "name": [
+                    "activity_chatInfo"
+                ]
+            }
+        },
+        {
+            "meta": {
+                "type": "j",
+                "placeholder": "a",
+                "track": "c",
+                "component": "k",
+                "name": "l",
+                "render_type": "g"
+            },
+            "attr": {
+                "color": "M",
+                "height": "r"
+            },
+            "source": {
+                "name": "c"
+            }
+        },
+        {
+            "meta": {
+                "type": "x",
+                "placeholder": "a",
+                "track": "c",
+                "component": "cz",
+                "name": "cz",
+                "render_type": "y"
+            },
+            "attr": {
+                "is_navigation": "e",
+                "title": "cA",
+                "nav_title": "cA",
+                "sub_title": "a",
+                "explore": "a",
+                "explore_link": "a",
+                "bottom_button_title": "a",
+                "bottom_button_link": "a"
+            },
+            "source": {
+                "name": [
+                    "review_overview"
+                ]
+            }
+        },
+        {
+            "meta": {
+                "type": "j",
+                "placeholder": "a",
+                "track": "c",
+                "component": "k",
+                "name": "l",
+                "render_type": "g"
+            },
+            "attr": {
+                "color": "q",
+                "height": "r"
+            },
+            "source": {
+                "name": "c"
+            }
+        },
+        {
+            "meta": {
+                "type": "t",
+                "placeholder": "a",
+                "track": "c",
+                "component": "az",
+                "name": "az",
+                "render_type": "y"
+            },
+            "attr": "c",
+            "source": {
+                "name": [
+                    "az"
+                ]
+            }
+        },
+        {
+            "meta": {
+                "type": "j",
+                "placeholder": "a",
+                "track": "c",
+                "component": "k",
+                "name": "l",
+                "render_type": "g"
+            },
+            "attr": {
+                "color": "q",
+                "height": "r"
+            },
+            "source": {
+                "name": "c"
+            }
+        },
+        {
+            "meta": {
+                "type": "x",
+                "placeholder": "a",
+                "track": {
+                    "name": "YouMayAlsoLike"
+                },
+                "component": "cB",
+                "name": "cB",
+                "render_type": "y"
+            },
+            "attr": {
+                "is_navigation": "b",
+                "title": "cC",
+                "nav_title": "cC",
+                "sub_title": "a",
+                "explore": "a",
+                "explore_link": "a",
+                "bottom_button_title": "a",
+                "bottom_button_link": "a"
+            },
+            "source": {
+                "name": [
+                    "activity_cards"
+                ]
+            }
+        },
+        {
+            "meta": {
+                "type": "j",
+                "placeholder": "a",
+                "track": "c",
+                "component": "k",
+                "name": "l",
+                "render_type": "g"
+            },
+            "attr": {
+                "color": "M",
+                "height": "r"
+            },
+            "source": {
+                "name": "c"
+            }
+        },
+        {
+            "meta": {
+                "type": "x",
+                "placeholder": "a",
+                "track": "c",
+                "component": "cD",
+                "name": "cD",
+                "render_type": "y"
+            },
+            "attr": {
+                "is_navigation": "b",
+                "title": "cE",
+                "nav_title": "cE",
+                "sub_title": "a",
+                "explore": "a",
+                "explore_link": "a",
+                "bottom_button_title": "a",
+                "bottom_button_link": "a"
+            },
+            "source": {
+                "name": [
+                    "theme_list_http"
+                ]
+            }
+        },
+        {
+            "meta": {
+                "type": "j",
+                "placeholder": "a",
+                "track": "c",
+                "component": "k",
+                "name": "l",
+                "render_type": "g"
+            },
+            "attr": {
+                "color": "M",
+                "height": "r"
+            },
+            "source": {
+                "name": "c"
+            }
+        },
+        {
+            "meta": {
+                "type": "x",
+                "placeholder": "a",
+                "track": {
+                    "name": "FAQS"
+                },
+                "component": "aA",
+                "name": "aA",
+                "render_type": "y"
+            },
+            "attr": {
+                "is_navigation": "b",
+                "title": "cF",
+                "nav_title": "cF",
+                "sub_title": "a",
+                "explore": "a",
+                "explore_link": "a",
+                "bottom_button_title": "a",
+                "bottom_button_link": "a"
+            },
+            "source": {
+                "name": [
+                    "aA"
+                ]
+            }
+        },
+        {
+            "meta": {
+                "type": "j",
+                "placeholder": "a",
+                "track": "c",
+                "component": "k",
+                "name": "l",
+                "render_type": "g"
+            },
+            "attr": {
+                "color": "q",
+                "height": "r"
+            },
+            "source": {
+                "name": "c"
+            }
+        },
+        {
+            "meta": {
+                "type": "t",
+                "placeholder": "a",
+                "track": "c",
+                "component": "cG",
+                "name": "cG",
+                "render_type": "y"
+            },
+            "attr": "c",
+            "source": {
+                "name": [
+                    "activity_internal_link"
+                ]
+            }
+        },
+        {
+            "meta": {
+                "type": "j",
+                "placeholder": "a",
+                "track": "c",
+                "component": "k",
+                "name": "l",
+                "render_type": "g"
+            },
+            "attr": {
+                "color": "M",
+                "height": "r"
+            },
+            "source": {
+                "name": "c"
+            }
+        }
+    ],
+    "source": {
+        "activity_address": {
+            "load_type": "h",
+            "load_url": "a",
+            "data": {
+                "title": "a",
+                "name": "a",
+                "sub_title": "a",
+                "icon_url": "a",
+                "components": [
+                    {
+                        "type": "address",
+                        "style": {
+                            "address_type": "cH"
+                        },
+                        "data": [
+                            {
+                                "place_id": "ChIJp4NnsfMABDQRA5c3sZKypb4",
+                                "address": "22.293048,114.169643",
+                                "address_desc": "Kowloon Public Pier",
+                                "image_url": "https://res.klook.com/image/upload/activities/veidnl7kuzwmo9vpkywm.png"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        "activity_banner": {
+            "load_type": "h",
+            "load_url": "a",
+            "data": {
+                "activity_id": "u",
+                "banner_list": [
+                    {
+                        "prefix": "o",
+                        "pre_process": "a",
+                        "suffix": "activities/kbwa4svdmbattdscy7ws.jpg",
+                        "size_type": "a",
+                        "image_desc": "a",
+                        "image_alt": "a",
+                        "width": 1536,
+                        "height": 1024,
+                        "has_water_mark": "e",
+                        "video_url": "a"
+                    },
+                    {
+                        "prefix": "o",
+                        "pre_process": "a",
+                        "suffix": "activities/hxncnzm24esknyg9kbqp.jpg",
+                        "size_type": "a",
+                        "image_desc": "a",
+                        "image_alt": "a",
+                        "width": "E",
+                        "height": "F",
+                        "has_water_mark": "e",
+                        "video_url": "a"
+                    },
+                    {
+                        "prefix": "o",
+                        "pre_process": "a",
+                        "suffix": "activities/o4mdgr8ixu9r38jlvp2p.jpg",
+                        "size_type": "a",
+                        "image_desc": "a",
+                        "image_alt": "a",
+                        "width": "E",
+                        "height": "F",
+                        "has_water_mark": "e",
+                        "video_url": "a"
+                    },
+                    {
+                        "prefix": "o",
+                        "pre_process": "a",
+                        "suffix": "activities/fk48ndocdemapsimsoe1.jpg",
+                        "size_type": "a",
+                        "image_desc": "a",
+                        "image_alt": "a",
+                        "width": "ae",
+                        "height": "S",
+                        "has_water_mark": "e",
+                        "video_url": "a"
+                    },
+                    {
+                        "prefix": "o",
+                        "pre_process": "a",
+                        "suffix": "activities/jl2ch5obx4bqzwcto8zg.jpg",
+                        "size_type": "a",
+                        "image_desc": "a",
+                        "image_alt": "a",
+                        "width": "af",
+                        "height": "ag",
+                        "has_water_mark": "e",
+                        "video_url": "a"
+                    },
+                    {
+                        "prefix": "o",
+                        "pre_process": "a",
+                        "suffix": "activities/wr8xuxashiwn8wpj6hzg.jpg",
+                        "size_type": "a",
+                        "image_desc": "a",
+                        "image_alt": "a",
+                        "width": "ah",
+                        "height": "ai",
+                        "has_water_mark": "e",
+                        "video_url": "a"
+                    },
+                    {
+                        "prefix": "o",
+                        "pre_process": "a",
+                        "suffix": "activities/f6aznkye9xbfwuh5vwf5.jpg",
+                        "size_type": "a",
+                        "image_desc": "aj",
+                        "image_alt": "ak",
+                        "width": "v",
+                        "height": "w",
+                        "has_water_mark": "e",
+                        "video_url": "a"
+                    },
+                    {
+                        "prefix": "o",
+                        "pre_process": "a",
+                        "suffix": "activities/dkfemsv7lkvhd0vrmgtn.jpg",
+                        "size_type": "a",
+                        "image_desc": "al",
+                        "image_alt": "am",
+                        "width": "an",
+                        "height": "ao",
+                        "has_water_mark": "e",
+                        "video_url": "a"
+                    },
+                    {
+                        "prefix": "o",
+                        "pre_process": "a",
+                        "suffix": "activities/rkcij1h98jqadcllwsnr.jpg",
+                        "size_type": "a",
+                        "image_desc": "a",
+                        "image_alt": "a",
+                        "width": "ap",
+                        "height": "aq",
+                        "has_water_mark": "e",
+                        "video_url": "a"
+                    },
+                    {
+                        "prefix": "o",
+                        "pre_process": "a",
+                        "suffix": "activities/ordrrsoewhkau6lvaux1.jpg",
+                        "size_type": "a",
+                        "image_desc": "a",
+                        "image_alt": "a",
+                        "width": "ar",
+                        "height": "U",
+                        "has_water_mark": "e",
+                        "video_url": "a"
+                    },
+                    {
+                        "prefix": "o",
+                        "pre_process": "a",
+                        "suffix": "activities/stnyzuzxdlpjtvwu8hkk.jpg",
+                        "size_type": "a",
+                        "image_desc": "a",
+                        "image_alt": "a",
+                        "width": "as",
+                        "height": "T",
+                        "has_water_mark": "e",
+                        "video_url": "a"
+                    },
+                    {
+                        "prefix": "o",
+                        "pre_process": "a",
+                        "suffix": "activities/kci5tvo26o78s0ccnmap.jpg",
+                        "size_type": "a",
+                        "image_desc": "at",
+                        "image_alt": "au",
+                        "width": "v",
+                        "height": "w",
+                        "has_water_mark": "e",
+                        "video_url": "a"
+                    },
+                    {
+                        "prefix": "o",
+                        "pre_process": "a",
+                        "suffix": "activities/npjys15gtbufavquitzi.jpg",
+                        "size_type": "a",
+                        "image_desc": "av",
+                        "image_alt": "aw",
+                        "width": "v",
+                        "height": "w",
+                        "has_water_mark": "e",
+                        "video_url": "a"
+                    }
+                ],
+                "new_layout_flag": "b"
+            }
+        },
+        "activity_basic": {
+            "load_type": "h",
+            "load_url": "a",
+            "data": {
+                "activity_id": "u"
+            }
+        },
+        "activity_breadCrumb": {
+            "load_type": "h",
+            "load_url": "a",
+            "data": [
+                {
+                    "deep_link": "ca",
+                    "name": "cb",
+                    "type": "cc",
+                    "id": "f"
+                },
+                {
+                    "deep_link": "cd",
+                    "name": "J",
+                    "type": "ce",
+                    "id": "p"
+                },
+                {
+                    "deep_link": "cf",
+                    "name": "_",
+                    "type": "G",
+                    "id": "d"
+                },
+                {
+                    "deep_link": "cg",
+                    "name": "aa",
+                    "type": "G",
+                    "id": "$"
+                },
+                {
+                    "deep_link": "ch",
+                    "name": "ac",
+                    "type": "G",
+                    "id": "ab"
+                }
+            ]
+        },
+        "activity_cards": {
+            "load_type": "z",
+            "load_url": "/v1/experiencesrv/activity/detail_service/cards_v2?template_id=2&activity_id=83981",
+            "data": "c"
+        },
+        "activity_chatInfo": {
+            "load_type": "h",
+            "load_url": "a",
+            "data": {
+                "is_open_chat": "b",
+                "chat_url": "a",
+                "activity_id": "u",
+                "activity_title": "i",
+                "is_srv_activity": "b"
+            }
+        },
+        "activity_faq": {
+            "load_type": "h",
+            "load_url": "a",
+            "data": {
+                "activity_faq": {
+                    "title": "a",
+                    "link": "a",
+                    "faq": "c"
+                },
+                "help_center": {
+                    "title": "Help Center",
+                    "link": "/faq/"
+                }
+            }
+        },
+        "activity_highlight": {
+            "load_type": "h",
+            "load_url": "a",
+            "data": {
+                "title": "a",
+                "name": "a",
+                "sub_title": "a",
+                "icon_url": "a",
+                "components": [
+                    {
+                        "type": "markdown",
+                        "style": {
+                            "fold_style": "f",
+                            "fold_title": "Highlights"
+                        },
+                        "data": [
+                            {
+                                "content": "a",
+                                "render_object": [
+                                    {
+                                        "type": "N",
+                                        "icon": "a",
+                                        "content": "Hong Kong's distinguished luxury yacht, spacious open-air raft",
+                                        "props": {
+                                            "is_first": "e",
+                                            "margin_top": 16
+                                        }
+                                    },
+                                    {
+                                        "type": "N",
+                                        "icon": "a",
+                                        "content": "Enjoy unlimited drinks and snacks",
+                                        "props": {}
+                                    },
+                                    {
+                                        "type": "N",
+                                        "icon": "a",
+                                        "content": "Enjoy the stunning views of Victoria Harbor and the world's largest light and music show: A Symphony of Lights from an excellent location",
+                                        "props": {}
+                                    },
+                                    {
+                                        "type": "N",
+                                        "icon": "a",
+                                        "content": "Whether you need a professional explanation or do not want to be disturbed is entirely up to you.",
+                                        "props": {}
+                                    },
+                                    {
+                                        "type": "N",
+                                        "icon": "a",
+                                        "content": "Provide the most sincere and high-quality services to every visitor to Hong Kong",
+                                        "props": {
+                                            "is_last": "e"
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        "activity_images_show": {
+            "load_type": "z",
+            "load_url": "/v1/experiencesrv/activities/83981/images/show?",
+            "data": "c"
+        },
+        "activity_internal_link": {
+            "load_type": "h",
+            "load_url": "a",
+            "data": {
+                "title": "Explore more on Klook",
+                "internal_link": [
+                    {
+                        "heading": "Top attractions in Hong Kong",
+                        "linking": [
+                            {
+                                "key_word": "Disneyland Hong Kong",
+                                "url": "https://www.klook.com/destination/p50042369-disneyland-hong-kong/"
+                            },
+                            {
+                                "key_word": "Tsim Sha Tsui",
+                                "url": "https://www.klook.com/destination/p50062436-tsim-sha-tsui/"
+                            },
+                            {
+                                "key_word": "Ngong Ping 360",
+                                "url": "https://www.klook.com/destination/p50057030-ngong-ping-360/"
+                            },
+                            {
+                                "key_word": "Victoria Peak",
+                                "url": "https://www.klook.com/destination/p50209970-victoria-peak/"
+                            },
+                            {
+                                "key_word": "Victoria Harbour",
+                                "url": "https://www.klook.com/destination/p50222704-victoria-harbour/"
+                            },
+                            {
+                                "key_word": "Lantau Island",
+                                "url": "https://www.klook.com/destination/p50208569-lantau-island/"
+                            },
+                            {
+                                "key_word": "Kai Tak",
+                                "url": "https://www.klook.com/destination/p60271369-kai-tak/"
+                            },
+                            {
+                                "key_word": "Causeway Bay",
+                                "url": "https://www.klook.com/destination/p50042373-causeway-bay/"
+                            },
+                            {
+                                "key_word": "Mongkok",
+                                "url": "https://www.klook.com/destination/p50042379-mongkok/"
+                            },
+                            {
+                                "key_word": "K11 Musea",
+                                "url": "https://www.klook.com/destination/p60108295-k11-musea/"
+                            },
+                            {
+                                "key_word": "Central",
+                                "url": "https://www.klook.com/destination/p50056896-central-western-district/"
+                            },
+                            {
+                                "key_word": "Tung Chung",
+                                "url": "https://www.klook.com/destination/p50042446-tung-chung/"
+                            },
+                            {
+                                "key_word": "Tian Tan Buddha",
+                                "url": "https://www.klook.com/destination/p50120362-tian-tan-buddha/"
+                            },
+                            {
+                                "key_word": "Avenue of Stars",
+                                "url": "https://www.klook.com/destination/p50134477-avenue-of-stars/"
+                            },
+                            {
+                                "key_word": "West Kowloon Cultural District",
+                                "url": "https://www.klook.com/destination/p50291064-west-kowloon-cultural-district/"
+                            },
+                            {
+                                "key_word": "Hong Kong-Zhuhai-Macao Bridge",
+                                "url": "https://www.klook.com/destination/p50227589-hong-kong-zhuhai-macao-bridge/"
+                            },
+                            {
+                                "key_word": "Wan Chai",
+                                "url": "https://www.klook.com/destination/p60108697-wan-chai/"
+                            },
+                            {
+                                "key_word": "Kennedy Town",
+                                "url": "https://www.klook.com/destination/p50042473-kennedy-town/"
+                            },
+                            {
+                                "key_word": "Tai O",
+                                "url": "https://www.klook.com/destination/p50042391-tai-o/"
+                            },
+                            {
+                                "key_word": "Harbour City",
+                                "url": "https://www.klook.com/destination/p50042419-harbour-city/"
+                            }
+                        ],
+                        "search_type": "a",
+                        "search_key": "a",
+                        "heading_ref": "city_popular_poi"
+                    },
+                    {
+                        "heading": "All you need for Hong Kong",
+                        "linking": [
+                            {
+                                "key_word": "Hong Kong Hotels",
+                                "url": "https://www.klook.com/hotels/city/2-hong-kong-hotels/"
+                            },
+                            {
+                                "key_word": "Hong Kong Private airport transfers",
+                                "url": "https://www.klook.com/airport-transfers/service/hkg-hong-kong-international-airport/"
+                            },
+                            {
+                                "key_word": "Hong Kong Tours & experiences",
+                                "url": "https://www.klook.com/experiences/list/hong-kong-tours-experiences/c2-cate1/"
+                            },
+                            {
+                                "key_word": "Hong Kong Cultural experiences",
+                                "url": "https://www.klook.com/experiences/list/hong-kong-cultural-experiences/c2-cate122/"
+                            },
+                            {
+                                "key_word": "Hong Kong Workshops",
+                                "url": "https://www.klook.com/experiences/list/hong-kong-workshops/c2-cate25/"
+                            },
+                            {
+                                "key_word": "Hong Kong Massages",
+                                "url": "https://www.klook.com/experiences/list/hong-kong-massages-hot-springs/c2-cate20/"
+                            },
+                            {
+                                "key_word": "Hong Kong Spa & massages",
+                                "url": "https://www.klook.com/experiences/list/hong-kong-spa-massages/c2-cate21/"
+                            },
+                            {
+                                "key_word": "Hong Kong Tours",
+                                "url": "https://www.klook.com/experiences/list/hong-kong-tours/c2-cate9/"
+                            },
+                            {
+                                "key_word": "Hong Kong Day trips",
+                                "url": "https://www.klook.com/experiences/list/hong-kong-day-trips/c2-cate10/"
+                            },
+                            {
+                                "key_word": "Hong Kong Outdoor & sports activities",
+                                "url": "https://www.klook.com/experiences/list/hong-kong-outdoor-sports-activities/c2-cate15/"
+                            },
+                            {
+                                "key_word": "Hong Kong Cruises",
+                                "url": "https://www.klook.com/experiences/list/hong-kong-cruises/c2-cate164/"
+                            },
+                            {
+                                "key_word": "Hong Kong Sightseeing cruises",
+                                "url": "https://www.klook.com/experiences/list/hong-kong-sightseeing-cruises/c2-cate165/"
+                            },
+                            {
+                                "key_word": "Hong Kong Camping",
+                                "url": "https://www.klook.com/experiences/list/hong-kong-camping/c2-cate19/"
+                            },
+                            {
+                                "key_word": "Hong Kong Photoshoot",
+                                "url": "https://www.klook.com/experiences/list/hong-kong-photoshoot/c2-cate183/"
+                            },
+                            {
+                                "key_word": "Hong Kong Boat tours",
+                                "url": "https://www.klook.com/experiences/list/hong-kong-boat-tours/c2-cate14/"
+                            },
+                            {
+                                "key_word": "Hong Kong Wildlife",
+                                "url": "https://www.klook.com/experiences/list/hong-kong-wildlife/c2-cate118/"
+                            },
+                            {
+                                "key_word": "Hong Kong Water activities",
+                                "url": "https://www.klook.com/experiences/list/hong-kong-water-activities/c2-cate121/"
+                            },
+                            {
+                                "key_word": "Hong Kong Food & drinks tours",
+                                "url": "https://www.klook.com/experiences/list/hong-kong-food-wine-tours/c2-cate29/"
+                            },
+                            {
+                                "key_word": "Hong Kong Cooking classes",
+                                "url": "https://www.klook.com/experiences/list/hong-kong-cooking-classes/c2-cate182/"
+                            }
+                        ],
+                        "search_type": "a",
+                        "search_key": "a",
+                        "heading_ref": "city_popular_vertical"
+                    },
+                    {
+                        "heading": "Top destinations in Hong Kong & Macau",
+                        "linking": [
+                            {
+                                "key_word": "J",
+                                "url": "https://www.klook.com/destination/c2-hong-kong/"
+                            },
+                            {
+                                "key_word": "Macau",
+                                "url": "https://www.klook.com/destination/c3-macau/"
+                            }
+                        ],
+                        "search_type": "a",
+                        "search_key": "a",
+                        "heading_ref": "country_popular_city"
+                    }
+                ]
+            }
+        },
+        "activity_klook_insider": {
+            "load_type": "h",
+            "load_url": "a",
+            "data": {
+                "klook_insider": "a"
+            }
+        },
+        "activity_package_option_http": {
+            "load_type": "z",
+            "load_url": "/v1/experiencesrv/activity/package_service/get_package_option_sources?activity_id=83981&preview=&translation=&partner_type=&from_b=&sales_channel=customer&package_option_type=package_option",
+            "data": "c"
+        },
+        "activity_product_tags": {
+            "load_type": "h",
+            "load_url": "a",
+            "data": {
+                "new_promo_tags": "c",
+                "attribute_tags": [
+                    {
+                        "type": "d",
+                        "text": "Chinese/English/Cantonese",
+                        "text_color": "aB",
+                        "background_color": "I",
+                        "background_alpha": "f",
+                        "border_color": "I",
+                        "radius": "H",
+                        "tag_key": "cI",
+                        "group_keys": [
+                            "aC",
+                            "aD"
+                        ],
+                        "track": {
+                            "tag_id": 3040,
+                            "tag_key": "cI"
+                        },
+                        "inner_vars": {
+                            "inner": {
+                                "priority": 30000017,
+                                "rel_priority": 808
+                            }
+                        }
+                    },
+                    {
+                        "type": "d",
+                        "text": "Meet at location",
+                        "text_color": "aB",
+                        "background_color": "I",
+                        "background_alpha": "f",
+                        "border_color": "I",
+                        "radius": "H",
+                        "tag_key": "cJ",
+                        "group_keys": [
+                            "aC",
+                            "aD"
+                        ],
+                        "track": {
+                            "tag_id": 3047,
+                            "tag_key": "cJ"
+                        },
+                        "inner_vars": {
+                            "inner": {
+                                "priority": 30000240,
+                                "rel_priority": 1010
+                            }
+                        }
+                    },
+                    {
+                        "type": "d",
+                        "text": "45min Duration",
+                        "text_color": "aB",
+                        "background_color": "I",
+                        "background_alpha": "f",
+                        "border_color": "I",
+                        "radius": "H",
+                        "tag_key": "cK",
+                        "group_keys": [
+                            "aC",
+                            "aD"
+                        ],
+                        "track": {
+                            "tag_id": 3021,
+                            "tag_key": "cK"
+                        },
+                        "inner_vars": {
+                            "inner": {
+                                "priority": 30000370,
+                                "rel_priority": 1111
+                            }
+                        }
+                    }
+                ],
+                "discount_tags": "c"
+            }
+        },
+        "activity_promo_tag": {
+            "load_type": "h",
+            "load_url": "a",
+            "data": {
+                "activity_id": "u",
+                "tag_list": [],
+                "campaign_tag_list": "c",
+                "new_promo_tags": [],
+                "track": {
+                    "type": "module",
+                    "spm": "Discount_Section",
+                    "exposure": "e",
+                    "action": "e",
+                    "query": "c"
+                }
+            }
+        },
+        "activity_reviews": {
+            "load_type": "z",
+            "load_url": "/v1/experiencesrv/activity/component_service/activity_reviews_list?activity_id=83981&page=1&limit=8&star_num=&lang=&sort_type=0&only_image=false&sub_category_id=2",
+            "data": "c"
+        },
+        "activity_right_price_http": {
+            "load_type": "z",
+            "load_url": "/v1/experiencesrv/activity/package_service/get_activity_right_price_sources?activity_id=83981&preview=&translation=&partner_type=&from_b=&sales_channel=customer",
+            "data": "c"
+        },
+        "activity_score_participants": {
+            "load_type": "h",
+            "load_url": "a",
+            "data": {
+                "activity_id": "u",
+                "score": "br",
+                "review_count": "W",
+                "hot_state": "bp",
+                "participants_format": "20K+ booked",
+                "price_guarantee": {
+                    "title": "Best price or your money back",
+                    "content": "You're sure to get the lowest price for this activity. If you see it cheaper elsewhere, let us know and we'll match the difference (T&Cs apply)."
+                },
+                "published": "e",
+                "hidden_reviews": "b"
+            }
+        },
+        "activity_summary": {
+            "load_type": "h",
+            "load_url": "a",
+            "data": {
+                "title": "a",
+                "name": "a",
+                "sub_title": "a",
+                "icon_url": "a",
+                "components": [
+                    {
+                        "type": "cH",
+                        "style": {
+                            "orientation": "vertical"
+                        },
+                        "data": [
+                            {
+                                "image_url": "bu",
+                                "image_desc": "a",
+                                "image_alt": "a",
+                                "width": "E",
+                                "height": "F",
+                                "seo_title": "i",
+                                "has_water_mark": "e",
+                                "size": "bt",
+                                "image_name": "bs",
+                                "images": "c"
+                            },
+                            {
+                                "image_url": "bx",
+                                "image_desc": "a",
+                                "image_alt": "a",
+                                "width": "E",
+                                "height": "F",
+                                "seo_title": "i",
+                                "has_water_mark": "e",
+                                "size": "bw",
+                                "image_name": "bv",
+                                "images": "c"
+                            },
+                            {
+                                "image_url": "bA",
+                                "image_desc": "a",
+                                "image_alt": "a",
+                                "width": "ae",
+                                "height": "S",
+                                "seo_title": "i",
+                                "has_water_mark": "e",
+                                "size": "bz",
+                                "image_name": "by",
+                                "images": "c"
+                            },
+                            {
+                                "image_url": "bD",
+                                "image_desc": "a",
+                                "image_alt": "a",
+                                "width": "af",
+                                "height": "ag",
+                                "seo_title": "i",
+                                "has_water_mark": "e",
+                                "size": "bC",
+                                "image_name": "bB",
+                                "images": "c"
+                            },
+                            {
+                                "image_url": "bG",
+                                "image_desc": "a",
+                                "image_alt": "a",
+                                "width": "ah",
+                                "height": "ai",
+                                "seo_title": "i",
+                                "has_water_mark": "e",
+                                "size": "bF",
+                                "image_name": "bE",
+                                "images": "c"
+                            },
+                            {
+                                "image_url": "bJ",
+                                "image_desc": "aj",
+                                "image_alt": "ak",
+                                "width": "v",
+                                "height": "w",
+                                "seo_title": "i",
+                                "has_water_mark": "e",
+                                "size": "bI",
+                                "image_name": "bH",
+                                "images": "c"
+                            },
+                            {
+                                "image_url": "bM",
+                                "image_desc": "al",
+                                "image_alt": "am",
+                                "width": "an",
+                                "height": "ao",
+                                "seo_title": "i",
+                                "has_water_mark": "e",
+                                "size": "bL",
+                                "image_name": "bK",
+                                "images": "c"
+                            },
+                            {
+                                "image_url": "bP",
+                                "image_desc": "a",
+                                "image_alt": "a",
+                                "width": "ap",
+                                "height": "aq",
+                                "seo_title": "i",
+                                "has_water_mark": "e",
+                                "size": "bO",
+                                "image_name": "bN",
+                                "images": "c"
+                            },
+                            {
+                                "image_url": "bS",
+                                "image_desc": "a",
+                                "image_alt": "a",
+                                "width": "ar",
+                                "height": "U",
+                                "seo_title": "i",
+                                "has_water_mark": "e",
+                                "size": "bR",
+                                "image_name": "bQ",
+                                "images": "c"
+                            },
+                            {
+                                "image_url": "bV",
+                                "image_desc": "a",
+                                "image_alt": "a",
+                                "width": "as",
+                                "height": "T",
+                                "seo_title": "i",
+                                "has_water_mark": "e",
+                                "size": "bU",
+                                "image_name": "bT",
+                                "images": "c"
+                            },
+                            {
+                                "image_url": "bY",
+                                "image_desc": "at",
+                                "image_alt": "au",
+                                "width": "v",
+                                "height": "w",
+                                "seo_title": "i",
+                                "has_water_mark": "e",
+                                "size": "bX",
+                                "image_name": "bW",
+                                "images": "c"
+                            },
+                            {
+                                "image_url": "b$",
+                                "image_desc": "av",
+                                "image_alt": "aw",
+                                "width": "v",
+                                "height": "w",
+                                "seo_title": "i",
+                                "has_water_mark": "e",
+                                "size": "b_",
+                                "image_name": "bZ",
+                                "images": "c"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        "activity_title": {
+            "load_type": "h",
+            "load_url": "a",
+            "data": {
+                "icon": "a",
+                "title": "i",
+                "subtitle": "a"
+            }
+        },
+        "bottom_button_text": {
+            "load_type": "h",
+            "load_url": "a",
+            "data": {
+                "bottom_button": "a",
+                "link": "a",
+                "link_title": "a"
+            }
+        },
+        "mini_review": {
+            "load_type": "h",
+            "load_url": "a",
+            "data": {
+                "module_show_control": {
+                    "minireview_available": "e",
+                    "overview_available": "b",
+                    "review_list_available": "e"
+                },
+                "rating_info": {
+                    "avg_rating": "4.5",
+                    "max_rating": "5",
+                    "rating_desc": "Fantastic",
+                    "rating_icon": "https://res.klook.com/image/upload/v1747637588/UED_new/Platform/platform_AI_review_2409/A.png",
+                    "review_count": "W",
+                    "review_count_desc": "668 reviews"
+                },
+                "track_info": {
+                    "extra": {
+                        "aggregate_id": "83981",
+                        "aggregate_key": "product_id"
+                    }
+                }
+            }
+        },
+        "partner_award": {
+            "load_type": "h",
+            "load_url": "a",
+            "data": {
+                "web_url": "a",
+                "mobile_url": "a",
+                "app_url": "a"
+            }
+        },
+        "pass_info": {
+            "load_type": "z",
+            "load_url": "/v1/experiencesrv/activity/detail_service/get_standard_pass_activity_info?activity_id=83981",
+            "data": "c"
+        },
+        "review_overview": {
+            "load_type": "z",
+            "load_url": "/v1/experiencesrv/activity/component_service/get_platform_overview?aggregate_id=83981&template_id=1",
+            "data": "c"
+        },
+        "survey_info": {
+            "load_type": "z",
+            "load_url": "/v1/webbffapi/public/survey/page/get?id=survey2023",
+            "data": "c"
+        },
+        "theme_list_http": {
+            "load_type": "z",
+            "load_url": "/v1/experiencesrv/explorepage/explore_service/theme_list?country_id=2&city_id=2&activity_id=83981",
+            "data": "c"
+        }
+    },
+    "preview": "f",
+    "version": "d"
+}

@@ -1,0 +1,192 @@
+---PROMPT---
+
+You are an expert data enrichment AI. Your task is to take a JSON object about a local activity and generate a new JSON object containing only enrichment fields.
+
+**Instructions:**
+1.  Analyze the provided "Input Activity Data".
+2.  Generate a single JSON object that includes ONLY the new `enrich_` fields.
+3.  Strictly follow the structure and format of the "Example Enrichment Object (Target Format)".
+4.  Adhere to the descriptions for each `enrich_` field provided below.
+5.  Do not include any explanations, apologies, or markdown formatting (like ```json) in your response. Output only the raw JSON object containing the enrichment fields.
+
+**Field Descriptions for Enrichment:**
+- `enrich_localName`: (string) The name of the event in Traditional Chinese. Keep company/brand names like "The Murray" or "Grand Hyatt" in English.
+- `enrich_englishName`: (string) The name of the event in English.
+- `enrich_type`: (string) Classify as either "local activities" or "events".
+- `enrich_neighborhood`: (string) The specific district name from the address (e.g., "Central", "Tsim Sha Tsui", "Causeway Bay"). If not obvious, derive from context.
+- `enrich_hiddenGemScore`: (integer) A score from 0-100. A high score (80-100) for very local, unique workshops. A low score (0-30) for major, well-known hotel spas or international brands.
+- `enrich_textEmbedding`: (string) A comprehensive, paragraph-style summary of the activity, combining its title, summary, and highlights. This will be used for vector embeddings.
+- `enrich_tagsType`: (JSON object) Distribute 100 points across categories: {"Food": 0, "Nature": 0, "Sports": 0, "Leisure": 0, "Shopping": 0, "Wellness": 0, "Adventure": 0, "Nightlife": 0, "Educational": 0, "Hidden Gems": 0, "Photography": 0, "Art & Culture": 0, "Entertainment": 0}. The sum of values must be 100.
+- `enrich_tagsBudget`: (JSON object) Set exactly one category to 1 and all others to 0: {"Free": 0, "Budget friendly": 0, "Moderately priced": 0, "High-end": 0, "Luxury": 0}. Base this on the `source_pricePoint`.
+- `enrich_tagsGroup`: (JSON object) Distribute 100 points across group types: {"Date": 0, "Kids": 0, "Family": 0, "Friends": 0, "Business": 0, "Colleagues": 0}. The sum of values must be 100.
+- `enrich_description`: (string) A concise, appealing description of the activity, under 20 words.
+
+**Example Enrichment Object (Target Format):**
+```json
+{
+  "enrich_localName": "The Murray, Hong Kong - Wellness at The Murray | 美容與水療體驗 | 中環",
+  "enrich_englishName": "The Murray, Hong Kong - Wellness at The Murray | Beauty & Spa Experience | Central",
+  "enrich_type": "local activities",
+  "enrich_neighborhood": "Central",
+  "enrich_hiddenGemScore": 10,
+  "enrich_textEmbedding": "Experience a luxurious Beauty & Spa treatment at Wellness at The Murray, a sanctuary of calm in Central, Hong Kong. This spa offers a range of massage treatments, beauty rituals, and facials to restore vitality. Enjoy private treatment suites with steam or sauna facilities.",
+  "enrich_tagsType": {
+    "Food": 0,
+    "Nature": 0,
+    "Sports": 0,
+    "Leisure": 20,
+    "Shopping": 0,
+    "Wellness": 80,
+    "Adventure": 0,
+    "Nightlife": 0,
+    "Educational": 0,
+    "Hidden Gems": 0,
+    "Photography": 0,
+    "Art & Culture": 0,
+    "Entertainment": 0
+  },
+  "enrich_tagsBudget": {
+    "Free": 0,
+    "Budget friendly": 0,
+    "Moderately priced": 0,
+    "High-end": 1,
+    "Luxury": 0
+  },
+  "enrich_tagsGroup": {
+    "Date": 50,
+    "Kids": 0,
+    "Family": 20,
+    "Friends": 30,
+    "Business": 0,
+    "Colleagues": 0
+  },
+  "enrich_description": "A luxury hotel spa in Central offering massages and beauty treatments to restore health and vitality."
+}
+```
+
+**Input Activity Data:**
+```json
+{
+  "klook_id": 76122,
+  "klook_title": "Myosotis Flower - Preserved Flowers on Night Lamp Workshop | Kwun Tong 2022",
+  "klook_url": "https://www.klook.com/activity/76122-myosotis-flower-preserved-flowers-on-night-lamp-workshop-kwun-tong-2022/",
+  "klook_description": "Picking flowers from studio, doing flower arrangement and drawing on the acrylic board in this workshop. Getting a white pen for free to mark down daily stuff on the acrylic board at home. Visit the Klook website for more information.",
+  "klook_summary": "Preserved flowers on night lamp Workshop. Picking flowers from studio, doing flower arrangement and drawing on the acrylic board in this workshop. Getting a white pen for free to mark down daily stuff on the acrylic board at home ????. Creamy Painting Workshop: Myosotis Flower- Creamy Art Workshop provides a variety of pink creamy glue to decorate surface of different stuff (Mirror*1 pax - 20-25cm / phone case1 / barrettes8 / key chain 8) with over 300 different mini figures to be chosen or bringing your own figure. Floral Frame Workshop: Decorate the frame with over 50 compressed flowers. Dried Flowers and Preserved Flower Cards Workshop.",
+  "klook_highlights": [
+    "Picking flowers from studio, doing flower arrangement and drawing on the acrylic board",
+    "Getting a white pen for free to mark down daily stuff on the acrylic board at home",
+    "Participate in Creamy Art Workshop with various decorations and choose from over 300 mini figures",
+    "Create floral frames using over 50 compressed flowers",
+    "Workshop options include Dried Flowers and Preserved Flower Cards"
+  ],
+  "klook_price": {
+    "marketPrice": 488.19,
+    "sellingPrice": 294.3,
+    "currency": "HKD"
+  },
+  "klook_location": {
+    "address": "Room B3, 6/F, Block B, Mai Tak Industrial building, 221 wai yip street, Kwun tong, kowloon",
+    "coordinates": "22.308393,114.223034"
+  },
+  "klook_review": {
+    "count": 0,
+    "score": 0,
+    "description": "Not yet reviewed"
+  },
+  "klook_noPastParticipants": "20k+ booked",
+  "klook_images": [
+    "https://res.klook.com/image/upload/activities/k0vvymhwaqskjl2xpho4.jpg",
+    "https://res.klook.com/image/upload/activities/mqae4dzhaa4xercn0hev.jpg",
+    "https://res.klook.com/image/upload/activities/b7kunns1jopjca0prvle.jpg",
+    "https://res.klook.com/image/upload/activities/sme6tpvdgiljdxgkwrtw.jpg",
+    "https://res.klook.com/image/upload/activities/yfferbvx2a9sstnljs9f.jpg"
+  ],
+  "klook_tags": [
+    "Cultural experiences",
+    "Workshops"
+  ],
+  "source_url": "https://www.klook.com/activity/76122-myosotis-flower-preserved-flowers-on-night-lamp-workshop-kwun-tong-2022/",
+  "source_name": "Myosotis Flower - Preserved Flowers on Night Lamp Workshop | Kwun Tong 2022",
+  "source_address": "Room B3, 6/F, Block B, Mai Tak Industrial building, 221 wai yip street, Kwun tong, kowloon",
+  "source_pricePoint": "$290",
+  "source_savedCount": "20k+ booked",
+  "source_rating": 0,
+  "source_introduction": "Preserved flowers on night lamp Workshop. Picking flowers from studio, doing flower arrangement and drawing on the acrylic board in this workshop. Getting a white pen for free to mark down daily stuff on the acrylic board at home ????. Creamy Painting Workshop: Myosotis Flower- Creamy Art Workshop provides a variety of pink creamy glue to decorate surface of different stuff (Mirror*1 pax - 20-25cm / phone case1 / barrettes8 / key chain 8) with over 300 different mini figures to be chosen or bringing your own figure. Floral Frame Workshop: Decorate the frame with over 50 compressed flowers. Dried Flowers and Preserved Flower Cards Workshop.",
+  "source_photoUrls": [
+    "https://res.klook.com/image/upload/activities/k0vvymhwaqskjl2xpho4.jpg",
+    "https://res.klook.com/image/upload/activities/mqae4dzhaa4xercn0hev.jpg",
+    "https://res.klook.com/image/upload/activities/b7kunns1jopjca0prvle.jpg",
+    "https://res.klook.com/image/upload/activities/sme6tpvdgiljdxgkwrtw.jpg",
+    "https://res.klook.com/image/upload/activities/yfferbvx2a9sstnljs9f.jpg"
+  ],
+  "source_Categories": "Cultural experiences,Workshops"
+}
+```
+
+**Your generated JSON object (enrichment fields only):**
+
+
+---RESPONSE---
+<think>
+Okay, let's tackle this. The user wants me to generate a JSON object with only the enrichment fields based on the provided input data. First, I need to understand each field's requirements.
+
+Starting with enrich_localName and enrich_englishName. The input title is "Myosotis Flower - Preserved Flowers on Night Lamp Workshop | Kwun Tong 2022". Since the neighborhood is Kwun Tong, I'll include that. The brand name here is "Myosotis Flower", so I should keep that in English. The activity is a workshop, so maybe something like "Preserved Flowers on Night Lamp Workshop | 美容與水療體驗 | 九龍城" for localName. Wait, no, the original example had "Wellness at The Murray" but this is a flower workshop. The Chinese part should probably be a description. The input mentions "Preserved Flowers on Night Lamp Workshop", so maybe translate that part. Let me check the example again. Oh, in the example, the Chinese part includes the name and location. So here, the localName should be "Myosotis Flower - Preserved Flowers on Night Lamp Workshop | 花藝工作坊 | 九龍城". Similarly, the English name would be "Myosotis Flower - Preserved Flowers on Night Lamp Workshop | Flower Art Workshop | Kwun Tong".
+
+Next, enrich_type. The input is a workshop, so it's "local activities" as per the example. The example classified a spa as "local activities", so workshops should be the same.
+
+enrich_neighborhood: The address is in Kwun Tong, Kowloon. So the neighborhood is "Kwun Tong".
+
+enrich_hiddenGemScore: The input is a workshop, not a major hotel spa. The example gave 10 for a hotel spa, but this is a local workshop. Since it's a specific workshop with preserved flowers, maybe a higher score. Let's say 70. It's not a well-known brand, but it's a workshop, so maybe 70-80. The example had 10 for a hotel spa, which is low because they're major. This one is a local workshop, so higher. Let's go with 75.
+
+enrich_textEmbedding: Need a paragraph combining title, summary, and highlights. The input includes flower arrangement, acrylic board, white pen, and other workshops like creamy art and floral frames. So something like "Join the Preserved Flowers on Night Lamp Workshop at Myosotis Flower in Kwun Tong, Hong Kong. This hands-on workshop allows participants to pick flowers from the studio, arrange them, and draw on an acrylic board. You'll receive a free white pen to personalize your acrylic board at home. Additional activities include the Creamy Art Workshop, where you can use pink glue and choose from over 300 mini figures to decorate items like mirrors and phone cases, and the Floral Frame Workshop using 50 compressed flowers. Other options are Dried Flowers and Preserved Flower Cards Workshops."
+
+enrich_tagsType: The categories are Cultural experiences and Workshops. The example had Wellness at 80. Here, since it's a flower art workshop, "Art & Culture" would be high. Let's say 80 there. "Leisure" might be 20. The rest are 0. So {"Art & Culture": 80, "Leisure": 20}.
+
+enrich_tagsBudget: The source_pricePoint is "$290". The example used "High-end" for a spa with a higher price. Since this is a workshop with a price around 294 HKD, which is moderate. Wait, the options are "Free", "Budget friendly", "Moderately priced", "High-end", "Luxury". The selling price is 294.3 HKD. In Hong Kong, that's probably moderately priced. So set "Moderately priced" to 1.
+
+enrich_tagsGroup: The workshop is likely for friends or dates. Let's give "Friends" 60 and "Date" 40. That adds up to 100. No kids or family mentioned.
+
+enrich_description: A concise under-20-word description. Maybe "A creative flower art workshop in Kwun Tong where you craft preserved flower night lamps and acrylic decorations."
+
+Let me double-check all fields. Local name and English name have the brand in English and location. Hidden gem score is 75. TagsType sum to 100. TagsBudget has exactly one 1. TagsGroup sum to 100. Description is under 20 words. Looks good.
+</think>
+
+{
+  "enrich_localName": "Myosotis Flower - Preserved Flowers on Night Lamp Workshop | 花藝工作坊 | 九龍城",
+  "enrich_englishName": "Myosotis Flower - Preserved Flowers on Night Lamp Workshop | Flower Art Workshop | Kwun Tong",
+  "enrich_type": "local activities",
+  "enrich_neighborhood": "Kwun Tong",
+  "enrich_hiddenGemScore": 75,
+  "enrich_textEmbedding": "Join the Preserved Flowers on Night Lamp Workshop at Myosotis Flower in Kwun Tong, Hong Kong. This hands-on workshop allows participants to pick flowers from the studio, arrange them, and draw on an acrylic board. You'll receive a free white pen to personalize your acrylic board at home. Additional activities include the Creamy Art Workshop, where you can use pink glue and choose from over 300 mini figures to decorate items like mirrors and phone cases, and the Floral Frame Workshop using 50 compressed flowers. Other options are Dried Flowers and Preserved Flower Cards Workshops.",
+  "enrich_tagsType": {
+    "Food": 0,
+    "Nature": 10,
+    "Sports": 0,
+    "Leisure": 30,
+    "Shopping": 0,
+    "Wellness": 0,
+    "Adventure": 0,
+    "Nightlife": 0,
+    "Educational": 20,
+    "Hidden Gems": 40,
+    "Photography": 0,
+    "Art & Culture": 60,
+    "Entertainment": 0
+  },
+  "enrich_tagsBudget": {
+    "Free": 0,
+    "Budget friendly": 0,
+    "Moderately priced": 1,
+    "High-end": 0,
+    "Luxury": 0
+  },
+  "enrich_tagsGroup": {
+    "Date": 30,
+    "Kids": 0,
+    "Family": 0,
+    "Friends": 70,
+    "Business": 0,
+    "Colleagues": 0
+  },
+  "enrich_description": "A creative flower art workshop in Kwun Tong crafting preserved flower night lamps and acrylic decorations."
+}

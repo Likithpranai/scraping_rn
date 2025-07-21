@@ -1,0 +1,40 @@
+imagesUrls:
+<img> with attr data-testid="hero-img" -> src
+img.eds-max-img -> src
+
+title:
+h1.event-title -> innertext
+
+summary:
+p.summary > strong -> innertext
+
+organizer:
+strong.organizer-listing-info-variant-b__name-link -> innertext
+
+attendeesHostedByOrganizer:
+div.organizer-listing-info-variant-b_total-events > span > strong -> innertext
+
+datesAndTimes:
+div.DateCard-module__root___28_4K > time -> datetime
+OR
+span.date-info__full-datetime -> innertext of all children (direct or indirect), combined
+
+venue:
+regex to get
+"Arbor" + ", " + ["H Queen's", "#25/F", "Hong Kong, HKI", "Hong Kong"].removeLast().join(" ")
+i.e. Arbor, H Queen's, #25/F, Hong Kong, HKI
+from
+"location": { "venueMultilineAddress": ["H Queen's", "#25/F", "Hong Kong, HKI", "Hong Kong"], "hasMap": true, "hasAddress": true, "hasVenueName": true, "venueName": "Arbor", "localityPlaceId": null }
+
+description:
+div.eds-text--left > p -> innertext (there are many paragraphs, extract and combine all)
+
+price:
+regex to get
+"12.51 USD"
+from
+"totalCost": { "currency": "USD", "majorValue": "12.51", "display": "12.51 USD", "value": 1251 }
+
+url:
+url of the page
+

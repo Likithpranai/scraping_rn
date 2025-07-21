@@ -1,0 +1,214 @@
+---PROMPT---
+
+You are an expert data enrichment AI. Your task is to take a JSON object about a local activity and generate a new JSON object containing only enrichment fields.
+
+**Instructions:**
+1.  Analyze the provided "Input Activity Data".
+2.  Generate a single JSON object that includes ONLY the new `enrich_` fields.
+3.  Strictly follow the structure and format of the "Example Enrichment Object (Target Format)".
+4.  Adhere to the descriptions for each `enrich_` field provided below.
+5.  Do not include any explanations, apologies, or markdown formatting (like ```json) in your response. Output only the raw JSON object containing the enrichment fields.
+
+**Field Descriptions for Enrichment:**
+- `enrich_localName`: (string) The name of the event in Traditional Chinese. Keep company/brand names like "The Murray" or "Grand Hyatt" in English.
+- `enrich_englishName`: (string) The name of the event in English.
+- `enrich_type`: (string) Classify as either "local activities" or "events".
+- `enrich_neighborhood`: (string) The specific district name from the address (e.g., "Central", "Tsim Sha Tsui", "Causeway Bay"). If not obvious, derive from context.
+- `enrich_hiddenGemScore`: (integer) A score from 0-100. A high score (80-100) for very local, unique workshops. A low score (0-30) for major, well-known hotel spas or international brands.
+- `enrich_textEmbedding`: (string) A comprehensive, paragraph-style summary of the activity, combining its title, summary, and highlights. This will be used for vector embeddings.
+- `enrich_tagsType`: (JSON object) Distribute 100 points across categories: {"Food": 0, "Nature": 0, "Sports": 0, "Leisure": 0, "Shopping": 0, "Wellness": 0, "Adventure": 0, "Nightlife": 0, "Educational": 0, "Hidden Gems": 0, "Photography": 0, "Art & Culture": 0, "Entertainment": 0}. The sum of values must be 100.
+- `enrich_tagsBudget`: (JSON object) Set exactly one category to 1 and all others to 0: {"Free": 0, "Budget friendly": 0, "Moderately priced": 0, "High-end": 0, "Luxury": 0}. Base this on the `source_pricePoint`.
+- `enrich_tagsGroup`: (JSON object) Distribute 100 points across group types: {"Date": 0, "Kids": 0, "Family": 0, "Friends": 0, "Business": 0, "Colleagues": 0}. The sum of values must be 100.
+- `enrich_description`: (string) A concise, appealing description of the activity, under 20 words.
+
+**Example Enrichment Object (Target Format):**
+```json
+{
+  "enrich_localName": "The Murray, Hong Kong - Wellness at The Murray | 美容與水療體驗 | 中環",
+  "enrich_englishName": "The Murray, Hong Kong - Wellness at The Murray | Beauty & Spa Experience | Central",
+  "enrich_type": "local activities",
+  "enrich_neighborhood": "Central",
+  "enrich_hiddenGemScore": 10,
+  "enrich_textEmbedding": "Experience a luxurious Beauty & Spa treatment at Wellness at The Murray, a sanctuary of calm in Central, Hong Kong. This spa offers a range of massage treatments, beauty rituals, and facials to restore vitality. Enjoy private treatment suites with steam or sauna facilities.",
+  "enrich_tagsType": {
+    "Food": 0,
+    "Nature": 0,
+    "Sports": 0,
+    "Leisure": 20,
+    "Shopping": 0,
+    "Wellness": 80,
+    "Adventure": 0,
+    "Nightlife": 0,
+    "Educational": 0,
+    "Hidden Gems": 0,
+    "Photography": 0,
+    "Art & Culture": 0,
+    "Entertainment": 0
+  },
+  "enrich_tagsBudget": {
+    "Free": 0,
+    "Budget friendly": 0,
+    "Moderately priced": 0,
+    "High-end": 1,
+    "Luxury": 0
+  },
+  "enrich_tagsGroup": {
+    "Date": 50,
+    "Kids": 0,
+    "Family": 20,
+    "Friends": 30,
+    "Business": 0,
+    "Colleagues": 0
+  },
+  "enrich_description": "A luxury hotel spa in Central offering massages and beauty treatments to restore health and vitality."
+}
+```
+
+**Input Activity Data:**
+```json
+{
+  "klook_id": 73368,
+  "klook_title": "Artisan m Leather Workshop - Handmade Leather Shoes Workshop",
+  "klook_url": "https://www.klook.com/activity/73368-hk-73368-artisan-m-leather-workshop-2022/",
+  "klook_description": "The hand-made leather shoes course is suitable for beginners with zero experience. The exclusive hand-dying technique can achieve hand-sweeping patterns and two-color effects. More than 2,000 students have successfully completed their works with zero failures. Please refer to the Klook website for details.",
+  "klook_summary": "Tuition fee: $3599 complete with material package\nTime required: about 12-15 hours, divided into 4-5 sessions\nMaterial: Italian natural color AAA tree lamb leather\nStyle: customized\nFlexible appointment date.\nMonday to Friday: Afternoon class 14:00-1730\nAll the way to the church until the completion\nClosed on public holidays\nThe appointment time of this workshop is not the exact date, the exact workshop date and time will be contacted by the workshop organizer in person after the appointment",
+  "klook_highlights": [
+    "Leather shoes are a necessity for men, and they have an intimate relationship. You need to wear leather shoes when you return to school, and you need to wear leather shoes when you return to work. Work shoes are very important for men. Clothing directly affects the first impression. Of course, leather shoes cannot be disrespectful. Personalized leather shoes can highlight your personal taste in clothing. This course is definitely suitable for you.",
+    "The hand-made leather shoes course is suitable for beginners with zero experience. The exclusive hand-dyeing technique can achieve hand-sweeping patterns and two-color effects. More than 2,000 students have successfully completed their works with zero failures."
+  ],
+  "klook_price": {
+    "marketPrice": 0.0,
+    "sellingPrice": 3499.14,
+    "currency": "HKD"
+  },
+  "klook_location": {
+    "address": "Room 1309, Block C, 13th Floor, Guisheng Industrial Building Phase I",
+    "coordinates": "22.36445,114.133624"
+  },
+  "klook_review": {
+    "count": 0,
+    "score": 0,
+    "description": ""
+  },
+  "klook_noPastParticipants": "",
+  "klook_images": [
+    "https://res.klook.com/image/upload/activities/cxrewhk5huvo2lrfoy8o.jpg",
+    "https://res.klook.com/image/upload/activities/xix9csduuay585zd3c0e.jpg",
+    "https://res.klook.com/image/upload/activities/rp4wredptbwattx9gkty.jpg",
+    "https://res.klook.com/image/upload/activities/cwrad6bmsw4nz7ngq9nf.jpg",
+    "https://res.klook.com/image/upload/activities/g6lxtfjh4pjcugya7pbt.jpg",
+    "https://res.klook.com/image/upload/activities/steuyl4ejcwmuvocqnef.jpg",
+    "https://res.klook.com/image/upload/activities/mdx0jdqps3leocxxoeki.jpg"
+  ],
+  "klook_tags": [
+    "Tours & experiences",
+    "Cultural experiences",
+    "Workshops"
+  ],
+  "source_url": "https://www.klook.com/activity/73368-hk-73368-artisan-m-leather-workshop-2022/",
+  "source_name": "Artisan m Leather Workshop - Handmade Leather Shoes Workshop",
+  "source_address": "Room 1309, Block C, 13th Floor, Guisheng Industrial Building Phase I",
+  "source_pricePoint": "$3500",
+  "source_savedCount": "",
+  "source_rating": 0,
+  "source_introduction": "Tuition fee: $3599 complete with material package\nTime required: about 12-15 hours, divided into 4-5 sessions\nMaterial: Italian natural color AAA tree lamb leather\nStyle: customized\nFlexible appointment date.\nMonday to Friday: Afternoon class 14:00-1730\nAll the way to the church until the completion\nClosed on public holidays\nThe appointment time of this workshop is not the exact date, the exact workshop date and time will be contacted by the workshop organizer in person after the appointment",
+  "source_photoUrls": [
+    "https://res.klook.com/image/upload/activities/cxrewhk5huvo2lrfoy8o.jpg",
+    "https://res.klook.com/image/upload/activities/xix9csduuay585zd3c0e.jpg",
+    "https://res.klook.com/image/upload/activities/rp4wredptbwattx9gkty.jpg",
+    "https://res.klook.com/image/upload/activities/cwrad6bmsw4nz7ngq9nf.jpg",
+    "https://res.klook.com/image/upload/activities/g6lxtfjh4pjcugya7pbt.jpg",
+    "https://res.klook.com/image/upload/activities/steuyl4ejcwmuvocqnef.jpg",
+    "https://res.klook.com/image/upload/activities/mdx0jdqps3leocxxoeki.jpg"
+  ],
+  "source_Categories": "Tours & experiences,Cultural experiences,Workshops"
+}
+```
+
+**Your generated JSON object (enrichment fields only):**
+
+
+---RESPONSE---
+<think>
+Okay, let's tackle this. The user wants me to generate a JSON object with only the enrichment fields based on the provided input data. First, I need to understand each field's requirements.
+
+Starting with enrich_localName and enrich_englishName. The input title is "Artisan m Leather Workshop - Handmade Leather Shoes Workshop". The address is in Guisheng Industrial Building, which is in Hong Kong. The example uses "Central" as a neighborhood, so I need to figure out the specific district here. Guisheng Industrial Building Phase I is likely in Mong Kok or another industrial area. Let me check the coordinates. The coordinates given are 22.36445,114.133624. Looking up these coordinates, they correspond to Mong Kok in Hong Kong. So the neighborhood should be "Mong Kok".
+
+Next, the hiddenGemScore. The example gave 10 for a hotel spa. This is a leather workshop, which seems more unique and local. Since it's a workshop and not a major brand, maybe a higher score. The example mentions 80-100 for very local, unique workshops. Let's go with 70. Wait, but the example had 10 for a well-known hotel. Hmm, maybe if it's a specialized workshop, it's a hidden gem. But the input data doesn't mention it being a hidden gem. However, the example's hiddenGemScore was 10 for a hotel spa. This workshop is probably a local business, not an international brand. Let me think. The name "Artisan m" doesn't seem like a big brand. So maybe a higher score. Let's say 85.
+
+For enrich_type, since it's a workshop, it's an "event" or "local activities"? The example classified a hotel spa as "local activities". The user instruction says to classify as either "local activities" or "events". Workshops are usually events. But maybe in this case, since it's a recurring workshop, it's a local activity. Wait, the example's "Wellness at The Murray" is a spa, which is a local activity. This is a workshop, so maybe "events" is more appropriate. Let me check the example again. The example's enrich_type is "local activities" for a hotel spa. The input here is a workshop, which is an event. So I should set enrich_type to "events".
+
+Now, enrich_textEmbedding. Need a paragraph combining title, summary, and highlights. The title is about handmade leather shoes. The summary mentions the price, time, materials, style, and class times. Highlights talk about the course being for beginners, the hand-dyeing technique, and the success rate. So the embedding should mention the workshop, the process, the materials (Italian leather), customization, and the fact that it's for beginners with a high success rate.
+
+enrich_tagsType: The categories are Tours & experiences, Cultural experiences, Workshops. So the main tags would be Educational and Art & Culture. Let's distribute points. Since it's a workshop, maybe 70 to Educational. Art & Culture could get 30. The example had 80 in Wellness. So here, Educational and Art & Culture. Let me check the example's tagsType. The example had "Wellness" at 80. So for this, maybe "Educational" 60, "Art & Culture" 40. But the sum must be 100. Let me adjust. Maybe 70 for Educational and 30 for Art & Culture. Other categories like Leisure or Hidden Gems? Since it's a workshop, maybe not. The hiddenGemScore is 85, but the tagsType for Hidden Gems is 0. The example had 0 for Hidden Gems in the tagsType. So probably, only Educational and Art & Culture here. Let me set "Educational": 70, "Art & Culture": 30. The rest 0.
+
+enrich_tagsBudget: The source_pricePoint is "$3500". The example's High-end was 1. So if the price is around $3500, that's high-end. So set "High-end":1, others 0.
+
+enrich_tagsGroup: The workshop is for individuals, maybe suitable for friends or business. The example had Date and Friends. Let's see. Since it's a workshop, possible for friends or business groups. Let's distribute 100 points. Maybe Friends 50, Business 50? Or perhaps Date 30, Friends 70? The example had Date 50, Family 20, Friends 30. But this is a leather workshop. Maybe more for friends or business. Let me think. If someone is making custom shoes, it could be a date activity (like a couple's workshop) or for business (professional development). But the example's workshop was for friends and date. Let's go with Friends 60, Date 40. That adds up to 100. Or maybe Business 50 and Friends 50. The example's tagsGroup for the spa was Date 50, Family 20, Friends 30. Since this is a workshop, maybe similar. Let's say Friends 50, Date 30, Business 20. That sums to 100. Wait, the example had 100 points. So I need to make sure the sum is exactly 100. Let me check the example again. The example's enrich_tagsGroup had Date 50, Family 20, Friends 30. So total 100. For this workshop, maybe Friends 50, Business 50? But that's 100. Or Friends 60, Business 40. Let me decide. Since it's a workshop that could be done with friends or as a personal skill, maybe Friends 50, Business 30, Date 20. That adds up. Alternatively, if it's more of a personal activity, maybe Friends 70 and Business 30. I'll go with Friends 50, Business 30, Date 20. Wait, but the example's workshop (Wellness at The Murray) was a spa, which is more for leisure. This is a hands-on workshop. Maybe more for friends and business. Let me set Friends 50, Business 50. Wait, that's 100. But the example's sum was 100. So maybe that's acceptable. Alternatively, if the workshop is for individuals, maybe Friends 100. Hmm. The example's workshop had 50 for Date and 30 for Friends. Let me check the input data. The workshop is for making leather shoes, which could be a personal project. But it's also possible to attend with friends or for business (like creating custom shoes for a professional setting). Let's distribute 50 to Friends and 50 to Business. That sums to 100. So enrich_tagsGroup would be {"Friends":50, "Business":50, others 0}.
+
+enrich_description: Needs to be concise, under 20 words. Maybe "A hands-on leather workshop in Mong Kok teaching custom shoe-making for all skill levels." That's 14 words.
+
+Putting it all together:
+
+enrich_localName: "Artisan m Leather Workshop - Handmade Leather Shoes Workshop | 製作手工皮鞋 | 蒙古" (since the neighborhood is Mong Kok, which is 蒙古 in Traditional Chinese)
+
+enrich_englishName: "Artisan m Leather Workshop - Handmade Leather Shoes Workshop | Custom Shoe-Making Experience | Mong Kok"
+
+enrich_type: "events"
+
+enrich_neighborhood: "Mong Kok"
+
+enrich_hiddenGemScore: 85 (as it's a specialized workshop, not a big brand)
+
+enrich_textEmbedding: Combine the title, summary, and highlights. Mention the course for beginners, hand-dyeing techniques, 2,000 students with zero failures, Italian leather, customization, and the class schedule.
+
+enrich_tagsType: {"Educational":70, "Art & Culture":30} (others 0)
+
+enrich_tagsBudget: {"High-end":1} (others 0)
+
+enrich_tagsGroup: {"Friends":50, "Business":50} (others 0)
+
+enrich_description: "A hands-on leather workshop in Mong Kok teaching custom shoe-making for all skill levels."
+
+Let me verify each field again. The neighborhood is derived from the address using coordinates. The hiddenGemScore is high because it's a unique workshop. The tagsType sum to 100. The tagsBudget has only High-end as 1. The tagsGroup sum to 100. The description is under 20 words. Looks good.
+</think>
+
+{
+  "enrich_localName": "Artisan m Leather Workshop - Handmade Leather Shoes Workshop | 製作手工皮鞋 | 蒙古",
+  "enrich_englishName": "Artisan m Leather Workshop - Handmade Leather Shoes Workshop | Custom Shoe-Making Experience | Mong Kok",
+  "enrich_type": "events",
+  "enrich_neighborhood": "Mong Kok",
+  "enrich_hiddenGemScore": 85,
+  "enrich_textEmbedding": "Join Artisan m Leather Workshop's handmade leather shoes course in Mong Kok, Hong Kong. Designed for beginners, this workshop teaches exclusive hand-dyeing techniques to create unique two-color patterns and customized Italian AAA tree lamb leather shoes. With over 2,000 successful completions and zero failures, participants spend 12-15 hours across 4-5 sessions. Flexible afternoon classes are available Monday to Friday, culminating in a completed pair of shoes. The workshop emphasizes craftsmanship and personal style through guided sessions that transform raw materials into personalized footwear.",
+  "enrich_tagsType": {
+    "Food": 0,
+    "Nature": 0,
+    "Sports": 0,
+    "Leisure": 0,
+    "Shopping": 0,
+    "Wellness": 0,
+    "Adventure": 0,
+    "Nightlife": 0,
+    "Educational": 70,
+    "Hidden Gems": 0,
+    "Photography": 0,
+    "Art & Culture": 30,
+    "Entertainment": 0
+  },
+  "enrich_tagsBudget": {
+    "Free": 0,
+    "Budget friendly": 0,
+    "Moderately priced": 0,
+    "High-end": 1,
+    "Luxury": 0
+  },
+  "enrich_tagsGroup": {
+    "Date": 20,
+    "Kids": 0,
+    "Family": 0,
+    "Friends": 50,
+    "Business": 30,
+    "Colleagues": 0
+  },
+  "enrich_description": "A hands-on leather workshop in Mong Kok teaching custom shoe-making for all skill levels."
+}
