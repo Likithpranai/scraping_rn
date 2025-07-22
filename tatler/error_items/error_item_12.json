@@ -1,0 +1,43 @@
+{
+  "source_url": "https://www.tatlerasia.com/dining/prince-and-the-peacock-hk?listId=345",
+  "source_name": "Prince and the Peacock",
+  "source_address": "2/F, Central Magistracy, Tai Kwun, 1 Arbuthnot Road, Central, Hong Kong",
+  "source_neighbourhood": "Central, Hong Kong",
+  "source_pricepoint": "",
+  "source_photoUrls": [
+    "https://cdn.tatlerasia.com/tatlerasia/i/2025/06/04161926-prince-and-the-peacock-the-veranda_cover_1600x1067.jpg",
+    "https://cdn.tatlerasia.com/tatlerasia/i/2025/06/04161925-patti-samosa-spiced-chicken-poona-onions-curry-leaves-1_cover_1600x1067.jpg",
+    "https://cdn.tatlerasia.com/tatlerasia/i/2025/06/04161925-prince-the-peacock-interiors0_cover_1600x1067.jpg",
+    "https://cdn.tatlerasia.com/tatlerasia/i/2025/06/04161926-prince-the-peacock-interiors1_cover_1068x1600.jpg",
+    "https://cdn.tatlerasia.com/tatlerasia/i/2025/06/04161925-prince-and-the-peacock-the-kohinoor1_cover_1600x1067.jpg",
+    "https://cdn.tatlerasia.com/tatlerasia/i/2025/06/04161927-dal-moradabad-slow-cooked-yellow-lentils-onions-tomatoes-tempered-red-chillies1-1_cover_1600x1067.jpg",
+    "https://cdn.tatlerasia.com/tatlerasia/i/2025/06/04161926-keema-mirch-ka-salaan0-1_cover_1600x1067.jpg",
+    "https://cdn.tatlerasia.com/tatlerasia/i/2025/06/04161926-prince-the-peacock-interiors3-2_cover_1600x1067.jpg",
+    "https://cdn.tatlerasia.com/tatlerasia/i/2025/06/04161926-pandhra-rassa-prince-and-the-peacock-1-lancelot-chan-1_cover_1600x1067.jpg",
+    "https://cdn.tatlerasia.com/tatlerasia/i/2025/06/04161927-meen-porichettu-prince-and-the-peacock-1-lancelot-chan-1_cover_1600x1067.jpg"
+  ],
+  "source_categories": [
+    "Indian"
+  ],
+  "enrich_recognition": [
+    {
+      "year": "2025",
+      "award": "Tatler Best Design Restaurant Hong Kong"
+    },
+    {
+      "year": "2025",
+      "award": "Tatler Best 20 Restaurants Hong Kong"
+    }
+  ],
+  "enrich_localname": "Prince and the Peacock",
+  "enrich_english_name": "Prince and the Peacock",
+  "enrich_type": "restaurant",
+  "enrich_neighborhood": "Central, Hong Kong",
+  "enrich_localTips": "The private room, known as The Kohinoor, includes an open-air terrace with city views.",
+  "enrich_signature": [
+    "Meen porichettu",
+    "Nalli gosht biryani",
+    "Pandhra rassa"
+  ],
+  "enrich_description": "Experience the opulence of India\u2019s royal courts in the heart of Hong Kong"
+}

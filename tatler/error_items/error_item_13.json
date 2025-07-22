@@ -1,0 +1,38 @@
+{
+  "source_url": "https://www.tatlerasia.com/dining/racines-hk?listId=345",
+  "source_name": "Racines",
+  "source_address": "G/F, 22 Upper Station Street, Sheung Wan, Hong Kong",
+  "source_neighbourhood": "Sheung Wan, Hong Kong",
+  "source_pricepoint": "",
+  "source_photoUrls": [
+    "https://cdn.tatlerasia.com/tatlerasia/i/2025/06/04172215-racines-127-racines-1_cover_1600x1067.jpg",
+    "https://cdn.tatlerasia.com/tatlerasia/i/2025/06/04172216-img-2194-racines-1_cover_1600x1067.JPG",
+    "https://cdn.tatlerasia.com/tatlerasia/i/2025/06/04172215-racines-5-racines-1_cover_1600x1067.jpg",
+    "https://cdn.tatlerasia.com/tatlerasia/i/2025/06/04172215-racines-16-2-racines-1_cover_1599x1068.jpg",
+    "https://cdn.tatlerasia.com/tatlerasia/i/2025/06/04172216-img-3035-racines-1_cover_1067x1600.JPG",
+    "https://cdn.tatlerasia.com/tatlerasia/i/2025/06/04172216-img-3034-racines-1_cover_1067x1600.JPG",
+    "https://cdn.tatlerasia.com/tatlerasia/i/2025/06/04172216-racines-163-racines-1_cover_1067x1600.jpg",
+    "https://cdn.tatlerasia.com/tatlerasia/i/2025/06/04172215-racines-122-racines-1_cover_1067x1600.jpg",
+    "https://cdn.tatlerasia.com/tatlerasia/i/2025/06/04172216-racines-3-racines-1_cover_1067x1600.jpg"
+  ],
+  "source_categories": [
+    "French"
+  ],
+  "enrich_recognition": [
+    {
+      "year": "2025",
+      "award": "Tatler Best 20 Restaurants Hong Kong"
+    }
+  ],
+  "enrich_localname": "Racines",
+  "enrich_english_name": "Racines",
+  "enrich_type": "restaurant",
+  "enrich_neighborhood": "Sheung Wan, Hong Kong",
+  "enrich_localTips": "For a front-row seat to the action, grab a seat at the bar and hear the inspiration and stories behind the menu firsthand.",
+  "enrich_signature": [
+    "Brittany Pigeon",
+    "Chicken Liver parfait canap\u00e9",
+    "Four seeds sourdough and butter with chilli espelette"
+  ],
+  "enrich_description": "An intimate, almost private kitchen experience, where a love for quality ingredients and a passion for creating joy through food"
+}

@@ -1,0 +1,43 @@
+{
+  "source_url": "https://www.tatlerasia.com/dining/caprice?listId=345",
+  "source_name": "Caprice",
+  "source_address": "6/F, Four Seasons Hotel Hong Kong, 8 Finance Street, Central, Hong Kong",
+  "source_neighbourhood": "Central, Central, Hong Kong",
+  "source_pricepoint": "$$$$",
+  "source_photoUrls": [
+    "https://cdn.tatlerasia.com/tatlerasia/i/2025/06/01201950-interior-caprice-1-four-seasons-hotel-hong-kong_cover_1600x948.jpg",
+    "https://cdn.tatlerasia.com/tatlerasia/i/2025/06/01201950-brittany-blue-lobster-beetroot-and-chocolate-with-ruby-sauce-caprice-four-seasons-hotel-hong-kong_cover_1600x1067.jpg",
+    "https://cdn.tatlerasia.com/tatlerasia/i/2025/06/01201949-interior-caprice-2-four-seasons-hotel-hong-kong_cover_1067x1600.jpg",
+    "https://cdn.tatlerasia.com/tatlerasia/i/2025/06/01201949-alaskan-king-crab-crustacean-jelly-and-oscietre-prestige-caviar-from-la-maison-kaviari-caprice-four-seasons-hotel-hong-kong_cover_1599x1066.jpg",
+    "https://cdn.tatlerasia.com/tatlerasia/i/2025/06/01201949-land-and-sea-tartare-australian-wagyu-beef-and-tarbouriech-oyster-kristal-caviar-caprice-four-seasons-hotel-hong-kong_cover_1600x1067.jpg",
+    "https://cdn.tatlerasia.com/tatlerasia/i/2025/06/01201949-mille-feuille-chocolat-banane-sorbet-cacao-banana-chocolate-millefeuille-cocoa-sorbet-caprice-four-seasons-hotel-hong-kong_cover_1067x1600.jpg"
+  ],
+  "source_categories": [
+    "French"
+  ],
+  "enrich_recognition": [
+    {
+      "year": "2025",
+      "award": "Tatler Best 20 Restaurants Hong Kong"
+    },
+    {
+      "year": "2024",
+      "award": "Tatler Best Asia 100 Restaurants"
+    },
+    {
+      "year": "2024",
+      "award": "Asia's 50 Best Restaurants"
+    }
+  ],
+  "enrich_localname": "Caprice",
+  "enrich_english_name": "Caprice",
+  "enrich_type": "restaurant",
+  "enrich_neighborhood": "Central, Central, Hong Kong",
+  "enrich_localTips": "As the world\u2019s only Ch\u00e2teau d\u2019Yquem ambassador, Caprice offers the chance to explore exceptional vintages and unique formats not easily found elsewhere.",
+  "enrich_signature": [
+    "Australian Wagyu beef with oyster and caviar",
+    "Alaskan king crab crustacean jelly with oyster and caviar",
+    "Brittany blue lobster, beetroot and chocolate with ruby sauce"
+  ],
+  "enrich_description": "A benchmark for haute cuisine in Hong Kong, where French elegance meets Asian finesse"
+}

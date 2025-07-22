@@ -1,0 +1,47 @@
+{
+  "source_url": "https://www.tatlerasia.com/dining/chairman?listId=345",
+  "source_name": "The Chairman",
+  "source_address": "3/F, The Wellington, 198 Wellington Street, Central, Hong Kong",
+  "source_neighbourhood": "Central, Hong Kong",
+  "source_pricepoint": "$$$$",
+  "source_photoUrls": [
+    "https://cdn.tatlerasia.com/tatlerasia/i/2025/06/01203638-thick-cut-chairman-style-char-siu-2_cover_1600x1067.jpeg",
+    "https://cdn.tatlerasia.com/tatlerasia/i/2025/06/01203639-interior-3_cover_1600x1057.JPG",
+    "https://cdn.tatlerasia.com/tatlerasia/i/2025/06/01203638-interior-1_cover_1600x1067.jpg",
+    "https://cdn.tatlerasia.com/tatlerasia/i/2025/06/01203641-steamed-fresh-flowery-crab-with-aged-shaoxing-wine-fragrant-chicken-oil-flat-rice-noodles_cover_1600x1067.jpg",
+    "https://cdn.tatlerasia.com/tatlerasia/i/2025/06/01203640-steamed-grouper-fish-head-with-fermented-chilli-and-salted-lard_cover_1600x1067.jpg",
+    "https://cdn.tatlerasia.com/tatlerasia/i/2025/06/01203638-interior-4_cover_1600x1068.JPG",
+    "https://cdn.tatlerasia.com/tatlerasia/i/2025/06/01203640-beef-short-ribs-and-chinese-liver-sausages-claypot-rice_cover_1068x1600.jpg",
+    "https://cdn.tatlerasia.com/tatlerasia/i/2025/06/01203639-interior-2_cover_1600x1046.JPG",
+    "https://cdn.tatlerasia.com/tatlerasia/i/2025/06/01203640-steamed-crab-meat-and-sakura-shrimps-sticky-rice_cover_1067x1600.jpg",
+    "https://cdn.tatlerasia.com/tatlerasia/i/2025/06/01203640-camphor-wood-smoked-goose-with-7-spices_cover_1067x1600.jpeg"
+  ],
+  "source_categories": [
+    "Cantonese"
+  ],
+  "enrich_recognition": [
+    {
+      "year": "2025",
+      "award": "Tatler Best Restaurant of the Year Hong Kong"
+    },
+    {
+      "year": "2025",
+      "award": "Tatler Best 20 Restaurants Hong Kong"
+    },
+    {
+      "year": "2024",
+      "award": "Tatler Best Asia 100 Restaurants"
+    }
+  ],
+  "enrich_localname": "The Chairman",
+  "enrich_english_name": "The Chairman",
+  "enrich_type": "restaurant",
+  "enrich_neighborhood": "Central, Hong Kong",
+  "enrich_localTips": "When online bookings open, avoid the rush for prime weekend slots. Instead, skip ahead\u2014look at weekday lunches or later dates.",
+  "enrich_signature": [
+    "Steamed flower crab with aged shaoxing wine, chicken oil and flat rice noodles",
+    "Thick-cut Chairman-style char siu",
+    "Camphor wood-smoked goose"
+  ],
+  "enrich_description": "An independent Cantonese restaurant by Danny Yip, rooted in tradition with an eye on the future"
+}

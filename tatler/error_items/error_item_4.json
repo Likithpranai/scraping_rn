@@ -1,0 +1,45 @@
+{
+  "source_url": "https://www.tatlerasia.com/dining/cristal-room-anne-sophie-pic-hong-kong?listId=345",
+  "source_name": "Cristal Room by Anne-Sophie Pic",
+  "source_address": "44/F, Forty-five, Gloucester Tower, Landmark Atrium, 15 Queen's Road Central, Central, Hong Kong",
+  "source_neighbourhood": "Central, Hong Kong",
+  "source_pricepoint": "$$$$",
+  "source_photoUrls": [
+    "https://cdn.tatlerasia.com/tatlerasia/i/2025/06/01205034-les-berlingots-asp-3-1_cover_1600x1067.jpg",
+    "https://cdn.tatlerasia.com/tatlerasia/i/2025/06/01205035-07-chocolate-hojicha-cubebe-new-dessert-diner_cover_1067x1600.jpg",
+    "https://cdn.tatlerasia.com/tatlerasia/i/2025/06/01205614-cristal-room-by-anne-sophie-pic-open-kitchen_cover_1599x837.jpg",
+    "https://cdn.tatlerasia.com/tatlerasia/i/2025/06/01205035-cristal-room-by-anne-sophie-pic4_cover_1200x1600.jpg",
+    "https://cdn.tatlerasia.com/tatlerasia/i/2025/06/01205035-20241012-hd-cristal-room-by-anne-sophie-pic-la-tomate-groupepic-3_cover_1067x1600.jpg",
+    "https://cdn.tatlerasia.com/tatlerasia/i/2025/06/01205035-20230714-cristal-room-hong-kong-st-marcellin-cheese-madagascar-smoked-vanilla-frozen-mochi-groupepic-6_cover_1600x1067.jpg",
+    "https://cdn.tatlerasia.com/tatlerasia/i/2025/06/01205034-20240422-cristal-room-spring-hibiscus-infusion-rhubarb-shrub-seedlip-spice-mario_cover_1067x1600.jpg",
+    "https://cdn.tatlerasia.com/tatlerasia/i/2025/06/01205615-cristal-room-by-anne-sophie-pic6_cover_1600x1200.jpg"
+  ],
+  "source_categories": [
+    "French"
+  ],
+  "enrich_recognition": [
+    {
+      "year": "2025",
+      "award": "Tatler Best New Restaurant Hong Kong"
+    },
+    {
+      "year": "2025",
+      "award": "Tatler Best 20 Restaurants Hong Kong"
+    },
+    {
+      "year": "2024",
+      "award": "Michelin 1 Star"
+    }
+  ],
+  "enrich_localname": "Cristal Room by Anne-Sophie Pic",
+  "enrich_english_name": "Cristal Room by Anne-Sophie Pic",
+  "enrich_type": "restaurant",
+  "enrich_neighborhood": "Central, Hong Kong",
+  "enrich_localTips": "Try the mixed pairing\u2014it\u2019s a revelation, with umami-forward sakes and creative non-alcoholic selections that elevate the dining experience.",
+  "enrich_signature": [
+    "Les Berlingots ASP pasta",
+    "Wild seabass with Petrossian Daurenki caviar",
+    "Le Millefeuille blanc"
+  ],
+  "enrich_description": "A masterclass in French gastronomy, where layers of flavour meet precision and finesse"
+}

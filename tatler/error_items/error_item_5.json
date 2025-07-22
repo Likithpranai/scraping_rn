@@ -1,0 +1,45 @@
+{
+  "source_url": "https://www.tatlerasia.com/dining/estro-hong-kong?listId=345",
+  "source_name": "Estro",
+  "source_address": "2/F, 1 Duddell Street, Central, Hong Kong",
+  "source_neighbourhood": "Central, Hong Kong",
+  "source_pricepoint": "$$$$",
+  "source_photoUrls": [
+    "https://cdn.tatlerasia.com/tatlerasia/i/2025/06/01211250-estro5_cover_1500x1000.jpg",
+    "https://cdn.tatlerasia.com/tatlerasia/i/2025/06/01210829-estro-pappardelle-onion-genovese-ragout-wagyu-ka-man-leung_cover_1067x1600.jpg",
+    "https://cdn.tatlerasia.com/tatlerasia/i/2025/06/01211250-estro3_cover_1500x1000.jpg",
+    "https://cdn.tatlerasia.com/tatlerasia/i/2025/06/01210828-estro-line-caught-seabass-spring-onion-seawater-seaweed-ka-man-leung_cover_1067x1600.jpg",
+    "https://cdn.tatlerasia.com/tatlerasia/i/2025/06/01210826-squid-almond-capers-caviar-ka-man-leung_cover_1600x1067.JPG",
+    "https://cdn.tatlerasia.com/tatlerasia/i/2025/06/01211108-estro2_cover_1500x1000.jpg",
+    "https://cdn.tatlerasia.com/tatlerasia/i/2025/06/01210828-estro-bottoni-with-buffalo-cheese-guanciale-and-peppercorns-ka-man-leung_cover_1600x1067.jpg",
+    "https://cdn.tatlerasia.com/tatlerasia/i/2025/06/01211250-estro1_cover_1500x1000.jpg"
+  ],
+  "source_categories": [
+    "Italian"
+  ],
+  "enrich_recognition": [
+    {
+      "year": "2025",
+      "award": "Tatler Best 20 Restaurants Hong Kong"
+    },
+    {
+      "year": "2024",
+      "award": "Tatler Best Asia 100 Restaurants"
+    },
+    {
+      "year": "2024",
+      "award": "Tatler Best Pastry Chef"
+    }
+  ],
+  "enrich_localname": "Estro",
+  "enrich_english_name": "Estro",
+  "enrich_type": "restaurant",
+  "enrich_neighborhood": "Central, Hong Kong",
+  "enrich_localTips": "The new \u00e0 la carte menu brings welcome flexibility, though resisting a second pasta might be a challenge.",
+  "enrich_signature": [
+    "Seasonal bottoni",
+    "Squid with almond and caviar",
+    "Red prawn coral pannacotta"
+  ],
+  "enrich_description": "Neapolitan tradition, distilled and redefined by Antimo Maria Merone"
+}

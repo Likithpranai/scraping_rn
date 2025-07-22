@@ -1,0 +1,37 @@
+{
+  "source_url": "https://www.tatlerasia.com/dining/leela-hong-kong?listId=345",
+  "source_name": "Leela",
+  "source_address": "Shop 301-310, Lee Garden Three, 1 Sunning Road, Causeway Bay, Hong Kong",
+  "source_neighbourhood": "Causeway Bay, Hong Kong",
+  "source_pricepoint": "$$$$",
+  "source_photoUrls": [
+    "https://cdn.tatlerasia.com/tatlerasia/i/2025/06/01215050-interiors-leela10-steph-leung_cover_1400x982.jpg",
+    "https://cdn.tatlerasia.com/tatlerasia/i/2025/06/01215050-interiors-leela0-steph-leung_cover_1400x1064.jpg",
+    "https://cdn.tatlerasia.com/tatlerasia/i/2025/06/01215049-interiors-leela2-steph-leung_cover_1050x1400.jpg",
+    "https://cdn.tatlerasia.com/tatlerasia/i/2025/06/01215050-interiors-leela3-steph-leung_cover_1400x933.jpg",
+    "https://cdn.tatlerasia.com/tatlerasia/i/2025/06/01215051-leela-kandhari-lamb-chop1-steph-leung_cover_1600x1067.jpeg",
+    "https://cdn.tatlerasia.com/tatlerasia/i/2025/06/01215051-leela-monkfish-musallam-steph-leung_cover_1600x1067.jpg",
+    "https://cdn.tatlerasia.com/tatlerasia/i/2025/06/01215050-interiors-leela1-steph-leung_cover_1050x1400.jpg",
+    "https://cdn.tatlerasia.com/tatlerasia/i/2025/06/01215052-jackfruit-and-soya-keema-dabeli-leela0-steph-leung_cover_1600x1067.jpg"
+  ],
+  "source_categories": [
+    "Indian"
+  ],
+  "enrich_recognition": [
+    {
+      "year": "2025",
+      "award": "Tatler Best 20 Restaurants Hong Kong"
+    }
+  ],
+  "enrich_localname": "Leela",
+  "enrich_english_name": "Leela",
+  "enrich_type": "restaurant",
+  "enrich_neighborhood": "Causeway Bay, Hong Kong",
+  "enrich_localTips": "For a more exclusive experience, book the private dining room, or enjoy cocktails and small plates on the terrace.",
+  "enrich_signature": [
+    "Monkfish musallam",
+    "Honey sesame pork ribs",
+    "Bone marrow and beef cheek biryani"
+  ],
+  "enrich_description": "A culinary playground, where Indian cuisine is reimagined with innovative flair"
+}

@@ -1,0 +1,43 @@
+{
+  "source_url": "https://www.tatlerasia.com/dining/yong-fu-hong-kong?listId=345",
+  "source_name": "Yong Fu",
+  "source_address": "Shop 2, G/F&1/F, Golden Star Building, 20-24 Lockhart Road, Wan Chai, Hong Kong",
+  "source_neighbourhood": "Wan Chai, Hong Kong",
+  "source_pricepoint": "$$$$",
+  "source_photoUrls": [
+    "https://cdn.tatlerasia.com/tatlerasia/i/2025/06/01231800-\u62db\u724c\u5341\u516b\u65a9\u7684\u526f\u672cpic-ka-man-leung_cover_1061x1599.jpg",
+    "https://cdn.tatlerasia.com/tatlerasia/i/2025/06/01231801-dsf2550-ka-man-leung_cover_1067x1600.jpg",
+    "https://cdn.tatlerasia.com/tatlerasia/i/2025/06/01231805-\u5b81\u6ce2\u6c64\u5706\u7684\u526f\u672c-ka-man-leung_cover_1600x1067.JPG",
+    "https://cdn.tatlerasia.com/tatlerasia/i/2025/06/01231801-private-room-yong-fu-hong-kong1-ka-man-leung_cover_1600x900.jpg",
+    "https://cdn.tatlerasia.com/tatlerasia/i/2025/06/01231802-private-room-yong-fu-hong-kong0-ka-man-leung_cover_1200x1600.jpg",
+    "https://cdn.tatlerasia.com/tatlerasia/i/2025/06/01231804-main-dining-room-yong-fu-hong-kong-ka-man-leung_cover_1600x979.jpg"
+  ],
+  "source_categories": [
+    "Chinese"
+  ],
+  "enrich_recognition": [
+    {
+      "year": "2025",
+      "award": "Tatler Best 20 Restaurants Hong Kong"
+    },
+    {
+      "year": "2024",
+      "award": "Michelin 1 Star"
+    },
+    {
+      "year": "2023",
+      "award": "Tatler Dining 20"
+    }
+  ],
+  "enrich_localname": "Yong Fu",
+  "enrich_english_name": "Yong Fu",
+  "enrich_type": "restaurant",
+  "enrich_neighborhood": "Wan Chai, Hong Kong",
+  "enrich_localTips": "Yong Fu shines with family-style dining\u2014pre-order the crispy chicken two days ahead for the best experience.",
+  "enrich_signature": [
+    "Alaskan king crab two ways",
+    "\u2060Braised abalone in golden premium chicken soup",
+    "\u2060Stir-fried rice cake with yellow croaker fish roe"
+  ],
+  "enrich_description": "Ningbo cuisine at its finest\u2014delicate, precise and singing with flavour"
+}

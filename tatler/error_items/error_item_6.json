@@ -1,0 +1,42 @@
+{
+  "source_url": "https://www.tatlerasia.com/dining/feuille-hk?listId=345",
+  "source_name": "Feuille",
+  "source_address": "5/F, The Wellington, 198 Wellington Street, Central, Hong Kong",
+  "source_neighbourhood": "Central, Hong Kong",
+  "source_pricepoint": "$$$$",
+  "source_photoUrls": [
+    "https://cdn.tatlerasia.com/tatlerasia/i/2025/06/01212032-mustard-seed-shiso-sea-grape-feuille-2-coco-yeung_cover_1600x1067.jpg",
+    "https://cdn.tatlerasia.com/tatlerasia/i/2025/06/01212030-interior-feuille-2-coco-yeung_cover_1600x1067.jpg",
+    "https://cdn.tatlerasia.com/tatlerasia/i/2025/06/01212032-interior-feuille-1-coco-yeung_cover_1067x1600.jpg",
+    "https://cdn.tatlerasia.com/tatlerasia/i/2025/06/01212033-cumin-egg-sweet-corn-feuille-1-coco-yeung_cover_1067x1600.jpg",
+    "https://cdn.tatlerasia.com/tatlerasia/i/2025/06/01212030-interior-feuille-3-coco-yeung_cover_1067x1600.jpg"
+  ],
+  "source_categories": [
+    "French"
+  ],
+  "enrich_recognition": [
+    {
+      "year": "2025",
+      "award": "Tatler Best 20 Restaurants Hong Kong"
+    },
+    {
+      "year": "2024",
+      "award": "Michelin Green Star"
+    },
+    {
+      "year": "2024",
+      "award": "Michelin 1 Star"
+    }
+  ],
+  "enrich_localname": "Feuille",
+  "enrich_english_name": "Feuille",
+  "enrich_type": "restaurant",
+  "enrich_neighborhood": "Central, Hong Kong",
+  "enrich_localTips": "The dill pil-pil sauce, crafted from turbot bone collagen and dill oil into a rich, mayonnaise-like emulsion, is a rare find\u2014skip the butter and try it.",
+  "enrich_signature": [
+    "Cumin, egg, sweet corn",
+    "Mustard seed with shiso and sea grape",
+    "Pumpkin, spiny lobster and saffron"
+  ],
+  "enrich_description": "A refined, plant-forward fine dining experience where vegetables are spotlighted in beautifully crafted, seasonally driven dishes"
+}

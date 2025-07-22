@@ -1,0 +1,43 @@
+{
+  "source_url": "https://www.tatlerasia.com/dining/vea-hong-kong?listId=345",
+  "source_name": "VEA",
+  "source_address": "30/F, The Wellington, 198 Wellington Street, Central, Hong Kong",
+  "source_neighbourhood": "Central, Hong Kong",
+  "source_pricepoint": "$$$$",
+  "source_photoUrls": [
+    "https://cdn.tatlerasia.com/tatlerasia/i/2025/06/01222614-vea-27-head-abalone-pithiviers-1-marissa-leung_cover_1600x1067.jpeg",
+    "https://cdn.tatlerasia.com/tatlerasia/i/2025/06/01222614-vea-low-table-2023-1-marissa-leung_cover_1600x1067.jpg",
+    "https://cdn.tatlerasia.com/tatlerasia/i/2025/06/01222734-seacucumber_cover_1599x1066.jpg",
+    "https://cdn.tatlerasia.com/tatlerasia/i/2025/06/01222614-vea-entrance-2023-1-marissa-leung_cover_1600x1047.jpg",
+    "https://cdn.tatlerasia.com/tatlerasia/i/2025/06/01222616-vea-fish-maw-marissa-leung_cover_1600x1067.jpg",
+    "https://cdn.tatlerasia.com/tatlerasia/i/2025/06/01222614-vea-private-dining-room-2023-1-marissa-leung_cover_1600x1067.jpg"
+  ],
+  "source_categories": [
+    "French-Chinese"
+  ],
+  "enrich_recognition": [
+    {
+      "year": "2025",
+      "award": "Tatler Best 20 Restaurants Hong Kong"
+    },
+    {
+      "year": "2024",
+      "award": "Tatler Best Asia 100 Restaurants"
+    },
+    {
+      "year": "2024",
+      "award": "Michelin 1 Star"
+    }
+  ],
+  "enrich_localname": "VEA",
+  "enrich_english_name": "VEA",
+  "enrich_type": "restaurant",
+  "enrich_neighborhood": "Central, Hong Kong",
+  "enrich_localTips": "If you drink, opt for the wine pairing\u2014but don\u2019t overlook the standout Chinese bottles that elevate the menu\u2019s delicate flavours.",
+  "enrich_signature": [
+    "Sea cucumber",
+    "Fish maw",
+    "Abalone \u201cpithivier\u201d"
+  ],
+  "enrich_description": "Where French finesse meets Chinese heritage and flavours\u2014with spectacular results"
+}

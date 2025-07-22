@@ -1,0 +1,42 @@
+{
+  "source_url": "https://www.tatlerasia.com/dining/ho-lee-fook-hong-kong?listId=345",
+  "source_name": "Ho Lee Fook",
+  "source_address": "G/F, 1-5 Elgin Street, Central, Hong Kong",
+  "source_neighbourhood": "Central, Hong Kong",
+  "source_pricepoint": "$$",
+  "source_photoUrls": [
+    "https://cdn.tatlerasia.com/tatlerasia/i/2025/06/01214133-razor-clam-ho-lee-fook-jiaen-koh_cover_1600x1067.jpg",
+    "https://cdn.tatlerasia.com/tatlerasia/i/2025/06/01214135-ho-lee-fook-exterior-jiaen-koh_cover_1599x956.jpg",
+    "https://cdn.tatlerasia.com/tatlerasia/i/2025/06/01214134-ho-lee-fook-interior-01-copy-jiaen-koh_cover_1599x1066.jpg",
+    "https://cdn.tatlerasia.com/tatlerasia/i/2025/06/01214135-stir-fry-king-ho-lee-fook-jiaen-koh_cover_1600x1067.jpg",
+    "https://cdn.tatlerasia.com/tatlerasia/i/2025/06/01214136-ho-lee-duck-ho-lee-fook-jiaen-koh_cover_1600x1067.jpg"
+  ],
+  "source_categories": [
+    "Cantonese"
+  ],
+  "enrich_recognition": [
+    {
+      "year": "2025",
+      "award": "Tatler Best Service Restaurant Hong Kong"
+    },
+    {
+      "year": "2025",
+      "award": "Tatler Best 20 Restaurants Hong Kong"
+    },
+    {
+      "year": "2024",
+      "award": "Tatler Best Asia 100 Restaurants"
+    }
+  ],
+  "enrich_localname": "Ho Lee Fook",
+  "enrich_english_name": "Ho Lee Fook",
+  "enrich_type": "restaurant",
+  "enrich_neighborhood": "Central, Hong Kong",
+  "enrich_localTips": "For a more lively dim sum experience, book into the Good Fortune Club, held on the first Sunday of every month.",
+  "enrich_signature": [
+    "Ho Lee duck or roast meat platter",
+    "Steamed razor clams with glass noodles",
+    "Stir-fry king"
+  ],
+  "enrich_description": "High-energy Cantonese fare with bold flavours and even louder vibes"
+}

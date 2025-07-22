@@ -1,0 +1,45 @@
+{
+  "source_url": "https://www.tatlerasia.com/dining/mono-hong-kong?listId=345",
+  "source_name": "Mono",
+  "source_address": "5/F, 18 On Lan Street, Central, Hong Kong",
+  "source_neighbourhood": "Central, Hong Kong",
+  "source_pricepoint": "$$$$",
+  "source_photoUrls": [
+    "https://cdn.tatlerasia.com/tatlerasia/i/2025/06/01215821-chef-counter-group-jia_cover_1600x1067.jpg",
+    "https://cdn.tatlerasia.com/tatlerasia/i/2025/06/01215819-mono-private-dining-room-group-jia_cover_1600x1067.jpg",
+    "https://cdn.tatlerasia.com/tatlerasia/i/2025/06/01215818-white-sesame-sourdough-bread-olive-oil-aguilera-100-arbequina-group-jia_cover_1067x1600.jpg",
+    "https://cdn.tatlerasia.com/tatlerasia/i/2025/06/01215819-danish-langoustine-ecuador-cacao-expressions1-group-jia_cover_1067x1600.jpg",
+    "https://cdn.tatlerasia.com/tatlerasia/i/2025/06/01215819-mexican-infladita-corn-bafun-uni-tonburi-group-jia_cover_1067x1600.jpg",
+    "https://cdn.tatlerasia.com/tatlerasia/i/2025/06/01220042-interior_cover_1400x935.jpg",
+    "https://cdn.tatlerasia.com/tatlerasia/i/2025/06/01215819-aged-medai-fish-peruvian-causa-nopal-tartare-colombian-cubio-kalamata-olive-leche-de-tigre1-group-jia_cover_1067x1600.jpg",
+    "https://cdn.tatlerasia.com/tatlerasia/i/2025/06/01215819-kabocha-pumpkin-taco-mexican-pumpkin-mole-amazonian-lemon-ants-cajun-white-corn-tortilla-pumpkin-cream-group-jia_cover_1067x1600.jpg"
+  ],
+  "source_categories": [
+    "Latin American"
+  ],
+  "enrich_recognition": [
+    {
+      "year": "2025",
+      "award": "Tatler Best 20 Restaurants Hong Kong"
+    },
+    {
+      "year": "2024",
+      "award": "Tatler Best Asia 100 Restaurants"
+    },
+    {
+      "year": "2024",
+      "award": "Michelin 1 Star"
+    }
+  ],
+  "enrich_localname": "Mono",
+  "enrich_english_name": "Mono",
+  "enrich_type": "restaurant",
+  "enrich_neighborhood": "Central, Hong Kong",
+  "enrich_localTips": "The beloved Venezuelan street food arepa is given a creative, bite-sized spin here, while the wasakaka, an avocado-based sauce that\u2019s frequently served over grilled dishes, makes an appearance in many of the dishes.",
+  "enrich_signature": [
+    "Danish langoustine with cacao expressions",
+    "White sesame sourdough with olive oil Aguilera, 100% Arbequina",
+    "Mono-made Ecuadorian chocolate 70%"
+  ],
+  "enrich_description": "A refined take on Latin American cuisine, where unexpected ingredient pairings surprise and delight in every course"
+}

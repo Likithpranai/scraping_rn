@@ -1,0 +1,43 @@
+{
+  "source_url": "https://www.tatlerasia.com/dining/amber?listId=345",
+  "source_name": "Amber",
+  "source_address": "7/F, The Landmark Mandarin Oriental, 15 Queen's Road Central, Hong Kong",
+  "source_neighbourhood": "Central, Hong Kong",
+  "source_pricepoint": "$$$$",
+  "source_photoUrls": [
+    "https://cdn.tatlerasia.com/tatlerasia/i/2025/06/01200000-kinmedai-squid-garum-soy-kinome-extra-virgin-grapeseed-oil-celtus-amber-1-yanton-ho_cover_1599x1066.jpg",
+    "https://cdn.tatlerasia.com/tatlerasia/i/2025/06/01200000-heirloom-tomato-strawberry-an-soymilk-burrata-rose-lemon-verbena-extra-virgin-olive-oil-amber-1-yanton-ho_cover_1599x1066.jpg",
+    "https://cdn.tatlerasia.com/tatlerasia/i/2025/06/01200000-amber-entrance-kristen-tang_cover_1600x1299.jpg",
+    "https://cdn.tatlerasia.com/tatlerasia/i/2025/06/01200000-aka-uni-amber-1-yanton-ho_cover_1067x1600.jpg",
+    "https://cdn.tatlerasia.com/tatlerasia/i/2025/06/01200000-amber-full-restaurant-14-mb-kristen-tang_cover_1600x1067.jpg",
+    "https://cdn.tatlerasia.com/tatlerasia/i/2025/06/01200000-private-room-by-amber-kristen-tang_cover_1600x1190.jpg"
+  ],
+  "source_categories": [
+    "French"
+  ],
+  "enrich_recognition": [
+    {
+      "year": "2025",
+      "award": "Tatler Best 20 Restaurants Hong Kong"
+    },
+    {
+      "year": "2024",
+      "award": "Tatler Best Asia 100 Restaurants"
+    },
+    {
+      "year": "2024",
+      "award": "Michelin Green Star"
+    }
+  ],
+  "enrich_localname": "Amber",
+  "enrich_english_name": "Amber",
+  "enrich_type": "restaurant",
+  "enrich_neighborhood": "Central, Hong Kong",
+  "enrich_localTips": "Book the Full Amber Experience, which includes a kitchen tour. Being shown around, then served a course, in the unbelievably calm space is an experience you won\u2019t forget.",
+  "enrich_signature": [
+    "Aka uni with lobster, cauliflower and caviar",
+    "One-year aged carnaroli rice risotto",
+    "Roe deer loin, foie gras and beetroot"
+  ],
+  "enrich_description": "Creative and expertly executed haute cuisine in a refined yet unpretentious setting"
+}

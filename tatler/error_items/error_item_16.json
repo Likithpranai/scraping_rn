@@ -1,0 +1,43 @@
+{
+  "source_url": "https://www.tatlerasia.com/dining/whey-hk?listId=345",
+  "source_name": "Whey",
+  "source_address": "UG/F, The Wellington, 198 Wellington Street, Central, Hong Kong",
+  "source_neighbourhood": "Central, Hong Kong",
+  "source_pricepoint": "$$$$",
+  "source_photoUrls": [
+    "https://cdn.tatlerasia.com/tatlerasia/i/2025/06/01223547-interior-whey-3-coco-yeung_cover_1600x1067.jpeg",
+    "https://cdn.tatlerasia.com/tatlerasia/i/2025/06/01223546-interior-whey-1-coco-yeung_cover_1600x1067.jpeg",
+    "https://cdn.tatlerasia.com/tatlerasia/i/2025/06/01223545-maoshan-wang-durian-ice-cream-whey-2-coco-yeung_cover_1600x1067.jpeg",
+    "https://cdn.tatlerasia.com/tatlerasia/i/2025/06/01223647-whey-bread_cover_1080x719.jpg",
+    "https://cdn.tatlerasia.com/tatlerasia/i/2025/06/01223547-lobster-nasi-ulam-whey-1-coco-yeung_cover_1600x1067.jpeg",
+    "https://cdn.tatlerasia.com/tatlerasia/i/2025/06/01223547-interior-whey-2-coco-yeung_cover_1600x1067.jpeg"
+  ],
+  "source_categories": [
+    "Southeast Asian"
+  ],
+  "enrich_recognition": [
+    {
+      "year": "2025",
+      "award": "Tatler Best 20 Restaurants Hong Kong"
+    },
+    {
+      "year": "2024",
+      "award": "Michelin 1 Star"
+    },
+    {
+      "year": "2023",
+      "award": "Michelin 1 Star"
+    }
+  ],
+  "enrich_localname": "Whey",
+  "enrich_english_name": "Whey",
+  "enrich_type": "restaurant",
+  "enrich_neighborhood": "Central, Hong Kong",
+  "enrich_localTips": "To fully appreciate the intricate flavours and textures of Quek\u2019s creations, consider opting for the wine pairing, which has been thoughtfully curated to enhance each course\u2019s unique profile.",
+  "enrich_signature": [
+    "Buak keluak brioche",
+    "Lobster nasi ulam",
+    "Mao Shan Wang caviar ice cream"
+  ],
+  "enrich_description": "A culinary symphony of Singaporean flavours and European finesse"
+}

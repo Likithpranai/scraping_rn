@@ -1,0 +1,41 @@
+{
+  "source_url": "https://www.tatlerasia.com/dining/xin-rong-ji-hong-kong?listId=345",
+  "source_name": "Xin Rong Ji",
+  "source_address": "G/F-1/F, China Overseas Building, 138 Lockhart Road, Wan Chai, Hong Kong",
+  "source_neighbourhood": "Wan Chai, Hong Kong",
+  "source_pricepoint": "$$$$",
+  "source_photoUrls": [
+    "https://cdn.tatlerasia.com/tatlerasia/i/2025/06/01224724-xrj_cover_960x720.jpeg",
+    "https://cdn.tatlerasia.com/tatlerasia/i/2025/06/01230229-xrj_cover_1500x1000.jpg",
+    "https://cdn.tatlerasia.com/tatlerasia/i/2025/06/01224724-xrj-1_cover_1080x1080.jpg",
+    "https://cdn.tatlerasia.com/tatlerasia/i/2025/06/01224724-xrj-2_cover_737x959.jpg"
+  ],
+  "source_categories": [
+    "Chinese"
+  ],
+  "enrich_recognition": [
+    {
+      "year": "2025",
+      "award": "Tatler Best 20 Restaurants Hong Kong"
+    },
+    {
+      "year": "2024",
+      "award": "Michelin 1 Star"
+    },
+    {
+      "year": "2023",
+      "award": "Michelin 1 Star"
+    }
+  ],
+  "enrich_localname": "Xin Rong Ji",
+  "enrich_english_name": "Xin Rong Ji",
+  "enrich_type": "restaurant",
+  "enrich_neighborhood": "Wan Chai, Hong Kong",
+  "enrich_localTips": "For something beyond seafood, order the roasted and air-dried Mongolian lamb\u2014it\u2019s a dish that doesn\u2019t often appear on menus in Hong Kong and is well worth seeking out.",
+  "enrich_signature": [
+    "Roasted Peking duck",
+    "Braised wild-caught yellow croaker",
+    "Crispy fried silver ribbon fish"
+  ],
+  "enrich_description": "Pristine seafood, polished service and Taizhou cooking at its finest"
+}

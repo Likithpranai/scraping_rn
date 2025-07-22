@@ -1,0 +1,44 @@
+{
+  "source_url": "https://www.tatlerasia.com/dining/tate-dining-room?listId=345",
+  "source_name": "Tate Dining Room",
+  "source_address": "210 Hollywood Road, Sheung Wan, Hong Kong",
+  "source_neighbourhood": "Sheung Wan, Hong Kong",
+  "source_pricepoint": "$$$$",
+  "source_photoUrls": [
+    "https://cdn.tatlerasia.com/tatlerasia/i/2025/06/01221900-tate-ab-x1a5193-vicky-lau_cover_1600x1067.JPG",
+    "https://cdn.tatlerasia.com/tatlerasia/i/2025/06/01221900-tate-04scallop-x1a5297-vicky-lau_cover_1600x1059.JPG",
+    "https://cdn.tatlerasia.com/tatlerasia/i/2025/06/01221859-tate-07pigeon-x1a5418b-vicky-lau_cover_1600x1036.jpg",
+    "https://cdn.tatlerasia.com/tatlerasia/i/2025/06/01221859-img-1396-edit-vicky-lau_cover_1600x900.jpg",
+    "https://cdn.tatlerasia.com/tatlerasia/i/2025/06/01221900-img-1357-edit-vicky-lau_cover_1600x1000.jpg",
+    "https://cdn.tatlerasia.com/tatlerasia/i/2025/06/01221859-img-1393-edit-vicky-lau_cover_1599x1066.jpg",
+    "https://cdn.tatlerasia.com/tatlerasia/i/2025/06/01221900-tate-08sun-x1a5120-vicky-lau_cover_1067x1600.JPG"
+  ],
+  "source_categories": [
+    "French-Chinese"
+  ],
+  "enrich_recognition": [
+    {
+      "year": "2025",
+      "award": "Tatler Best 20 Restaurants Hong Kong"
+    },
+    {
+      "year": "2024",
+      "award": "Michelin 2 Stars"
+    },
+    {
+      "year": "2024",
+      "award": "Tatler Dining 20"
+    }
+  ],
+  "enrich_localname": "Tate Dining Room",
+  "enrich_english_name": "Tate Dining Room",
+  "enrich_type": "restaurant",
+  "enrich_neighborhood": "Sheung Wan, Hong Kong",
+  "enrich_localTips": "Notably, the kitchen extends exceptional consideration to vegetarians, crafting bespoke menus with the same meticulous attention to detail\u2014simply provide 48 hours\u2019 notice.",
+  "enrich_signature": [
+    "Century egg mimosa with crab and vinegar jelly",
+    "Warm scallop with kumquat grenobloise sauce",
+    "Steamed pigeon breast with Sichuan pigeon jus"
+  ],
+  "enrich_description": "French-Chinese fine dining that lives up to the hype"
+}

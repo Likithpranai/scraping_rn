@@ -1,0 +1,41 @@
+{
+  "source_url": "https://www.tatlerasia.com/dining/wing-restaurant?listId=345",
+  "source_name": "Wing",
+  "source_address": "29/F, The Wellington, 198 Wellington Street, Sheung Wan, Hong Kong",
+  "source_neighbourhood": "Sheung Wan, Hong Kong",
+  "source_pricepoint": "$$$$",
+  "source_photoUrls": [
+    "https://cdn.tatlerasia.com/tatlerasia/i/2025/06/01224302-wing-alaskan-king-crab-leg-with-crab-roe-garlic-and-crispy-cheung-fun-\u849c\u84c9\u87f9\u7c89\u84b8\u7687\u5e1d\u87f9\u8173\u914d\u714e\u8178\u7c89-marissa-leung-1_cover_1183x1600.jpg",
+    "https://cdn.tatlerasia.com/tatlerasia/i/2025/06/01224259-wing-main-dining-1-marissa-leung-1_cover_1600x1067.jpg",
+    "https://cdn.tatlerasia.com/tatlerasia/i/2025/06/01224300-wing-japanese-oyster-and-century-egg-in-housemade-chili-sauce-\u9999\u8fa3\u751f\u8814\u4f34\u76ae\u86cb-2-marissa-leung-1_cover_1600x1067.jpg",
+    "https://cdn.tatlerasia.com/tatlerasia/i/2025/06/01224300-wing-private-dining-marissa-leung-1_cover_1600x1197.jpg"
+  ],
+  "source_categories": [
+    "Modern Chinese"
+  ],
+  "enrich_recognition": [
+    {
+      "year": "2025",
+      "award": "Tatler Best 20 Restaurants Hong Kong"
+    },
+    {
+      "year": "2024",
+      "award": "Tatler Best Asia: Restaurant of the Year"
+    },
+    {
+      "year": "2024",
+      "award": "Tatler Best Asia 100 Restaurants"
+    }
+  ],
+  "enrich_localname": "Wing",
+  "enrich_english_name": "Wing",
+  "enrich_type": "restaurant",
+  "enrich_neighborhood": "Sheung Wan, Hong Kong",
+  "enrich_localTips": "For larger groups, the magnum selection on the wine list is well worth exploring.",
+  "enrich_signature": [
+    "Alaskan king crab leg with crab roe and crispy cheung fun",
+    "Japanese oyster and century egg in housemade chilli sauce",
+    "Razor clam with Yunnan chilli and bull kelp"
+  ],
+  "enrich_description": "Confident, boundary-pushing Chinese cuisine by chef and founder Vicky Cheng"
+}

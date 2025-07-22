@@ -1,0 +1,42 @@
+{
+  "source_url": "https://www.tatlerasia.com/dining/fo174?listId=345",
+  "source_name": "Forum",
+  "source_address": "1/F, Sino Plaza, 255-257 Gloucester Road, Causeway Bay, Hong Kong",
+  "source_neighbourhood": "Causeway Bay, Hong Kong",
+  "source_pricepoint": "$$$$",
+  "source_photoUrls": [
+    "https://cdn.tatlerasia.com/tatlerasia/i/2025/06/01213251-interior-\u5bcc\u81e8\u98ef\u5e97-9-josephine-ho_cover_1600x1067.jpeg",
+    "https://cdn.tatlerasia.com/tatlerasia/i/2025/06/01213248-\u963f\u4e00\u9b91\u9b5a-\u5bcc\u81e8\u98ef\u5e97-1-josephine-ho-20250318t123045_cover_1067x1600.jpeg",
+    "https://cdn.tatlerasia.com/tatlerasia/i/2025/06/01213249-interior-\u5bcc\u81e8\u98ef\u5e97-8-josephine-ho_cover_1600x1067.jpeg",
+    "https://cdn.tatlerasia.com/tatlerasia/i/2025/06/01213251-interior-\u5bcc\u81e8\u98ef\u5e97-7-josephine-ho_cover_1600x1067.jpeg",
+    "https://cdn.tatlerasia.com/tatlerasia/i/2025/06/01213249-\u7464\u67f1\u7117\u91c0\u87f9\u84cb-\u5bcc\u81e8\u98ef\u5e97-3-josephine-ho_cover_1067x1600.jpeg"
+  ],
+  "source_categories": [
+    "Cantonese"
+  ],
+  "enrich_recognition": [
+    {
+      "year": "2025",
+      "award": "Tatler Best 20 Restaurants Hong Kong"
+    },
+    {
+      "year": "2024",
+      "award": "Michelin 3 Stars"
+    },
+    {
+      "year": "2023",
+      "award": "Michelin 3 Stars"
+    }
+  ],
+  "enrich_localname": "Forum",
+  "enrich_english_name": "Forum",
+  "enrich_type": "restaurant",
+  "enrich_neighborhood": "Causeway Bay, Hong Kong",
+  "enrich_localTips": "Some specialities, including the famed stuffed and roasted chicken wings, require pre-ordering\u2014plan ahead.",
+  "enrich_signature": [
+    "Ah Yat abalone",
+    "Oxtail with roasted sauce",
+    "Baked stuffed crab shell"
+  ],
+  "enrich_description": "A traditional Cantonese institution where abalone is king and classics shine"
+}

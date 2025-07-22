@@ -1,0 +1,47 @@
+{
+  "source_url": "https://www.tatlerasia.com/dining/mosu-hong-kong?listId=345",
+  "source_name": "Mosu Hong Kong",
+  "source_address": "3/F, M+, 38 Museum Drive, West Kowloon Cultural District, Tsim Sha Tsui, Hong Kong",
+  "source_neighbourhood": "Tsim Sha Tsui, Hong Kong",
+  "source_pricepoint": "$$$$",
+  "source_photoUrls": [
+    "https://cdn.tatlerasia.com/tatlerasia/i/2025/06/01220717-mosu-white-sesame-tofu-03_cover_1067x1600.jpg",
+    "https://cdn.tatlerasia.com/tatlerasia/i/2025/06/01220717-mosu-dinner-tilefish-squash-saffron-02_cover_1067x1600.jpg",
+    "https://cdn.tatlerasia.com/tatlerasia/i/2025/06/01220716-acorn-noodle_cover_900x1600.jpg",
+    "https://cdn.tatlerasia.com/tatlerasia/i/2025/06/01220716-mosu-abalone-taco-03_cover_1600x1065.jpg",
+    "https://cdn.tatlerasia.com/tatlerasia/i/2025/06/01220717-mosu-dashima-cheesecake_cover_1600x1067.jpg",
+    "https://cdn.tatlerasia.com/tatlerasia/i/2025/06/01220716-mosuhongkong-blacksesame-march2022-5_cover_1599x1064.jpg",
+    "https://cdn.tatlerasia.com/tatlerasia/i/2025/06/01220717-mosu-hong-kong-interior_cover_1600x1067.jpg",
+    "https://cdn.tatlerasia.com/tatlerasia/i/2025/06/01220716-mosu-lunch-and-lunch-iron-pot-rice-with-korean-galbi-short-rib_cover_1600x1067.jpg",
+    "https://cdn.tatlerasia.com/tatlerasia/i/2025/06/01220716-mosuhongkong-gim-02_cover_1600x1065.jpg",
+    "https://cdn.tatlerasia.com/tatlerasia/i/2025/06/01220718-mosu-hong-kong-interior2_cover_1600x1067.jpg"
+  ],
+  "source_categories": [
+    "Korean"
+  ],
+  "enrich_recognition": [
+    {
+      "year": "2025",
+      "award": "Tatler Best 20 Restaurants Hong Kong"
+    },
+    {
+      "year": "2023",
+      "award": "Tatler Best New Restaurant"
+    },
+    {
+      "year": "2023",
+      "award": "Tatler Rising Star"
+    }
+  ],
+  "enrich_localname": "Mosu Hong Kong",
+  "enrich_english_name": "Mosu Hong Kong",
+  "enrich_type": "restaurant",
+  "enrich_neighborhood": "Tsim Sha Tsui, Hong Kong",
+  "enrich_localTips": "The wine pairing is a must\u2014expertly chosen to match Mosu\u2019s bold yet refined flavours, with some real standout pours along the way.",
+  "enrich_signature": [
+    "Abalone taco",
+    "Tilefish and brassicas",
+    "Ember roasted acorn noodles"
+  ],
+  "enrich_description": "A masterful interplay of Korean tradition, French technique, and minimalist elegance"
+}
